@@ -7,8 +7,11 @@ public class PipeCut {
     private UUID uuid;
 
     private String[] rowData;
+    private String spool;
     private String service;
-    private int rawLength;
+
+    private String diameter; // end1 on csv
+    private int lengthDecimal;
 
     public PipeCut() {
         uuid = UUID.randomUUID();
@@ -26,6 +29,14 @@ public class PipeCut {
         this.rowData = rowData;
     }
 
+    public String getSpool() {
+        return spool;
+    }
+
+    public void setSpool(String spool) {
+        this.spool = spool;
+    }
+
     public String getService() {
         return service;
     }
@@ -34,12 +45,20 @@ public class PipeCut {
         this.service = service;
     }
 
-    public int getRawLength() {
-        return rawLength;
+    public String getDiameter() {
+        return diameter;
     }
 
-    public void setRawLength(int rawLength) {
-        this.rawLength = rawLength;
+    public void setDiameter(String diameter) {
+        this.diameter = diameter;
+    }
+
+    public int getLengthDecimal() {
+        return lengthDecimal;
+    }
+
+    public void setLengthDecimal(int lengthDecimal) {
+        this.lengthDecimal = lengthDecimal;
     }
 
 

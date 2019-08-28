@@ -9,8 +9,5 @@ public class Batch {
 
     private UUID uuid;
 
-    private int jobNumber;
-    private String spool;
-    private String area;
     private String service;
 }

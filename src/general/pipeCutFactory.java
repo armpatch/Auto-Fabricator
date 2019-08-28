@@ -1,14 +1,8 @@
 package general;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class pipeCutFactory {
-
-    private static final String pathToCsv = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\" +
-                    "research\\pipe csvs\\Original\\pipes.csv";
 
     public static ArrayList<PipeCut> getPipeCutsFrom(ArrayList<String> rawCSVRows) {
         final int FIRST_ROW = 1;
@@ -23,8 +17,10 @@ public class pipeCutFactory {
             PipeCut pipeCut = new PipeCut();
 
             pipeCut.setRowData(rowString.split(","));
-            pipeCut.setService(pipeCutData[4]);
-            pipeCut.setRawLength(Integer.valueOf(pipeCutData[10]));
+            pipeCut.setSpool(pipeCutData[PipeCSV.SPOOL]);
+            pipeCut.setService(pipeCutData[PipeCSV.SERVICE]);
+            pipeCut.setDiameter(pipeCutData[PipeCSV.DIAMETER]);
+            pipeCut.setLengthDecimal(Integer.valueOf(pipeCutData[PipeCSV.LENGTH_DECIMAL]));
 
             pipeCuts.add(pipeCut);
         }
@@ -32,17 +28,5 @@ public class pipeCutFactory {
         return pipeCuts;
     }
 
-    static ArrayList<String> getRowsFromCSV(String path) throws IOException {
-        BufferedReader csvReader = new BufferedReader(new FileReader(pathToCsv));
 
-        String row;
-        ArrayList<String> rows = new ArrayList<>();
-
-        while ((row = csvReader.readLine()) != null) {
-            rows.add(row);
-        }
-        csvReader.close();
-
-        return rows;
-    }
 }
