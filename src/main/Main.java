@@ -1,4 +1,4 @@
-package general;
+package main;
 
 import java.io.IOException;
 

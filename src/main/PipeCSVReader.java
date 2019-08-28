@@ -1,11 +1,11 @@
-package general;
+package main;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class PipeCSV {
+public class PipeCSVReader {
 
     public static final int JOB = 0;
     public static final int SPOOL = 1;
@@ -14,7 +14,7 @@ public class PipeCSV {
     public static final int SERVICE = 4;
     public static final int MATERIAL = 5;
     public static final int DIAMETER = 6;
-    public static final int LENGTH = 7;
+    public static final int END1 = 7;
     public static final int CONNECTOR1 = 8;
     public static final int CONNECTOR2 = 9;
     public static final int LENGTH_DECIMAL = 10;
