@@ -7,21 +7,21 @@ public class CutGroup {
     private UUID uuid;
 
     private ArrayList<PipeCut> pipeCuts;
-    private String pipeDiameter;
+    private float pipeDiameter;
     private boolean isPulledTee;
 
-    public CutGroup(String pipeDiameter, boolean isPulledTee) {
+    public CutGroup(float pipeDiameter, boolean isPulledTee) {
         uuid = UUID.randomUUID();
 
         this.pipeDiameter = pipeDiameter;
         this.isPulledTee = isPulledTee;
     }
 
-    public String getPipeDiameter() {
+    public float getPipeDiameter() {
         return pipeDiameter;
     }
 
-    public void setPipeDiameter(String pipeDiameter) {
+    public void setPipeDiameter(float pipeDiameter) {
         this.pipeDiameter = pipeDiameter;
     }
 
