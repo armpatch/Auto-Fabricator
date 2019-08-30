@@ -37,7 +37,15 @@ public class CutGroup {
         pipeCuts.add(pipeCut);
     }
 
+    public void removePipeCut(PipeCut pipeCut) {
+        pipeCuts.remove(pipeCut);
+    }
+
     public int size() {
         return pipeCuts.size();
+    }
+
+    public void sortByLength() {
+        pipeCuts.sort(PipeCut.getLengthComparator());
     }
 }

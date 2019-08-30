@@ -11,12 +11,12 @@ public class Main {
         csvRows = PipeCSVReader.getRowsFromCSV();
 
         // create pipes from the list of csv rows
-        ArrayList<PipeCut> pipecuts;
-        pipecuts = PipeCutFactory.getPipeCutList(csvRows);
+        ArrayList<PipeCut> pipeCuts;
+        pipeCuts = PipeCutFactory.getPipeCutList(csvRows);
 
         // create pipe groups separated by size and pulled tees
         ArrayList<CutGroup> cutGroups;
-        cutGroups = CutGroupFactory.getFilledCutGroups(pipecuts);
+        cutGroups = CutGroupFactory.getFilledCutGroups(pipeCuts);
 
     }
 }

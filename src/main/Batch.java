@@ -9,7 +9,7 @@ public class Batch {
 
     private UUID uuid;
 
-    private String pipeService;
-    private String pipeDiameter;
+    private String service;
+    private float diameter;
     private boolean isPulledTee;
 }

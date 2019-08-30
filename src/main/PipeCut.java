@@ -1,5 +1,6 @@
 package main;
 
+import java.util.Comparator;
 import java.util.UUID;
 
 public class PipeCut {
@@ -59,5 +60,17 @@ public class PipeCut {
 
     public void setDiameter(float diameter) {
         this.diameter = diameter;
+    }
+
+    public static Comparator<PipeCut> getLengthComparator(){
+        return new Comparator<PipeCut>() {
+            @Override
+            public int compare(PipeCut o1, PipeCut o2) {
+                float length1 = o1.getLengthDecimal();
+                float length2 = o2.getLengthDecimal();
+
+                return Float.compare(length1, length2);
+            }
+        };
     }
 }
