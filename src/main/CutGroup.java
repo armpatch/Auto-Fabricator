@@ -1,29 +1,28 @@
 package main;
 
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class CutGroup {
-    private UUID uuid;
-
-    private ArrayList<PipeCut> pipeCuts;
+    private ArrayList<PipeCut> pipeCuts = new ArrayList<>();
     private float diameter;
     private boolean isPulledTee;
     private String service;
 
-    public CutGroup(float diameter, boolean isPulledTee, String service) {
-        uuid = UUID.randomUUID();
-
+    CutGroup(float diameter, boolean isPulledTee, String service) {
         setDiameter(diameter);
         setPulledTee(isPulledTee);
         setService(service);
     }
 
-    public void addPipeCut(PipeCut pipeCut) {
+    void addPipeCut(PipeCut pipeCut) {
         pipeCuts.add(pipeCut);
     }
 
-    public PipeCut getPipeCut(int index) {
+    void removePipeCut(PipeCut pipeCut) {
+        pipeCuts.remove(pipeCut);
+    }
+
+    PipeCut getPipeCut(int index) {
         return pipeCuts.get(index);
     }
 
@@ -31,25 +30,25 @@ public class CutGroup {
         return pipeCuts.size();
     }
 
-    public void sortByLength() {
+    void sortByLength() {
         pipeCuts.sort(PipeCut.getLengthComparator());
     }
 
     // getters and setters
 
-    public float getDiameter() {
+    float getDiameter() {
         return diameter;
     }
 
-    public void setDiameter(float diameter) {
+    private void setDiameter(float diameter) {
         this.diameter = diameter;
     }
 
-    public boolean isPulledTee() {
+    boolean isPulledTee() {
         return isPulledTee;
     }
 
-    public void setPulledTee(boolean pulledTee) {
+    private void setPulledTee(boolean pulledTee) {
         isPulledTee = pulledTee;
     }
 

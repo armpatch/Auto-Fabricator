@@ -22,7 +22,7 @@ public class PipeCSVReader {
     public static final int BIN = 12;
     public static final int LABEL = 13;
 
-    static final String pathToCsv = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\" +
+    private static final String pathToCsv = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\" +
             "research\\pipe csvs\\Original\\pipes.csv";
 
     static ArrayList<String> getRowsFromCSV() throws IOException {

@@ -2,12 +2,12 @@ package main;
 
 import java.util.ArrayList;
 
-public class CutGroupFactory {
+class CutGroupFactory {
 
     private static float[] pipeDiameters = {0.5f, 0.75f, 1.0f, 1.25f, 1.5f};
     private static String[] services = {"HW", "CW"};
 
-    public static ArrayList<CutGroup> createCutGroups(ArrayList<PipeCut> pipeCuts) throws Exception {
+    static ArrayList<CutGroup> createCutGroups(ArrayList<PipeCut> pipeCuts) {
         ArrayList<CutGroup> cutGroups = getEmptyCutGroups();
 
         putPipeCutsIntoGroups(pipeCuts, cutGroups);
@@ -29,15 +29,14 @@ public class CutGroupFactory {
         return emptyCutGroups;
     }
 
-    private static void putPipeCutsIntoGroups(ArrayList<PipeCut> pipeCuts, ArrayList<CutGroup> cutGroups)
-            throws Exception {
+    private static void putPipeCutsIntoGroups(ArrayList<PipeCut> pipeCuts, ArrayList<CutGroup> cutGroups) {
         for (PipeCut pipeCut: pipeCuts) {
             CutGroup matchingCutGroup = getMatchingCutGroup(pipeCut, cutGroups);
             matchingCutGroup.addPipeCut(pipeCut);
         }
     }
 
-    private static CutGroup getMatchingCutGroup(PipeCut pipeCut, ArrayList<CutGroup> cutGroups) throws Exception {
+    private static CutGroup getMatchingCutGroup(PipeCut pipeCut, ArrayList<CutGroup> cutGroups) {
         CutGroup output = null;
         for (CutGroup cutGroup: cutGroups) {
             if (pipeCut.isPulledTee() == cutGroup.isPulledTee() &&

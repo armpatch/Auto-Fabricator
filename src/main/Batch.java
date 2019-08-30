@@ -1,14 +1,10 @@
 package main;
 
 import java.util.ArrayList;
-import java.util.UUID;
 
 public class Batch {
-    private static int MAX_STOCK_LENGTH = 220; // inches
 
-    private ArrayList<PipeCut> pipeCuts;
-
-    private UUID uuid;
+    private ArrayList<PipeCut> pipeCuts = new ArrayList<>();
 
     private String service;
     private float diameter;
@@ -16,23 +12,25 @@ public class Batch {
 
     private float totalLength;
 
-    public Batch(String service, float diameter, boolean isPulledTee) {
+    Batch(String service, float diameter, boolean isPulledTee) {
         setService(service);
         setDiameter(diameter);
         setPulledTee(isPulledTee);
     }
 
-    public boolean addPipeCut(PipeCut pipeCut) {
+    void addPipeCut(PipeCut pipeCut) {
         totalLength += pipeCut.getLength();
-        return pipeCuts.add(pipeCut);
+        pipeCuts.add(pipeCut);
     }
 
     public int size() {
         return pipeCuts.size();
     }
 
-    public float remainingLength() {
-        return MAX_STOCK_LENGTH - getTotalLength();
+    float remainingLength() {
+        // inches
+        int MAX_STOCK_LENGTH = 220;
+        return MAX_STOCK_LENGTH - totalLength;
     }
 
     public PipeCut getPipeCut(int index) {
@@ -53,23 +51,20 @@ public class Batch {
         this.service = service;
     }
 
-    public float getDiameter() {
+    float getDiameter() {
         return diameter;
     }
 
-    public void setDiameter(float diameter) {
+    private void setDiameter(float diameter) {
         this.diameter = diameter;
     }
 
-    public boolean isPulledTee() {
+    boolean isPulledTee() {
         return isPulledTee;
     }
 
-    public void setPulledTee(boolean pulledTee) {
+    private void setPulledTee(boolean pulledTee) {
         isPulledTee = pulledTee;
     }
 
-    public float getTotalLength() {
-        return totalLength;
-    }
 }

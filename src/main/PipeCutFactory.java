@@ -2,11 +2,11 @@ package main;
 
 import java.util.ArrayList;
 
-public class PipeCutFactory {
+class PipeCutFactory {
 
-    final static int FIRST_ROW = 1;
+    private final static int FIRST_ROW = 1;
 
-    public static ArrayList<PipeCut> getPipeCutList(ArrayList<String> rawCSVRows) {
+    static ArrayList<PipeCut> getPipeCutList(ArrayList<String> rawCSVRows) {
 
         ArrayList<PipeCut> pipeCuts = new ArrayList<>(rawCSVRows.size());
 

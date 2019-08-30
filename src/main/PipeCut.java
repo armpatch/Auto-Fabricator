@@ -1,11 +1,8 @@
 package main;
 
 import java.util.Comparator;
-import java.util.UUID;
 
 public class PipeCut {
-
-    private UUID uuid;
 
     private String[] rowData;
     private float lengthDecimal;
@@ -14,19 +11,15 @@ public class PipeCut {
     private boolean pulledTee;
     private float diameter;
 
-    public PipeCut() {
-        uuid = UUID.randomUUID();
+    PipeCut() {
     }
 
-    public UUID getUuid() {
-        return uuid;
-    }
 
-    public String[] getRowData() {
+    String[] getRowData() {
         return rowData;
     }
 
-    public void setRowData(String[] rowData) {
+    void setRowData(String[] rowData) {
         this.rowData = rowData;
     }
 
@@ -42,27 +35,27 @@ public class PipeCut {
         return service;
     }
 
-    public void getService(String waterService) {
+    void getService(String waterService) {
         this.service = waterService;
     }
 
-    public boolean isPulledTee() {
+    boolean isPulledTee() {
         return pulledTee;
     }
 
-    public void setPulledTee(boolean pulledTee) {
+    void setPulledTee(boolean pulledTee) {
         this.pulledTee = pulledTee;
     }
 
-    public float getDiameter() {
+    float getDiameter() {
         return diameter;
     }
 
-    public void setDiameter(float diameter) {
+    void setDiameter(float diameter) {
         this.diameter = diameter;
     }
 
-    public static Comparator<PipeCut> getLengthComparator(){
+    static Comparator<PipeCut> getLengthComparator(){
         return new Comparator<PipeCut>() {
             @Override
             public int compare(PipeCut o1, PipeCut o2) {
