@@ -12,6 +12,8 @@ public class Batch {
 
     private float totalLength;
 
+    int MAX_TOTAL_LENGTH = 220; // inches
+
     Batch(String service, float diameter, boolean isPulledTee) {
         setService(service);
         setDiameter(diameter);
@@ -27,10 +29,8 @@ public class Batch {
         return pipeCuts.size();
     }
 
-    float remainingLength() {
-        // inches
-        int MAX_STOCK_LENGTH = 220;
-        return MAX_STOCK_LENGTH - totalLength;
+    float getUncutLengthRemaining() {
+        return MAX_TOTAL_LENGTH - totalLength;
     }
 
     public PipeCut getPipeCut(int index) {
@@ -67,4 +67,7 @@ public class Batch {
         isPulledTee = pulledTee;
     }
 
+    public float getTotalLength() {
+        return totalLength;
+    }
 }

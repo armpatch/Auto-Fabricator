@@ -25,7 +25,7 @@ class BatchFactory {
                 cutGroup.isPulledTee());
 
         while (cutGroup.size() > 0) {
-            PipeCut pipeCut = getLongestPipeCut(cutGroup, batch.remainingLength());
+            PipeCut pipeCut = getLongestPipeCut(cutGroup, batch.getUncutLengthRemaining());
 
             if (pipeCut != null) {
                 cutGroup.removePipeCut(pipeCut);
