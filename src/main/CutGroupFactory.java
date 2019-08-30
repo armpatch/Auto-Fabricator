@@ -48,11 +48,13 @@ class CutGroupFactory {
     }
 
     private static void removeEmptyGroups(ArrayList<CutGroup> cutGroups) {
-        for (CutGroup cutGroup: cutGroups) {
-            if (cutGroup.size() == 0) {
-                cutGroups.remove(cutGroup);
-            }
+        ArrayList<CutGroup> groupsToRemove = new ArrayList<>();
+
+        for (CutGroup group: cutGroups) {
+            if (group.size() == 0) groupsToRemove.add(group);
         }
+
+        cutGroups.removeAll(groupsToRemove);
     }
 
 }
