@@ -40,7 +40,7 @@ public class CutGroupFactory {
     private static CutGroup getMatchingCutGroup(PipeCut pipeCut, ArrayList<CutGroup> cutGroups) throws Exception {
         for (CutGroup cutGroup: cutGroups) {
             if (pipeCut.isPulledTee() == cutGroup.isPulledTee() &&
-            pipeCut.getDiameter() == cutGroup.getPipeDiameter()) {
+            pipeCut.getDiameter() == cutGroup.getDiameter()) {
                 return cutGroup;
             }
         }

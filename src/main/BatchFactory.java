@@ -12,7 +12,7 @@ public class BatchFactory {
         while (cutGroup.size() > 0) {
             Batch currentBatch = new Batch(
                     cutGroup.getService(),
-                    cutGroup.getPipeDiameter(),
+                    cutGroup.getDiameter(),
                     cutGroup.isPulledTee());
 
             while (cutGroup.size() > 0) {
@@ -29,7 +29,12 @@ public class BatchFactory {
     }
 
     private static PipeCut findLongestPipe(CutGroup cutGroup, float maxLength) {
-
+        for (int index = 0; index < cutGroup.size(); index++ ) {
+            PipeCut pipeCut = cutGroup.getPipeCut(index);
+            if (pipeCut.getLength() <= maxLength)
+                return pipeCut;
+        }
+        return null;
     }
 
 
