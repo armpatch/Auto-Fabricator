@@ -9,12 +9,14 @@ public class CutGroup {
     private ArrayList<PipeCut> pipeCuts;
     private float pipeDiameter;
     private boolean isPulledTee;
+    private String service;
 
-    public CutGroup(float pipeDiameter, boolean isPulledTee) {
+    public CutGroup(float pipeDiameter, boolean isPulledTee, String service) {
         uuid = UUID.randomUUID();
 
-        this.pipeDiameter = pipeDiameter;
-        this.isPulledTee = isPulledTee;
+        setPipeDiameter(pipeDiameter);
+        setPulledTee(isPulledTee);
+        setService(service);
     }
 
     public float getPipeDiameter() {
@@ -31,6 +33,14 @@ public class CutGroup {
 
     public void setPulledTee(boolean pulledTee) {
         isPulledTee = pulledTee;
+    }
+
+    public String getService() {
+        return service;
+    }
+
+    public void setService(String service) {
+        this.service = service;
     }
 
     public void addPipeCut(PipeCut pipeCut) {

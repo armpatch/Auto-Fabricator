@@ -5,11 +5,12 @@ import java.util.ArrayList;
 public class CutGroupFactory {
 
     private static float[] pipeDiameters = {0.5f, 0.75f, 1.0f, 1.25f, 1.5f};
+    private static String[] services = {"HW", "CW"};
 
-    public static ArrayList<CutGroup> getFilledCutGroups(ArrayList<PipeCut> pipeCuts) throws Exception {
+    public static ArrayList<CutGroup> getCutGroups(ArrayList<PipeCut> pipeCuts) throws Exception {
         ArrayList<CutGroup> cutGroups = getEmptyCutGroups();
 
-        sortPipeCutsIntoCutGroups(cutGroups, pipeCuts);
+        putPipeCutsIntoGroups(pipeCuts, cutGroups);
         removeEmptyGroups(cutGroups);
 
         return cutGroups;
@@ -19,14 +20,16 @@ public class CutGroupFactory {
         ArrayList<CutGroup> emptyCutGroups = new ArrayList<>();
 
         for (float pipeDiameter: pipeDiameters){
-            emptyCutGroups.add(new CutGroup(pipeDiameter,true));
-            emptyCutGroups.add(new CutGroup(pipeDiameter,false));
+            for (String service: services) {
+                emptyCutGroups.add(new CutGroup(pipeDiameter,true, service));
+                emptyCutGroups.add(new CutGroup(pipeDiameter,false, service));
+            }
         }
 
         return emptyCutGroups;
     }
 
-    private static void sortPipeCutsIntoCutGroups(ArrayList<CutGroup> cutGroups, ArrayList<PipeCut> pipeCuts)
+    private static void putPipeCutsIntoGroups(ArrayList<PipeCut> pipeCuts, ArrayList<CutGroup> cutGroups)
             throws Exception {
         for (PipeCut pipeCut: pipeCuts) {
             CutGroup matchingCutGroup = getMatchingCutGroup(pipeCut, cutGroups);
@@ -41,7 +44,7 @@ public class CutGroupFactory {
                 return cutGroup;
             }
         }
-        throw new Exception("getMatchingCutGroup: Could not find a group that matches PipeCut");
+        throw new Exception("getMatchingCutGroup(): Could not find a group that matches PipeCut");
     }
 
     private static void removeEmptyGroups(ArrayList<CutGroup> cutGroups) {
