@@ -9,15 +9,11 @@ public class CutGroupFactory {
     public static ArrayList<CutGroup> getFilledCutGroups(ArrayList<PipeCut> pipeCuts) throws Exception {
         ArrayList<CutGroup> cutGroups = getEmptyCutGroups();
 
-        for (PipeCut pipeCut: pipeCuts) {
-            CutGroup matchingCutGroup = getMatchingCutGroup(pipeCut, cutGroups);
-        }
+        sortPipeCutsIntoCutGroups(cutGroups, pipeCuts);
+        removeEmptyCutGroups(cutGroups);
 
-
-
+        return cutGroups;
     }
-
-
 
     private static ArrayList<CutGroup> getEmptyCutGroups() {
         ArrayList<CutGroup> emptyCutGroups = new ArrayList<>();
@@ -30,6 +26,14 @@ public class CutGroupFactory {
         return emptyCutGroups;
     }
 
+    private static void sortPipeCutsIntoCutGroups(ArrayList<CutGroup> cutGroups, ArrayList<PipeCut> pipeCuts)
+            throws Exception {
+        for (PipeCut pipeCut: pipeCuts) {
+            CutGroup matchingCutGroup = getMatchingCutGroup(pipeCut, cutGroups);
+            matchingCutGroup.addPipeCut(pipeCut);
+        }
+    }
+
     private static CutGroup getMatchingCutGroup(PipeCut pipeCut, ArrayList<CutGroup> cutGroups) throws Exception {
         for (CutGroup cutGroup: cutGroups) {
             if (pipeCut.isPulledTee() == cutGroup.isPulledTee() &&
@@ -40,5 +44,23 @@ public class CutGroupFactory {
         throw new Exception("getMatchingCutGroup: Could not find a group that matches PipeCut");
     }
 
+    private static void removeEmptyCutGroups(ArrayList<CutGroup> cutGroups) {
+        for (CutGroup cutGroup: cutGroups) {
+            if (cutGroup.size() == 0) {
+                cutGroups.remove(cutGroup);
+            }
+        }
+    }
+
+    private static ArrayList<CutGroup> getNonEmptyCutGroups(ArrayList<CutGroup> inputGroups) {
+        ArrayList<CutGroup> nonEmptyGroups = new ArrayList<>();
+
+        for (CutGroup cutGroup : inputGroups) {
+            if (cutGroup.size() != 0)
+                nonEmptyGroups.add(cutGroup);
+        }
+
+        return nonEmptyGroups;
+    }
 
 }

@@ -32,4 +32,12 @@ public class CutGroup {
     public void setPulledTee(boolean pulledTee) {
         isPulledTee = pulledTee;
     }
+
+    public void addPipeCut(PipeCut pipeCut) {
+        pipeCuts.add(pipeCut);
+    }
+
+    public int size() {
+        return pipeCuts.size();
+    }
 }
