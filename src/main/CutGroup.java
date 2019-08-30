@@ -19,6 +19,24 @@ public class CutGroup {
         setService(service);
     }
 
+    public void addPipeCut(PipeCut pipeCut) {
+        pipeCuts.add(pipeCut);
+    }
+
+    public PipeCut getPipeCut(int index) {
+        return pipeCuts.get(index);
+    }
+
+    public int size() {
+        return pipeCuts.size();
+    }
+
+    public void sortByLength() {
+        pipeCuts.sort(PipeCut.getLengthComparator());
+    }
+
+    // getters and setters
+
     public float getPipeDiameter() {
         return pipeDiameter;
     }
@@ -41,21 +59,5 @@ public class CutGroup {
 
     public void setService(String service) {
         this.service = service;
-    }
-
-    public void addPipeCut(PipeCut pipeCut) {
-        pipeCuts.add(pipeCut);
-    }
-
-    public void removePipeCut(PipeCut pipeCut) {
-        pipeCuts.remove(pipeCut);
-    }
-
-    public int size() {
-        return pipeCuts.size();
-    }
-
-    public void sortByLength() {
-        pipeCuts.sort(PipeCut.getLengthComparator());
     }
 }

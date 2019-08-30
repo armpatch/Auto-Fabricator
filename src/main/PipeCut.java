@@ -8,7 +8,7 @@ public class PipeCut {
     private UUID uuid;
 
     private String[] rowData;
-    private int lengthDecimal;
+    private float lengthDecimal;
     private String service;
 
     private boolean pulledTee;
@@ -30,7 +30,7 @@ public class PipeCut {
         this.rowData = rowData;
     }
 
-    public int getLengthDecimal() {
+    public float getLength() {
         return lengthDecimal;
     }
 
@@ -66,8 +66,8 @@ public class PipeCut {
         return new Comparator<PipeCut>() {
             @Override
             public int compare(PipeCut o1, PipeCut o2) {
-                float length1 = o1.getLengthDecimal();
-                float length2 = o2.getLengthDecimal();
+                float length1 = o1.getLength();
+                float length2 = o2.getLength();
 
                 return Float.compare(length1, length2);
             }
