@@ -10,7 +10,7 @@ public class CutGroupFactory {
         ArrayList<CutGroup> cutGroups = getEmptyCutGroups();
 
         sortPipeCutsIntoCutGroups(cutGroups, pipeCuts);
-        removeEmptyCutGroups(cutGroups);
+        removeEmptyGroups(cutGroups);
 
         return cutGroups;
     }
@@ -44,7 +44,7 @@ public class CutGroupFactory {
         throw new Exception("getMatchingCutGroup: Could not find a group that matches PipeCut");
     }
 
-    private static void removeEmptyCutGroups(ArrayList<CutGroup> cutGroups) {
+    private static void removeEmptyGroups(ArrayList<CutGroup> cutGroups) {
         for (CutGroup cutGroup: cutGroups) {
             if (cutGroup.size() == 0) {
                 cutGroups.remove(cutGroup);
