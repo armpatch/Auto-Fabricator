@@ -18,5 +18,7 @@ public class Main {
         ArrayList<CutGroup> cutGroups;
         cutGroups = CutGroupFactory.getCutGroups(pipeCuts);
 
+        ArrayList<Batch> batches = BatchFactory.createBatchesFrom(cutGroups.get(0));
+
     }
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 public class Batch {
+    private static int MAX_STOCK_LENGTH = 220; // inches
 
     private ArrayList<PipeCut> pipeCuts;
 
@@ -30,6 +31,10 @@ public class Batch {
         return pipeCuts.size();
     }
 
+    public float remainingLength() {
+        return MAX_STOCK_LENGTH - getTotalLength();
+    }
+
     // getters and setters
 
     public String getService() {
@@ -54,5 +59,9 @@ public class Batch {
 
     public void setPulledTee(boolean pulledTee) {
         isPulledTee = pulledTee;
+    }
+
+    public float getTotalLength() {
+        return totalLength;
     }
 }
