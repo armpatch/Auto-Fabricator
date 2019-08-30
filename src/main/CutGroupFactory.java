@@ -10,7 +10,7 @@ class CutGroupFactory {
     static ArrayList<CutGroup> createCutGroups(ArrayList<PipeCut> pipeCuts) {
         ArrayList<CutGroup> cutGroups = getEmptyCutGroups();
 
-        putPipeCutsIntoGroups(pipeCuts, cutGroups);
+        fillGroupsWithPipe(pipeCuts, cutGroups);
         removeEmptyGroups(cutGroups);
 
         return cutGroups;
@@ -29,7 +29,7 @@ class CutGroupFactory {
         return emptyCutGroups;
     }
 
-    private static void putPipeCutsIntoGroups(ArrayList<PipeCut> pipeCuts, ArrayList<CutGroup> cutGroups) {
+    private static void fillGroupsWithPipe(ArrayList<PipeCut> pipeCuts, ArrayList<CutGroup> cutGroups) {
         for (PipeCut pipeCut: pipeCuts) {
             CutGroup matchingCutGroup = getMatchingCutGroup(pipeCut, cutGroups);
             matchingCutGroup.addPipeCut(pipeCut);

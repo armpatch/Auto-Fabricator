@@ -26,6 +26,10 @@ public class CutGroup {
         return pipeCuts.get(index);
     }
 
+    ArrayList<PipeCut> getPipeCuts() {
+        return pipeCuts;
+    }
+
     public int size() {
         return pipeCuts.size();
     }

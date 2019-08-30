@@ -18,11 +18,12 @@ public class Main {
         ArrayList<CutGroup> cutGroups;
         cutGroups = CutGroupFactory.createCutGroups(pipeCuts);
 
+        for (CutGroup cutGroup: cutGroups) {
+            TestPrinter.print(cutGroup);
+        }
+
+
         // create batches from group
         ArrayList<Batch> batches = BatchFactory.createBatchesFrom(cutGroups.get(1));
-
-        Batch batch1 = batches.get(1);
-        TestPrinter.print(batch1);
-
     }
 }
