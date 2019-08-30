@@ -2,11 +2,11 @@ package main;
 
 import java.util.ArrayList;
 
-public class pipeCutFactory {
+public class PipeCutFactory {
 
-    final int FIRST_ROW = 1;
+    final static int FIRST_ROW = 1;
 
-    public ArrayList<PipeCut> getPipeCutList(ArrayList<String> rawCSVRows) {
+    public static ArrayList<PipeCut> getPipeCutList(ArrayList<String> rawCSVRows) {
 
         ArrayList<PipeCut> pipeCuts = new ArrayList<>(rawCSVRows.size());
 
@@ -23,7 +23,7 @@ public class pipeCutFactory {
         return pipeCuts;
     }
 
-    private PipeCut getPipeCut(String[] pipeCutRowData) {
+    private static PipeCut getPipeCut(String[] pipeCutRowData) {
         PipeCut pipeCut = new PipeCut();
 
         pipeCut.setRowData(pipeCutRowData);
@@ -37,14 +37,12 @@ public class pipeCutFactory {
         return pipeCut;
     }
 
-    private boolean isPulledTee(String spool) {
+    private static boolean isPulledTee(String spool) {
         return spool.contains("PT");
     }
 
-    private float getDiameter(String diameterString) {
+    private static float getDiameter(String diameterString) {
         return Float.valueOf(diameterString);
     }
-
-
 
 }
