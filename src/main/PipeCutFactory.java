@@ -28,7 +28,7 @@ public class PipeCutFactory {
 
         pipeCut.setRowData(pipeCutRowData);
 
-        pipeCut.setLengthDecimal(Integer.valueOf(pipeCutRowData[PipeCSVReader.LENGTH_DECIMAL]));
+        pipeCut.setLength(Float.valueOf(pipeCutRowData[PipeCSVReader.LENGTH_DECIMAL]));
         pipeCut.getService(pipeCutRowData[PipeCSVReader.SERVICE]);
 
         pipeCut.setPulledTee(isPulledTee(pipeCutRowData[PipeCSVReader.SPOOL]));
@@ -41,8 +41,28 @@ public class PipeCutFactory {
         return spool.contains("PT");
     }
 
-    private static float getDiameter(String diameterString) {
-        return Float.valueOf(diameterString);
+    private static float getDiameter(String valueAsString) {
+        float diameter = 0;
+
+        switch (valueAsString) {
+            case "0 1/2":
+                diameter = 0.5f;
+                break;
+            case "0 3/4":
+                diameter = 0.75f;
+                break;
+            case "1":
+                diameter = 1f;
+                break;
+            case "1 1/4":
+                diameter = 1.25f;
+                break;
+            case "1 1/2":
+                diameter = 1.5f;
+                break;
+        }
+
+        return diameter;
     }
 
 }

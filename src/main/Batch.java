@@ -35,6 +35,14 @@ public class Batch {
         return MAX_STOCK_LENGTH - getTotalLength();
     }
 
+    public PipeCut getPipeCut(int index) {
+        return pipeCuts.get(index);
+    }
+
+    public ArrayList<PipeCut> getPipeCuts() {
+        return pipeCuts;
+    }
+
     // getters and setters
 
     public String getService() {

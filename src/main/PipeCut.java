@@ -34,7 +34,7 @@ public class PipeCut {
         return lengthDecimal;
     }
 
-    public void setLengthDecimal(int lengthDecimal) {
+    public void setLength(float lengthDecimal) {
         this.lengthDecimal = lengthDecimal;
     }
 

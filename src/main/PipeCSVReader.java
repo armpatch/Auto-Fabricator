@@ -32,6 +32,8 @@ public class PipeCSVReader {
         ArrayList<String> rows = new ArrayList<>();
 
         while ((row = csvReader.readLine()) != null) {
+            row = row.replace("\"", "");
+            System.out.println(row);
             rows.add(row);
         }
         csvReader.close();

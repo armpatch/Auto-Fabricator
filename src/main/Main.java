@@ -16,9 +16,12 @@ public class Main {
 
         // create pipe groups separated by size and pulled tees
         ArrayList<CutGroup> cutGroups;
-        cutGroups = CutGroupFactory.getCutGroups(pipeCuts);
+        cutGroups = CutGroupFactory.createCutGroups(pipeCuts);
 
         ArrayList<Batch> batches = BatchFactory.createBatchesFrom(cutGroups.get(0));
+
+        Batch batch1 = batches.get(0);
+        TestPrinter.print(batch1);
 
     }
 }
