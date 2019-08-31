@@ -35,7 +35,7 @@ public class PipeCut {
         return service;
     }
 
-    void getService(String waterService) {
+    void setService(String waterService) {
         this.service = waterService;
     }
 

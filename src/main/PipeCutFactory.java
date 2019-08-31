@@ -29,7 +29,7 @@ class PipeCutFactory {
         pipeCut.setRowData(pipeCutRowData);
 
         pipeCut.setLength(Float.valueOf(pipeCutRowData[PipeCSVReader.LENGTH_DECIMAL]));
-        pipeCut.getService(pipeCutRowData[PipeCSVReader.SERVICE]);
+        pipeCut.setService(pipeCutRowData[PipeCSVReader.SERVICE]);
 
         pipeCut.setPulledTee(isPulledTee(pipeCutRowData[PipeCSVReader.SPOOL]));
         pipeCut.setDiameter(getDiameter(pipeCutRowData[PipeCSVReader.DIAMETER]));

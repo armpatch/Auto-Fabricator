@@ -40,7 +40,9 @@ class CutGroupFactory {
         CutGroup output = null;
         for (CutGroup cutGroup: cutGroups) {
             if (pipeCut.isPulledTee() == cutGroup.isPulledTee() &&
-            pipeCut.getDiameter() == cutGroup.getDiameter()) {
+            pipeCut.getDiameter() == cutGroup.getDiameter() &&
+            pipeCut.getService().equals(cutGroup.getService()))
+            {
                 output = cutGroup;
             }
         }
