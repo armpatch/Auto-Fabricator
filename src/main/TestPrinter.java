@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class TestPrinter {
 
-    public static void print(Pipe pipe) {
+    private static void printRaw(Pipe pipe) {
         String[] rowData = pipe.getRowData();
         String message = "    ";
 
@@ -15,25 +15,35 @@ public class TestPrinter {
         System.out.println(message);
     }
 
-    public static void print(Batch batch) {
-        String messageHeader1 = "\n-----print(Batch)-----";
-        String messageHeader2 = "Service = " + batch.getService();
-        String messageHeader3 = "Diameter = " + batch.getDiameter();
-        String messageHeader4 = "Pulled Tee? " + batch.isPulledTee();
-        String messageHeader5 = "Total Length = " + batch.getTotalLength();
-        String messageHeader6 = batch.size() + " Pipes:";
 
-        System.out.println(messageHeader1);
-        System.out.println(messageHeader2);
-        System.out.println(messageHeader3);
-        System.out.println(messageHeader4);
-        System.out.println(messageHeader5);
-        System.out.println(messageHeader6);
+    private static void printBrief(Pipe pipe) {
+        String messageDiameter = pipe.getDiameter() + "\" ";
+        String messageService = pipe.getService() + " ";
+        String messageIsPulledTee = (pipe.isPulledTee())? "PT " : "";
+        String messagePipeLength = (pipe.getLength()) + "\"";
+
+        String messageCombined = messageDiameter + messageService + messageIsPulledTee +
+                "\t\t\t" + messagePipeLength;
+
+        System.out.println(messageCombined);
+    }
+
+    public static void print(Batch batch) {
+        String pipeCount = "Batch has " + batch.getCount() + " pipe(s))";
+        String totalLength = "Total = " + batch.getTotalLength() + "\"";
+        String diameter = batch.getDiameter() + "\" ";
+        String service = batch.getService() + " ";
+        String isPulledTee = (batch.isPulledTee())? "PT" : "";
+        String lineBreak = "\n----------------------------------";
+
+        String messageCombined = "\n\n" + diameter + service + isPulledTee + "\t\t" + totalLength + lineBreak;
+
+        System.out.println(messageCombined);
 
         ArrayList<Pipe> pipes = batch.getPipes();
 
         for (Pipe pipe : pipes) {
-            print(pipe);
+            printBrief(pipe);
         }
     }
 
@@ -53,7 +63,7 @@ public class TestPrinter {
         ArrayList<Pipe> pipes = group.getPipes();
 
         for (Pipe pipe : pipes) {
-            print(pipe);
+            printRaw(pipe);
         }
     }
 }

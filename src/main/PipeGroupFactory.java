@@ -20,6 +20,8 @@ class PipeGroupFactory {
     private static ArrayList<PipeGroup> getEmptyPipeGroups() {
         ArrayList<PipeGroup> emptyPipeGroups = new ArrayList<>();
 
+        // sorted by: diameter, service, pulled tee
+
         for (float pipeDiameter: pipeDiameters){
             for (String service: services) {
                 emptyPipeGroups.add(new PipeGroup(pipeDiameter,true, service));

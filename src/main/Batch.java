@@ -1,5 +1,6 @@
 package main;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Batch {
@@ -12,7 +13,7 @@ public class Batch {
 
     private float totalLength;
 
-    int MAX_TOTAL_LENGTH = 220; // inches
+    int TOTAL_LENGTH_MAX = 223; // inches
 
     Batch(String service, float diameter, boolean isPulledTee) {
         setService(service);
@@ -21,24 +22,20 @@ public class Batch {
     }
 
     void addPipe(Pipe pipe) {
-        totalLength += pipe.getLength();
+        setTotalLength(getTotalLength() + pipe.getLength());
         pipes.add(pipe);
     }
 
-    public int size() {
+    ArrayList<Pipe> getPipes() {
+        return pipes;
+    }
+
+    public int getCount() {
         return pipes.size();
     }
 
-    float getUncutLengthRemaining() {
-        return MAX_TOTAL_LENGTH - totalLength;
-    }
-
-    public Pipe getPipe(int index) {
-        return pipes.get(index);
-    }
-
-    public ArrayList<Pipe> getPipes() {
-        return pipes;
+    float getRemainingLength() {
+        return TOTAL_LENGTH_MAX - getTotalLength();
     }
 
     // getters and setters
@@ -67,7 +64,13 @@ public class Batch {
         isPulledTee = pulledTee;
     }
 
-    public float getTotalLength() {
+    private void setTotalLength(float length) {
+        DecimalFormat df = new DecimalFormat(".##");
+
+        totalLength = Float.valueOf(df.format(length));
+    }
+
+    float getTotalLength() {
         return totalLength;
     }
 }

@@ -10,7 +10,7 @@ class BatchFactory {
         while (pipeGroup.size() > 0) {
             Batch currentBatch = makeBatchFrom(pipeGroup);
 
-            if (currentBatch.size() != 0) {
+            if (currentBatch.getCount() != 0) {
                 batches.add(currentBatch);
             }
         }
@@ -24,7 +24,7 @@ class BatchFactory {
                 pipeGroup.isPulledTee());
 
         while (pipeGroup.size() > 0) {
-            Pipe pipe = getLongestPipe(pipeGroup, batch.getUncutLengthRemaining());
+            Pipe pipe = getLongestPipe(pipeGroup, batch.getRemainingLength());
 
             if (pipe != null) {
                 pipeGroup.removePipe(pipe);
