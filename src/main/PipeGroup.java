@@ -1,6 +1,7 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class PipeGroup {
     private ArrayList<Pipe> pipes = new ArrayList<>();
@@ -34,8 +35,9 @@ public class PipeGroup {
         return pipes.size();
     }
 
-    void sortByLength() {
+    void sortByLengthDescending() {
         pipes.sort(Pipe.getLengthComparator());
+        Collections.reverse(pipes);
     }
 
     // getters and setters

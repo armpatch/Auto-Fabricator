@@ -5,7 +5,6 @@ import java.util.ArrayList;
 class BatchFactory {
 
     static ArrayList<Batch> createBatchesFrom(PipeGroup pipeGroup) {
-        pipeGroup.sortByLength();
         ArrayList<Batch> batches = new ArrayList<>();
 
         while (pipeGroup.size() > 0) {

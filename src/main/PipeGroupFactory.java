@@ -12,6 +12,7 @@ class PipeGroupFactory {
 
         fillPipeGroupsWithPipe(pipes, pipeGroups);
         removeEmptyGroups(pipeGroups);
+        sortGroupsByLengthDescending(pipeGroups);
 
         return pipeGroups;
     }
@@ -57,6 +58,12 @@ class PipeGroupFactory {
         }
 
         pipeGroups.removeAll(groupsToRemove);
+    }
+
+    private static void sortGroupsByLengthDescending(ArrayList<PipeGroup> pipeGroups) {
+        for (PipeGroup pipeGroup : pipeGroups) {
+            pipeGroup.sortByLengthDescending();
+        }
     }
 
 }
