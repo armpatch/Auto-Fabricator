@@ -2,40 +2,40 @@ package main;
 
 import java.util.ArrayList;
 
-public class CutGroup {
-    private ArrayList<PipeCut> pipeCuts = new ArrayList<>();
+public class PipeGroup {
+    private ArrayList<Pipe> pipes = new ArrayList<>();
     private float diameter;
     private boolean isPulledTee;
     private String service;
 
-    CutGroup(float diameter, boolean isPulledTee, String service) {
+    PipeGroup(float diameter, boolean isPulledTee, String service) {
         setDiameter(diameter);
         setPulledTee(isPulledTee);
         setService(service);
     }
 
-    void addPipeCut(PipeCut pipeCut) {
-        pipeCuts.add(pipeCut);
+    void addPipe(Pipe pipe) {
+        pipes.add(pipe);
     }
 
-    void removePipeCut(PipeCut pipeCut) {
-        pipeCuts.remove(pipeCut);
+    void removePipe(Pipe pipe) {
+        pipes.remove(pipe);
     }
 
-    PipeCut getPipeCut(int index) {
-        return pipeCuts.get(index);
+    Pipe getPipe(int index) {
+        return pipes.get(index);
     }
 
-    ArrayList<PipeCut> getPipeCuts() {
-        return pipeCuts;
+    ArrayList<Pipe> getPipes() {
+        return pipes;
     }
 
     public int size() {
-        return pipeCuts.size();
+        return pipes.size();
     }
 
     void sortByLength() {
-        pipeCuts.sort(PipeCut.getLengthComparator());
+        pipes.sort(Pipe.getLengthComparator());
     }
 
     // getters and setters

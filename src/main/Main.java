@@ -11,19 +11,21 @@ public class Main {
         csvRows = PipeCSVReader.getRowsFromCSV();
 
         // create pipes from the list of csv rows
-        ArrayList<PipeCut> pipeCuts;
-        pipeCuts = PipeCutFactory.getPipeCutList(csvRows);
+        ArrayList<Pipe> pipes;
+        pipes = PipeFactory.getPipeList(csvRows);
 
         // create pipe groups separated by size and pulled tees
-        ArrayList<CutGroup> cutGroups;
-        cutGroups = CutGroupFactory.createCutGroups(pipeCuts);
+        ArrayList<PipeGroup> pipeGroups;
+        pipeGroups = PipeGroupFactory.createPipeGroups(pipes);
 
-        for (CutGroup cutGroup: cutGroups) {
-            TestPrinter.print(cutGroup);
+        for (PipeGroup pipeGroup : pipeGroups) {
+            ArrayList<Batch> batches = BatchFactory.createBatchesFrom(pipeGroup);
+            for (Batch batch : batches) {
+                TestPrinter.print(batch);
+            }
         }
 
-
         // create batches from group
-        ArrayList<Batch> batches = BatchFactory.createBatchesFrom(cutGroups.get(1));
+
     }
 }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Batch {
 
-    private ArrayList<PipeCut> pipeCuts = new ArrayList<>();
+    private ArrayList<Pipe> pipes = new ArrayList<>();
 
     private String service;
     private float diameter;
@@ -20,25 +20,25 @@ public class Batch {
         setPulledTee(isPulledTee);
     }
 
-    void addPipeCut(PipeCut pipeCut) {
-        totalLength += pipeCut.getLength();
-        pipeCuts.add(pipeCut);
+    void addPipe(Pipe pipe) {
+        totalLength += pipe.getLength();
+        pipes.add(pipe);
     }
 
     public int size() {
-        return pipeCuts.size();
+        return pipes.size();
     }
 
     float getUncutLengthRemaining() {
         return MAX_TOTAL_LENGTH - totalLength;
     }
 
-    public PipeCut getPipeCut(int index) {
-        return pipeCuts.get(index);
+    public Pipe getPipe(int index) {
+        return pipes.get(index);
     }
 
-    public ArrayList<PipeCut> getPipeCuts() {
-        return pipeCuts;
+    public ArrayList<Pipe> getPipes() {
+        return pipes;
     }
 
     // getters and setters

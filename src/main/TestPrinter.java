@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class TestPrinter {
 
-    public static void print(PipeCut pipeCut) {
-        String[] rowData = pipeCut.getRowData();
+    public static void print(Pipe pipe) {
+        String[] rowData = pipe.getRowData();
         String message = "    ";
 
         for (String data : rowData) {
@@ -21,7 +21,7 @@ public class TestPrinter {
         String messageHeader3 = "Diameter = " + batch.getDiameter();
         String messageHeader4 = "Pulled Tee? " + batch.isPulledTee();
         String messageHeader5 = "Total Length = " + batch.getTotalLength();
-        String messageHeader6 = batch.size() + " PipeCuts:";
+        String messageHeader6 = batch.size() + " Pipes:";
 
         System.out.println(messageHeader1);
         System.out.println(messageHeader2);
@@ -30,19 +30,19 @@ public class TestPrinter {
         System.out.println(messageHeader5);
         System.out.println(messageHeader6);
 
-        ArrayList<PipeCut> pipeCuts = batch.getPipeCuts();
+        ArrayList<Pipe> pipes = batch.getPipes();
 
-        for (PipeCut pipeCut : pipeCuts) {
-            print(pipeCut);
+        for (Pipe pipe : pipes) {
+            print(pipe);
         }
     }
 
-    public static void print(CutGroup group) {
-        String messageHeader1 = "\n-----print(CutGroup)-----";
+    public static void print(PipeGroup group) {
+        String messageHeader1 = "\n-----print(PipeGroup)-----";
         String messageHeader2 = "Service = " + group.getService();
         String messageHeader3 = "Diameter = " + group.getDiameter();
         String messageHeader4 = "Pulled Tee? " + group.isPulledTee();
-        String messageHeader5 = group.size() + " PipeCuts:";
+        String messageHeader5 = group.size() + " Pipes:";
 
         System.out.println(messageHeader1);
         System.out.println(messageHeader2);
@@ -50,10 +50,10 @@ public class TestPrinter {
         System.out.println(messageHeader4);
         System.out.println(messageHeader5);
 
-        ArrayList<PipeCut> pipeCuts = group.getPipeCuts();
+        ArrayList<Pipe> pipes = group.getPipes();
 
-        for (PipeCut pipeCut : pipeCuts) {
-            print(pipeCut);
+        for (Pipe pipe : pipes) {
+            print(pipe);
         }
     }
 }

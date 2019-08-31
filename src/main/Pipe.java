@@ -2,7 +2,7 @@ package main;
 
 import java.util.Comparator;
 
-public class PipeCut {
+public class Pipe {
 
     private String[] rowData;
     private float lengthDecimal;
@@ -10,10 +10,6 @@ public class PipeCut {
 
     private boolean pulledTee;
     private float diameter;
-
-    PipeCut() {
-    }
-
 
     String[] getRowData() {
         return rowData;
@@ -55,10 +51,10 @@ public class PipeCut {
         this.diameter = diameter;
     }
 
-    static Comparator<PipeCut> getLengthComparator(){
-        return new Comparator<PipeCut>() {
+    static Comparator<Pipe> getLengthComparator(){
+        return new Comparator<Pipe>() {
             @Override
-            public int compare(PipeCut o1, PipeCut o2) {
+            public int compare(Pipe o1, Pipe o2) {
                 float length1 = o1.getLength();
                 float length2 = o2.getLength();
 

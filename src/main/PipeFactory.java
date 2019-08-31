@@ -2,39 +2,39 @@ package main;
 
 import java.util.ArrayList;
 
-class PipeCutFactory {
+class PipeFactory {
 
     private final static int FIRST_ROW = 1;
 
-    static ArrayList<PipeCut> getPipeCutList(ArrayList<String> rawCSVRows) {
+    static ArrayList<Pipe> getPipeList(ArrayList<String> rawCSVRows) {
 
-        ArrayList<PipeCut> pipeCuts = new ArrayList<>(rawCSVRows.size());
+        ArrayList<Pipe> pipes = new ArrayList<>(rawCSVRows.size());
 
         for (int arrayIndex = FIRST_ROW; arrayIndex < rawCSVRows.size(); arrayIndex++) {
             String rowString = rawCSVRows.get(arrayIndex);
 
-            String[] pipeCutRowData = rowString.split(",");
+            String[] pipeRowData = rowString.split(",");
 
-            PipeCut pipeCut = getPipeCut(pipeCutRowData);
+            Pipe pipe = getPipe(pipeRowData);
 
-            pipeCuts.add(pipeCut);
+            pipes.add(pipe);
         }
 
-        return pipeCuts;
+        return pipes;
     }
 
-    private static PipeCut getPipeCut(String[] pipeCutRowData) {
-        PipeCut pipeCut = new PipeCut();
+    private static Pipe getPipe(String[] pipeRowData) {
+        Pipe pipe = new Pipe();
 
-        pipeCut.setRowData(pipeCutRowData);
+        pipe.setRowData(pipeRowData);
 
-        pipeCut.setLength(Float.valueOf(pipeCutRowData[PipeCSVReader.LENGTH_DECIMAL]));
-        pipeCut.setService(pipeCutRowData[PipeCSVReader.SERVICE]);
+        pipe.setLength(Float.valueOf(pipeRowData[PipeCSVReader.LENGTH_DECIMAL]));
+        pipe.setService(pipeRowData[PipeCSVReader.SERVICE]);
 
-        pipeCut.setPulledTee(isPulledTee(pipeCutRowData[PipeCSVReader.SPOOL]));
-        pipeCut.setDiameter(getDiameter(pipeCutRowData[PipeCSVReader.DIAMETER]));
+        pipe.setPulledTee(isPulledTee(pipeRowData[PipeCSVReader.SPOOL]));
+        pipe.setDiameter(getDiameter(pipeRowData[PipeCSVReader.DIAMETER]));
 
-        return pipeCut;
+        return pipe;
     }
 
     private static boolean isPulledTee(String spool) {

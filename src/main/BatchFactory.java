@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 class BatchFactory {
 
-    static ArrayList<Batch> createBatchesFrom(CutGroup cutGroup) {
-        cutGroup.sortByLength();
+    static ArrayList<Batch> createBatchesFrom(PipeGroup pipeGroup) {
+        pipeGroup.sortByLength();
         ArrayList<Batch> batches = new ArrayList<>();
 
-        while (cutGroup.size() > 0) {
-            Batch currentBatch = makeBatchFrom(cutGroup);
+        while (pipeGroup.size() > 0) {
+            Batch currentBatch = makeBatchFrom(pipeGroup);
 
             if (currentBatch.size() != 0) {
                 batches.add(currentBatch);
@@ -18,18 +18,18 @@ class BatchFactory {
         return batches;
     }
 
-    private static Batch makeBatchFrom(CutGroup cutGroup) {
+    private static Batch makeBatchFrom(PipeGroup pipeGroup) {
         Batch batch = new Batch(
-                cutGroup.getService(),
-                cutGroup.getDiameter(),
-                cutGroup.isPulledTee());
+                pipeGroup.getService(),
+                pipeGroup.getDiameter(),
+                pipeGroup.isPulledTee());
 
-        while (cutGroup.size() > 0) {
-            PipeCut pipeCut = getLongestPipeCut(cutGroup, batch.getUncutLengthRemaining());
+        while (pipeGroup.size() > 0) {
+            Pipe pipe = getLongestPipe(pipeGroup, batch.getUncutLengthRemaining());
 
-            if (pipeCut != null) {
-                cutGroup.removePipeCut(pipeCut);
-                batch.addPipeCut(pipeCut);
+            if (pipe != null) {
+                pipeGroup.removePipe(pipe);
+                batch.addPipe(pipe);
 
             } else {
                 break;
@@ -38,12 +38,12 @@ class BatchFactory {
         return batch;
     }
 
-    private static PipeCut getLongestPipeCut(CutGroup cutGroup, float maxLength) {
-        for (int index = 0; index < cutGroup.size(); index++ ) {
-            PipeCut pipeCut = cutGroup.getPipeCut(index);
+    private static Pipe getLongestPipe(PipeGroup pipeGroup, float maxLength) {
+        for (int index = 0; index < pipeGroup.size(); index++ ) {
+            Pipe pipe = pipeGroup.getPipe(index);
 
-            if (pipeCut.getLength() <= maxLength)
-                return pipeCut;
+            if (pipe.getLength() <= maxLength)
+                return pipe;
         }
         return null;
     }
