@@ -25,19 +25,35 @@ public class PipeCSVReader {
     private static final String pathToCsv = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\" +
             "research\\pipe csvs\\Original\\pipes.csv";
 
-    static ArrayList<String> getDataRowsFromCSV() throws IOException {
+    static ArrayList<String[]> getDataRows() throws IOException {
         BufferedReader csvReader = new BufferedReader(new FileReader(pathToCsv));
 
+        ArrayList<String[]> rows = new ArrayList<>();
+
         String row;
-        ArrayList<String> rows = new ArrayList<>();
 
         while ((row = csvReader.readLine()) != null) {
-            row = row.replace("\"", "");
-            rows.add(row);
+            rows.add(splitAndFormat(row));
         }
         csvReader.close();
 
         rows.remove(0);
         return rows;
     }
+
+    static String[] getHeaderRow() throws IOException {
+        BufferedReader csvReader = new BufferedReader(new FileReader(pathToCsv));
+
+        String row = csvReader.readLine();
+
+        csvReader.close();
+
+        return splitAndFormat(row);
+    }
+
+    static String[] splitAndFormat(String rowDataRaw) {
+        String output = rowDataRaw.replace("\"", "");
+        return output.split(",");
+    }
+
 }

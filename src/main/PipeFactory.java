@@ -4,33 +4,27 @@ import java.util.ArrayList;
 
 class PipeFactory {
 
-    static ArrayList<Pipe> createPipesFrom(ArrayList<String> dataRows) {
+    static ArrayList<Pipe> createPipesFrom(ArrayList<String[]> rows) {
 
-        ArrayList<Pipe> pipes = new ArrayList<>(dataRows.size());
+        ArrayList<Pipe> pipes = new ArrayList<>(rows.size());
 
-        for (int rowIndex = 0; rowIndex < dataRows.size(); rowIndex++) {
-            String rowString = dataRows.get(rowIndex);
-
-            String[] pipeRowData = rowString.split(",");
-
-            Pipe pipe = getPipe(pipeRowData);
-
+        for (String[] row : rows) {
+            Pipe pipe = getPipeFrom(row);
             pipes.add(pipe);
         }
 
         return pipes;
     }
 
-    private static Pipe getPipe(String[] pipeRowData) {
+    private static Pipe getPipeFrom(String[] row) {
         Pipe pipe = new Pipe();
 
-        pipe.setRowData(pipeRowData);
+        pipe.setRowData(row);
+        pipe.setLength(Float.valueOf(row[PipeCSVReader.LENGTH_DECIMAL]));
+        pipe.setService(row[PipeCSVReader.SERVICE]);
 
-        pipe.setLength(Float.valueOf(pipeRowData[PipeCSVReader.LENGTH_DECIMAL]));
-        pipe.setService(pipeRowData[PipeCSVReader.SERVICE]);
-
-        pipe.setPulledTee(isPulledTee(pipeRowData[PipeCSVReader.SPOOL]));
-        pipe.setDiameter(getDiameter(pipeRowData[PipeCSVReader.DIAMETER]));
+        pipe.setPulledTee(isPulledTee(row[PipeCSVReader.SPOOL]));
+        pipe.setDiameter(getDiameter(row[PipeCSVReader.DIAMETER]));
 
         return pipe;
     }
