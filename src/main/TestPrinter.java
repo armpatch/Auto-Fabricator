@@ -29,7 +29,6 @@ public class TestPrinter {
     }
 
     public static void print(Batch batch) {
-        String pipeCount = "Batch has " + batch.getCount() + " pipe(s))";
         String totalLength = "Total = " + batch.getTotalLength() + "\"";
         String diameter = batch.getDiameter() + "\" ";
         String service = batch.getService() + " ";

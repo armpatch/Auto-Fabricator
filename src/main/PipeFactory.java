@@ -6,7 +6,7 @@ class PipeFactory {
 
     private final static int FIRST_ROW = 1;
 
-    static ArrayList<Pipe> getPipeList(ArrayList<String> rawCSVRows) {
+    static ArrayList<Pipe> createPipesFrom(ArrayList<String> rawCSVRows) {
 
         ArrayList<Pipe> pipes = new ArrayList<>(rawCSVRows.size());
 

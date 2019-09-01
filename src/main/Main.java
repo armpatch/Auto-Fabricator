@@ -12,7 +12,7 @@ public class Main {
 
         // create pipes from the list of csv rows
         ArrayList<Pipe> pipes;
-        pipes = PipeFactory.getPipeList(csvRows);
+        pipes = PipeFactory.createPipesFrom(csvRows);
 
         // create pipe groups separated by size and pulled tees
         ArrayList<PipeGroup> pipeGroups;
@@ -24,6 +24,12 @@ public class Main {
                 TestPrinter.print(batch);
             }
         }
+
+        CSVBuilder csvBuilder = new CSVBuilder();
+        Pipe pipe = pipeGroups.get(0).g
+        csvBuilder.writePipeToFile();
+
+
 
         // create batches from group
 
