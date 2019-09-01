@@ -17,6 +17,21 @@ class CSVBuilder {
 
     }
 
+    private void writeHeader(String[] header) {
+
+    }
+
+    private void writeBatch(Batch batch) throws IOException {
+        ArrayList<Pipe> pipes = batch.getPipes();
+
+        for (Pipe pipe : pipes) {
+            writeRow(pipe.getRowData());
+        }
+        String[] emptyRow = {};
+
+        writeRow(emptyRow);
+    }
+
     void writeRow(String[] data) throws IOException {
         for (String field : data) {
             fileWriter.append(field);

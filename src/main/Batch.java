@@ -13,7 +13,7 @@ public class Batch {
 
     private float totalLength;
 
-    int TOTAL_LENGTH_MAX = 223; // inches
+    private int TOTAL_LENGTH_MAX = 223; // inches
 
     Batch(String service, float diameter, boolean isPulledTee) {
         setService(service);

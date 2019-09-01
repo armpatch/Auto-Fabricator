@@ -8,7 +8,7 @@ public class Main {
 
         // read csv row into an array of strings
         ArrayList<String> csvRows;
-        csvRows = PipeCSVReader.getRowsFromCSV();
+        csvRows = PipeCSVReader.getDataRowsFromCSV();
 
         // create pipes from the list of csv rows
         ArrayList<Pipe> pipes;
@@ -26,8 +26,8 @@ public class Main {
         }
 
         CSVBuilder csvBuilder = new CSVBuilder();
-        Pipe pipe = pipeGroups.get(0).g
-        csvBuilder.writePipeToFile();
+        // Pipe pipe = pipeGroups.get(0).g
+        // csvBuilder.writePipeToFile();
 
 
 

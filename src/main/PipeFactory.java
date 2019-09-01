@@ -4,14 +4,12 @@ import java.util.ArrayList;
 
 class PipeFactory {
 
-    private final static int FIRST_ROW = 1;
+    static ArrayList<Pipe> createPipesFrom(ArrayList<String> dataRows) {
 
-    static ArrayList<Pipe> createPipesFrom(ArrayList<String> rawCSVRows) {
+        ArrayList<Pipe> pipes = new ArrayList<>(dataRows.size());
 
-        ArrayList<Pipe> pipes = new ArrayList<>(rawCSVRows.size());
-
-        for (int arrayIndex = FIRST_ROW; arrayIndex < rawCSVRows.size(); arrayIndex++) {
-            String rowString = rawCSVRows.get(arrayIndex);
+        for (int rowIndex = 0; rowIndex < dataRows.size(); rowIndex++) {
+            String rowString = dataRows.get(rowIndex);
 
             String[] pipeRowData = rowString.split(",");
 

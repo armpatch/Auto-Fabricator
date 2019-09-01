@@ -25,7 +25,7 @@ public class PipeCSVReader {
     private static final String pathToCsv = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\" +
             "research\\pipe csvs\\Original\\pipes.csv";
 
-    static ArrayList<String> getRowsFromCSV() throws IOException {
+    static ArrayList<String> getDataRowsFromCSV() throws IOException {
         BufferedReader csvReader = new BufferedReader(new FileReader(pathToCsv));
 
         String row;
@@ -37,6 +37,7 @@ public class PipeCSVReader {
         }
         csvReader.close();
 
+        rows.remove(0);
         return rows;
     }
 }
