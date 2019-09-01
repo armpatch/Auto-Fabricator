@@ -3,7 +3,7 @@ package main;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
-public class Batch {
+public class Bundle {
 
     private ArrayList<Pipe> pipes = new ArrayList<>();
 
@@ -15,7 +15,7 @@ public class Batch {
 
     private int TOTAL_LENGTH_MAX = 223; // inches
 
-    Batch(String service, float diameter, boolean isPulledTee) {
+    Bundle(String service, float diameter, boolean isPulledTee) {
         setService(service);
         setDiameter(diameter);
         setPulledTee(isPulledTee);

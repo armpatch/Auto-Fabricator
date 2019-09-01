@@ -4,11 +4,11 @@ import javax.swing.*;
 
 public class MainFrame {
 
-    JFrame frame;
+    private JFrame frame;
 
     public MainFrame() {
         setupWindow();
-        setupButtons();
+        setupButtonsAndFields();
         showWindow();
     }
 
@@ -19,7 +19,12 @@ public class MainFrame {
         frame.setLayout(null);
     }
 
-    private void setupButtons() {
+    private void setupButtonsAndFields() {
+
+
+
+
+
         JButton button = new JButton("Create Files");
         button.setBounds(200, 150, 90, 50);
         frame.add(button);

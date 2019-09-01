@@ -28,18 +28,18 @@ public class TestPrinter {
         System.out.println(messageCombined);
     }
 
-    public static void print(Batch batch) {
-        String totalLength = "Total = " + batch.getTotalLength() + "\"";
-        String diameter = batch.getDiameter() + "\" ";
-        String service = batch.getService() + " ";
-        String isPulledTee = (batch.isPulledTee())? "PT" : "";
+    public static void print(Bundle bundle) {
+        String totalLength = "Total = " + bundle.getTotalLength() + "\"";
+        String diameter = bundle.getDiameter() + "\" ";
+        String service = bundle.getService() + " ";
+        String isPulledTee = (bundle.isPulledTee())? "PT" : "";
         String lineBreak = "\n----------------------------------";
 
         String messageCombined = "\n\n" + diameter + service + isPulledTee + "\t\t" + totalLength + lineBreak;
 
         System.out.println(messageCombined);
 
-        ArrayList<Pipe> pipes = batch.getPipes();
+        ArrayList<Pipe> pipes = bundle.getPipes();
 
         for (Pipe pipe : pipes) {
             printBrief(pipe);

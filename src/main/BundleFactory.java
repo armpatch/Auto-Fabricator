@@ -2,42 +2,41 @@ package main;
 
 import java.util.ArrayList;
 
-class BatchFactory {
+class BundleFactory {
 
-    static ArrayList<Batch> createBatchesFrom(PipeGroup pipeGroup) {
-        ArrayList<Batch> batches = new ArrayList<>();
+    static ArrayList<Bundle> createBundlesFrom(PipeGroup pipeGroup) {
+        ArrayList<Bundle> bundles = new ArrayList<>();
 
         while (pipeGroup.size() > 0) {
-            Batch currentBatch = makeBatchFrom(pipeGroup);
+            Bundle currentBundle = makeBundleFrom(pipeGroup);
 
-            if (currentBatch.getCount() != 0) {
-                batches.add(currentBatch);
+            if (currentBundle.getCount() != 0) {
+                bundles.add(currentBundle);
             }
         }
-        return batches;
+        return bundles;
     }
 
-    private static Batch makeBatchFrom(PipeGroup pipeGroup) {
-        Batch batch = new Batch(
+    private static Bundle makeBundleFrom(PipeGroup pipeGroup) {
+        Bundle bundle = new Bundle(
                 pipeGroup.getService(),
                 pipeGroup.getDiameter(),
                 pipeGroup.isPulledTee());
 
         while (pipeGroup.size() > 0) {
-            Pipe pipe = getLongestPipe(pipeGroup, batch.getRemainingLength());
+            Pipe pipe = findLongestPipe(pipeGroup, bundle.getRemainingLength());
 
             if (pipe != null) {
                 pipeGroup.removePipe(pipe);
-                batch.addPipe(pipe);
-
+                bundle.addPipe(pipe);
             } else {
                 break;
             }
         }
-        return batch;
+        return bundle;
     }
 
-    private static Pipe getLongestPipe(PipeGroup pipeGroup, float maxLength) {
+    private static Pipe findLongestPipe(PipeGroup pipeGroup, float maxLength) {
         for (int index = 0; index < pipeGroup.size(); index++ ) {
             Pipe pipe = pipeGroup.getPipe(index);
 
