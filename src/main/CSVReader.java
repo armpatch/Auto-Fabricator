@@ -23,7 +23,7 @@ public class CSVReader {
     public static final int LABEL = 13;
 
     private static final String pathToCsv = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\" +
-            "research\\pipe csvs\\Original\\pipes.csv";
+            "csv\\input\\pipes.csv";
 
     static ArrayList<String[]> getDataRows() throws IOException {
         BufferedReader csvReader = new BufferedReader(new FileReader(pathToCsv));

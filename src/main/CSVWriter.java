@@ -2,6 +2,7 @@ package main;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class CSVWriter {
 
@@ -13,12 +14,23 @@ public class CSVWriter {
 
     private FileWriter fileWriter;
 
-    private CSVWriter(String filePath) {
+    CSVWriter(String filePath) {
         setFilePath(filePath);
     }
 
     void initFileWriter() throws IOException {
         fileWriter = new FileWriter(getFilePath());
+    }
+
+    void writeBundlesToFile(ArrayList<Bundle> bundles) throws IOException {
+        for (Bundle bundle : bundles) {
+            ArrayList<Pipe> pipes = bundle.getPipes();
+            for (Pipe pipe : pipes) {
+                appendRow(pipe.getRowData());
+            }
+            appendRow(new String[] {});
+        }
+
     }
 
     void appendRow(String[] data) throws IOException {
@@ -37,12 +49,7 @@ public class CSVWriter {
         fileWriter.close();
     }
 
-    private void setFilePath(String filePath) {
-        this.filePath = filePath;
-    }
-
-    private String getFilePath() {
-        return filePath;
-    }
-
+    // getters and setters
+    private String getFilePath() {return filePath;}
+    private void setFilePath(String filePath) {this.filePath = filePath;}
 }

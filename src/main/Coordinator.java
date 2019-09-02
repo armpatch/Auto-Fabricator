@@ -5,8 +5,13 @@ import java.util.ArrayList;
 
 public class Coordinator {
 
+    static String jobNumber = "380200";
+    static String folderPath = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\csv\\output\\";
+    static String[] csvHeaderRow;
+
     static void start() throws IOException {
         ArrayList<String[]> csvRows = CSVReader.getDataRows();
+        csvHeaderRow = CSVReader.getHeaderRow();
         ArrayList<Pipe> pipes = PipeFactory.getPipesFrom(csvRows);
         ArrayList<PipeGroup> pipeGroups = PipeGroupFactory.createPipeGroups(pipes);
         ArrayList<GroupSet> groupSets = GroupSetFactory.createGroupSets(pipeGroups);
@@ -16,7 +21,7 @@ public class Coordinator {
         }
     }
 
-    private static void processIntoCSV(GroupSet groupSet) {
+    private static void processIntoCSV(GroupSet groupSet) throws IOException {
         ArrayList<Bundle> groupSetBundles = new ArrayList<>();
 
         // make bundles from each pipe group
@@ -26,12 +31,14 @@ public class Coordinator {
         }
         // we now have a combined set of bundles for all pipes in the GroupSet
 
-        // now send this list of bundles to its own csv;
-        // we will need a file name and a path.
+        String fileName = FileNameMaker.getFileName(jobNumber, groupSet.isPulledTee(), groupSet.getDiameter());
+        String filePath = folderPath + fileName;
 
+        CSVWriter csvWriter = new CSVWriter(filePath);
 
+        csvWriter.initFileWriter();
+        csvWriter.appendRow(csvHeaderRow);
+        csvWriter.writeBundlesToFile(groupSetBundles);
+        csvWriter.closeWriter();
     }
-
-
-
 }
