@@ -3,7 +3,7 @@ package main;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class PipeGroup {
+public class PipeGroup{
     private ArrayList<Pipe> pipes = new ArrayList<>();
     private float diameter;
     private boolean isPulledTee;

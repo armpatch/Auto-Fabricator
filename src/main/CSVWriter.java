@@ -3,7 +3,7 @@ package main;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class CSVFileWriter {
+public class CSVWriter {
 
     private static String TEST_FILE_PATH =
             "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\csv\\output\\" +
@@ -13,7 +13,7 @@ public class CSVFileWriter {
 
     private FileWriter fileWriter;
 
-    private CSVFileWriter(String filePath) {
+    private CSVWriter(String filePath) {
         setFilePath(filePath);
     }
 

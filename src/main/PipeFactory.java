@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 class PipeFactory {
 
-    static ArrayList<Pipe> createPipesFrom(ArrayList<String[]> rows) {
+    static ArrayList<Pipe> getPipesFrom(ArrayList<String[]> rows) {
 
         ArrayList<Pipe> pipes = new ArrayList<>(rows.size());
 
@@ -20,11 +20,11 @@ class PipeFactory {
         Pipe pipe = new Pipe();
 
         pipe.setRowData(row);
-        pipe.setLength(Float.valueOf(row[PipeCSVReader.LENGTH_DECIMAL]));
-        pipe.setService(row[PipeCSVReader.SERVICE]);
+        pipe.setLength(Float.valueOf(row[CSVReader.LENGTH_DECIMAL]));
+        pipe.setService(row[CSVReader.SERVICE]);
 
-        pipe.setPulledTee(isPulledTee(row[PipeCSVReader.SPOOL]));
-        pipe.setDiameter(getDiameter(row[PipeCSVReader.DIAMETER]));
+        pipe.setPulledTee(isPulledTee(row[CSVReader.SPOOL]));
+        pipe.setDiameter(getDiameter(row[CSVReader.DIAMETER]));
 
         return pipe;
     }

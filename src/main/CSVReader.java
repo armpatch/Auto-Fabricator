@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class PipeCSVReader {
+public class CSVReader {
 
     public static final int JOB = 0;
     public static final int SPOOL = 1;
