@@ -7,13 +7,13 @@ import io.FileNameMaker;
 import java.io.IOException;
 import java.util.ArrayList;
 
-class Coordinator {
+public class Coordinator {
 
     private static String jobNumber = "380200";
     private static String folderPath = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\csv\\output\\";
     private static String[] csvHeaderRow;
 
-    static void start() throws IOException {
+    public static void start() throws IOException {
         ArrayList<String[]> csvRows = CSVReader.getDataRows();
         csvHeaderRow = CSVReader.getHeaderRow();
         ArrayList<Pipe> pipes = PipeFactory.getPipesFrom(csvRows);
