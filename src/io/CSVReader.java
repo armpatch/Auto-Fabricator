@@ -1,31 +1,31 @@
-package main;
+package io;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-class CSVReader {
+public class CSVReader {
 
-    static  int JOB = 0;
-    static  int SPOOL = 1;
-    static  int ITEM_NO = 2;
-    static  int AREA = 3;
-    static  int SERVICE = 4;
-    static  int MATERIAL = 5;
-    static  int DIAMETER = 6;
-    static  int END1 = 7;
-    static  int CONNECTOR1 = 8;
-    static  int CONNECTOR2 = 9;
-    static  int LENGTH_DECIMAL = 10;
-    static  int PRINTER = 11;
-    static  int BIN = 12;
-    static  int LABEL = 13;
+    public static int JOB = 0;
+    public static int SPOOL = 1;
+    public static int ITEM_NO = 2;
+    public static int AREA = 3;
+    public static int SERVICE = 4;
+    public static int MATERIAL = 5;
+    public static int DIAMETER = 6;
+    public static int END1 = 7;
+    public static int CONNECTOR1 = 8;
+    public static int CONNECTOR2 = 9;
+    public static int LENGTH_DECIMAL = 10;
+    public static int PRINTER = 11;
+    public static int BIN = 12;
+    public static int LABEL = 13;
 
     private static final String pathToCsv = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\" +
             "csv\\input\\pipes.csv";
 
-    static ArrayList<String[]> getDataRows() throws IOException {
+    public static ArrayList<String[]> getDataRows() throws IOException {
         BufferedReader csvReader = new BufferedReader(new FileReader(pathToCsv));
 
         ArrayList<String[]> rows = new ArrayList<>();
@@ -41,7 +41,7 @@ class CSVReader {
         return rows;
     }
 
-    static String[] getHeaderRow() throws IOException {
+    public static String[] getHeaderRow() throws IOException {
         BufferedReader csvReader = new BufferedReader(new FileReader(pathToCsv));
 
         String row = csvReader.readLine();

@@ -1,4 +1,4 @@
-package main;
+package util;
 
 import java.util.Comparator;
 
@@ -11,7 +11,7 @@ public class Pipe {
     private boolean pulledTee;
     private float diameter;
 
-    String[] getRowData() {
+    public String[] getRowData() {
         return rowData;
     }
 
@@ -35,7 +35,7 @@ public class Pipe {
         this.service = waterService;
     }
 
-    boolean isPulledTee() {
+    public boolean isPulledTee() {
         return pulledTee;
     }
 
@@ -43,7 +43,7 @@ public class Pipe {
         this.pulledTee = pulledTee;
     }
 
-    float getDiameter() {
+    public float getDiameter() {
         return diameter;
     }
 

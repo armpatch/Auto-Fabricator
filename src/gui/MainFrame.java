@@ -1,4 +1,4 @@
-package UI;
+package gui;
 
 import javax.swing.*;
 
@@ -20,11 +20,6 @@ public class MainFrame {
     }
 
     private void setupButtonsAndFields() {
-
-
-
-
-
         JButton button = new JButton("Create Files");
         button.setBounds(200, 150, 90, 50);
         frame.add(button);
@@ -33,6 +28,5 @@ public class MainFrame {
     private void showWindow() {
         frame.setVisible(true);
     }
-
 
 }

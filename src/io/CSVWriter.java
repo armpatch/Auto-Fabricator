@@ -1,24 +1,27 @@
-package main;
+package io;
+
+import util.Bundle;
+import util.Pipe;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-class CSVWriter {
+public class CSVWriter {
 
     private String filePath;
 
     private FileWriter fileWriter;
 
-    CSVWriter(String filePath) {
+    public CSVWriter(String filePath) {
         setFilePath(filePath);
     }
 
-    void initFileWriter() throws IOException {
+    public void initFileWriter() throws IOException {
         fileWriter = new FileWriter(getFilePath());
     }
 
-    void writeBundlesToFile(ArrayList<Bundle> bundles) throws IOException {
+    public void writeBundlesToFile(ArrayList<Bundle> bundles) throws IOException {
         for (Bundle bundle : bundles) {
             ArrayList<Pipe> pipes = bundle.getPipes();
             for (Pipe pipe : pipes) {
@@ -29,7 +32,7 @@ class CSVWriter {
 
     }
 
-    void appendRow(String[] data) throws IOException {
+    public void appendRow(String[] data) throws IOException {
         if (data != null) {
             for (String field : data) {
                 fileWriter.append(field);
@@ -40,7 +43,7 @@ class CSVWriter {
         fileWriter.append("\n");
     }
 
-    void closeWriter() throws IOException {
+    public void closeWriter() throws IOException {
         fileWriter.flush();
         fileWriter.close();
     }

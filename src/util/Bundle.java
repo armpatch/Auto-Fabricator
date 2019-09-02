@@ -1,4 +1,4 @@
-package main;
+package util;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -26,7 +26,7 @@ public class Bundle {
         pipes.add(pipe);
     }
 
-    ArrayList<Pipe> getPipes() {
+    public ArrayList<Pipe> getPipes() {
         return pipes;
     }
 
@@ -48,7 +48,7 @@ public class Bundle {
         this.service = service;
     }
 
-    float getDiameter() {
+    public float getDiameter() {
         return diameter;
     }
 
@@ -56,7 +56,7 @@ public class Bundle {
         this.diameter = diameter;
     }
 
-    boolean isPulledTee() {
+    public boolean isPulledTee() {
         return isPulledTee;
     }
 
@@ -70,7 +70,7 @@ public class Bundle {
         totalLength = Float.valueOf(df.format(length));
     }
 
-    float getTotalLength() {
+    public float getTotalLength() {
         return totalLength;
     }
 }

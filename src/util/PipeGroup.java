@@ -1,4 +1,4 @@
-package main;
+package util;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -27,7 +27,7 @@ public class PipeGroup{
         return pipes.get(index);
     }
 
-    ArrayList<Pipe> getPipes() {
+    public ArrayList<Pipe> getPipes() {
         return pipes;
     }
 
@@ -42,7 +42,7 @@ public class PipeGroup{
 
     // getters and setters
 
-    float getDiameter() {
+    public float getDiameter() {
         return diameter;
     }
 
@@ -50,7 +50,7 @@ public class PipeGroup{
         this.diameter = diameter;
     }
 
-    boolean isPulledTee() {
+    public boolean isPulledTee() {
         return isPulledTee;
     }
 
