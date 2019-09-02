@@ -3,11 +3,11 @@ package main;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Coordinator {
+class Coordinator {
 
-    static String jobNumber = "380200";
-    static String folderPath = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\csv\\output\\";
-    static String[] csvHeaderRow;
+    private static String jobNumber = "380200";
+    private static String folderPath = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\csv\\output\\";
+    private static String[] csvHeaderRow;
 
     static void start() throws IOException {
         ArrayList<String[]> csvRows = CSVReader.getDataRows();

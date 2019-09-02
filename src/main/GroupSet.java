@@ -6,7 +6,7 @@ public class GroupSet {
     private float diameter;
     private boolean isPulledTee;
 
-    ArrayList<PipeGroup> pipeGroups = new ArrayList<>();
+    private ArrayList<PipeGroup> pipeGroups = new ArrayList<>();
 
     GroupSet(float diameter, boolean isPulledTee) {
         setDiameter(diameter);

@@ -2,7 +2,7 @@ package main;
 
 import java.util.ArrayList;
 
-public class GroupSetFactory {
+class GroupSetFactory {
 
     private static float[] pipeDiameters = {0.5f, 0.75f, 1.0f, 1.25f, 1.5f};
 

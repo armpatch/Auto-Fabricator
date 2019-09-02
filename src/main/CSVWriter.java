@@ -4,11 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class CSVWriter {
-
-    private static String TEST_FILE_PATH =
-            "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\csv\\output\\" +
-                    "pipeOutput.csv";
+class CSVWriter {
 
     private String filePath;
 

@@ -5,22 +5,22 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class CSVReader {
+class CSVReader {
 
-    public static final int JOB = 0;
-    public static final int SPOOL = 1;
-    public static final int ITEM_NO = 2;
-    public static final int AREA = 3;
-    public static final int SERVICE = 4;
-    public static final int MATERIAL = 5;
-    public static final int DIAMETER = 6;
-    public static final int END1 = 7;
-    public static final int CONNECTOR1 = 8;
-    public static final int CONNECTOR2 = 9;
-    public static final int LENGTH_DECIMAL = 10;
-    public static final int PRINTER = 11;
-    public static final int BIN = 12;
-    public static final int LABEL = 13;
+    static  int JOB = 0;
+    static  int SPOOL = 1;
+    static  int ITEM_NO = 2;
+    static  int AREA = 3;
+    static  int SERVICE = 4;
+    static  int MATERIAL = 5;
+    static  int DIAMETER = 6;
+    static  int END1 = 7;
+    static  int CONNECTOR1 = 8;
+    static  int CONNECTOR2 = 9;
+    static  int LENGTH_DECIMAL = 10;
+    static  int PRINTER = 11;
+    static  int BIN = 12;
+    static  int LABEL = 13;
 
     private static final String pathToCsv = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\" +
             "csv\\input\\pipes.csv";
@@ -51,7 +51,7 @@ public class CSVReader {
         return splitAndFormat(row);
     }
 
-    static String[] splitAndFormat(String rowDataRaw) {
+    private static String[] splitAndFormat(String rowDataRaw) {
         String output = rowDataRaw.replace("\"", "");
         return output.split(",");
     }

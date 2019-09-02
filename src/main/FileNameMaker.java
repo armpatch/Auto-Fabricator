@@ -1,10 +1,10 @@
 package main;
 
-public class FileNameMaker {
-    static final String TRADE = "PL";
-    static final String AREA = "AREA";
-    static final String MACHINE_NAME = "TCC-50";
-    static final String FILE_EXTENSION = ".csv";
+class FileNameMaker {
+    private static final String TRADE = "PL";
+    private static final String AREA = "AREA";
+    private static final String MACHINE_NAME = "TCC-50";
+    private static final String FILE_EXTENSION = ".csv";
 
     // EX:
     // 380200_PL-Lev04-T2-TCC-50-(PT)-1.5
