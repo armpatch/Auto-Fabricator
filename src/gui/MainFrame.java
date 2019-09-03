@@ -1,6 +1,10 @@
 package gui;
 
 import javax.swing.*;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.Document;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -9,6 +13,8 @@ public class MainFrame {
 
     private JFrame frame;
     private JFileChooser fileChooser;
+    private JTextField textField1 = new JTextField();
+    private JTextField textField2 = new JTextField();
 
     private String outputFolderPath;
     private String sourceFilePath;
@@ -39,18 +45,38 @@ public class MainFrame {
         frame.setLayout(null);
         frame.setResizable(false);
 
-        setupSourceChooser();
-        setupOutputChooser();
+        setupInputField();
+        setupOutputField();
         setupConvertButton();
     }
 
-    private void setupSourceChooser() {
+    private void setupInputField() {
         int y = 20;
 
-        // first text field
-        JTextField textField1 = new JTextField();
-        textField1.setBounds(20, y,300,30);
         frame.add(textField1);
+        textField1.setBounds(20, y,300,30);
+        textField1.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent event) {textChanged(event);}
+
+            @Override
+            public void removeUpdate(DocumentEvent event) {textChanged(event);}
+
+            @Override
+            public void changedUpdate(DocumentEvent event) {textChanged(event);}
+
+            private void textChanged(DocumentEvent event) {
+                Document doc = event.getDocument();
+
+                try {
+                    String text = doc.getText(0, doc.getLength());
+                    setSourceFilePath(text);
+                } catch (BadLocationException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
 
         JButton browserButton1 = new JButton("Browse");
         browserButton1.setBounds(340,y,100,30);
@@ -58,12 +84,38 @@ public class MainFrame {
 
     }
 
-    private void setupOutputChooser() {
+    private void setupOutputField() {
         int y = 60;
 
-        JTextField textField2 = new JTextField();
-        textField2.setBounds(20,y,300,30);
         frame.add(textField2);
+        textField2.setBounds(20,y,300,30);
+        textField2.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent event) {
+                textChanged(event);
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent event) {
+                textChanged(event);
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent event) {
+                textChanged(event);
+            }
+
+            private void textChanged(DocumentEvent event) {
+                Document doc = event.getDocument();
+
+                try {
+                    String text = doc.getText(0, doc.getLength());
+                    setOutputFolderPath(text);
+                } catch (BadLocationException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
         JButton browserButton2 = new JButton("Browse");
         browserButton2.setBounds(340,60,100,30);
@@ -100,10 +152,18 @@ public class MainFrame {
         int result = fileChooser.showOpenDialog(frame);
 
         if (result == JFileChooser.APPROVE_OPTION) {
-            File selectedFile = fileChooser.getSelectedFile();
-            String outputFolderPath = selectedFile.getAbsolutePath();
+            String folderPath = fileChooser.getSelectedFile().getAbsolutePath();
+            outputFolderPath = folderPath;
+            textField2.setText(folderPath);
             System.out.println("Selected file: " + outputFolderPath);
         }
     }
 
+    private void setOutputFolderPath(String path) {
+        outputFolderPath = path;
+    }
+
+    public void setSourceFilePath(String path) {
+        this.sourceFilePath = path;
+    }
 }
