@@ -16,24 +16,18 @@ public class MainFrame {
     private JTextField textField1 = new JTextField();
     private JTextField textField2 = new JTextField();
 
-    private String outputFolderPath;
-    private String sourceFilePath;
+    private String sourceFilePath = "";
+    private String outputFolderPath = "";
 
     public MainFrame() {
-        setupFrame();
-        showFrame();
+        setupJFrame();
+        showJFrame();
     }
 
-    private void setupFrame() {
+    private void setupJFrame() {
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (UnsupportedLookAndFeelException e) {
+        } catch (ClassNotFoundException | IllegalAccessException | UnsupportedLookAndFeelException | InstantiationException e) {
             e.printStackTrace();
         }
 
@@ -45,12 +39,12 @@ public class MainFrame {
         frame.setLayout(null);
         frame.setResizable(false);
 
-        setupInputField();
-        setupOutputField();
+        setupSourceFileChooser();
+        setupOutputFolderChooser();
         setupConvertButton();
     }
 
-    private void setupInputField() {
+    private void setupSourceFileChooser() {
         int y = 20;
 
         frame.add(textField1);
@@ -86,12 +80,12 @@ public class MainFrame {
         browserButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                chooseSourceFile();
+                showFileChooserWindow();
             }
         });
     }
 
-    private void setupOutputField() {
+    private void setupOutputFolderChooser() {
         int y = 60;
 
         frame.add(textField2);
@@ -131,7 +125,7 @@ public class MainFrame {
         browserButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                chooseOutputFolder();
+                showFolderChooserWindow();
             }
         });
     }
@@ -140,15 +134,20 @@ public class MainFrame {
         String title = "Convert";
         JButton button = new JButton(title);
         button.setBounds(20, 100, 150, 50);
-
         frame.add(button);
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                beginConversion();
+            }
+        });
     }
 
-    private void showFrame() {
+    private void showJFrame() {
         frame.setVisible(true);
     }
 
-    private void chooseSourceFile() {
+    private void showFileChooserWindow() {
         fileChooser = new JFileChooser();
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
 
@@ -166,7 +165,7 @@ public class MainFrame {
         }
     }
 
-    private void chooseOutputFolder() {
+    private void showFolderChooserWindow() {
         fileChooser = new JFileChooser();
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
 
@@ -184,11 +183,42 @@ public class MainFrame {
         }
     }
 
-    private void setOutputFolderPath(String path) {
-        outputFolderPath = path;
+    private void setOutputFolderPath(String path) {outputFolderPath = path;}
+
+    private void setSourceFilePath(String path) {this.sourceFilePath = path;}
+
+    private void beginConversion () {
+        if (!verifyPaths()) {
+
+            return;
+        }
+
+        System.out.println("MainFrame: begin conversion");
+
     }
 
-    public void setSourceFilePath(String path) {
-        this.sourceFilePath = path;
+    private boolean verifyPaths() {
+        boolean isSourcePathValid = false;
+        boolean isOutputPathValid = false;
+        File sourceFile = new File(sourceFilePath);
+        File outputFile = new File(outputFolderPath);
+
+        System.out.println(" ");
+        System.out.println("MainFrame: source = " + sourceFilePath);
+        System.out.println("MainFrame: output = " + outputFolderPath);
+
+        if (sourceFile.isFile()) {
+            isSourcePathValid = true;
+        } else {
+            System.out.println("MainFrame: source file path is not valid");
+        }
+
+        if (outputFile.isDirectory()) {
+            isOutputPathValid = true;
+        } else {
+            System.out.println("MainFrame: output folder path is not valid");
+        }
+
+        return isSourcePathValid && isOutputPathValid;
     }
 }

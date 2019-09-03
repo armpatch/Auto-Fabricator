@@ -10,7 +10,9 @@ import java.util.ArrayList;
 public class Coordinator {
 
     private static String jobNumber = "380200";
-    private static String folderPath = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\csv\\output\\";
+    private static String outputFolderPath;
+    private static String sourceFilePath;
+
     private static String[] csvHeaderRow;
 
     public static void start() throws IOException {
@@ -36,7 +38,7 @@ public class Coordinator {
         // we now have a combined set of bundles for all pipes in the GroupSet
 
         String fileName = FileNameMaker.getFileName(jobNumber, groupSet.isPulledTee(), groupSet.getDiameter());
-        String filePath = folderPath + fileName;
+        String filePath = outputFolderPath + fileName;
 
         CSVWriter csvWriter = new CSVWriter(filePath);
 
@@ -44,5 +46,13 @@ public class Coordinator {
         csvWriter.appendRow(csvHeaderRow);
         csvWriter.writeBundlesToFile(groupSetBundles);
         csvWriter.closeWriter();
+    }
+
+    public static void setOutputFolderPath(String outputFolderPath) {
+        Coordinator.outputFolderPath = outputFolderPath;
+    }
+
+    public static void setSourceFilePath(String sourceFilePath) {
+        Coordinator.sourceFilePath = sourceFilePath;
     }
 }
