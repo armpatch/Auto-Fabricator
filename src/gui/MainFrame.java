@@ -1,5 +1,7 @@
 package gui;
 
+import util.Coordinator;
+
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
@@ -8,6 +10,7 @@ import javax.swing.text.Document;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.io.IOException;
 
 public class MainFrame {
 
@@ -21,7 +24,10 @@ public class MainFrame {
 
     public MainFrame() {
         setupJFrame();
-        showJFrame();
+    }
+
+    public void show() {
+        frame.setVisible(true);
     }
 
     private void setupJFrame() {
@@ -143,10 +149,6 @@ public class MainFrame {
         });
     }
 
-    private void showJFrame() {
-        frame.setVisible(true);
-    }
-
     private void showFileChooserWindow() {
         fileChooser = new JFileChooser();
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
@@ -189,12 +191,17 @@ public class MainFrame {
 
     private void beginConversion () {
         if (!verifyPaths()) {
-
             return;
         }
+        Coordinator.setSourceFilePath(sourceFilePath);
+        Coordinator.setOutputFolderPath(outputFolderPath);
 
-        System.out.println("MainFrame: begin conversion");
-
+        try {
+            Coordinator.startConversion();
+            System.out.println("MainFrame: begin conversion");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private boolean verifyPaths() {

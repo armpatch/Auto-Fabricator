@@ -10,7 +10,6 @@ import java.util.ArrayList;
 public class CSVWriter {
 
     private String filePath;
-
     private FileWriter fileWriter;
 
     public CSVWriter(String filePath) {
@@ -49,6 +48,11 @@ public class CSVWriter {
     }
 
     // getters and setters
-    private String getFilePath() {return filePath;}
-    private void setFilePath(String filePath) {this.filePath = filePath;}
+    private String getFilePath() {
+        return filePath;
+    }
+
+    private void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
 }

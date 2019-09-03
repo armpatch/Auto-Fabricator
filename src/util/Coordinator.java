@@ -9,13 +9,14 @@ import java.util.ArrayList;
 
 public class Coordinator {
 
-    private static String jobNumber = "380200";
+    private static String jobNumber = "380200"; // TODO fix this placeholder
     private static String outputFolderPath;
     private static String sourceFilePath;
 
     private static String[] csvHeaderRow;
 
-    public static void start() throws IOException {
+    public static void startConversion() throws IOException {
+        CSVReader.setFilePath(sourceFilePath);
         ArrayList<String[]> csvRows = CSVReader.getDataRows();
         csvHeaderRow = CSVReader.getHeaderRow();
         ArrayList<Pipe> pipes = PipeFactory.getPipesFrom(csvRows);
@@ -35,13 +36,11 @@ public class Coordinator {
             ArrayList<Bundle> bundles = BundleFactory.createBundlesFrom(pipeGroup);
             groupSetBundles.addAll(bundles);
         }
-        // we now have a combined set of bundles for all pipes in the GroupSet
 
         String fileName = FileNameMaker.getFileName(jobNumber, groupSet.isPulledTee(), groupSet.getDiameter());
-        String filePath = outputFolderPath + fileName;
+        String filePath = outputFolderPath + "\\" + fileName;
 
         CSVWriter csvWriter = new CSVWriter(filePath);
-
         csvWriter.initFileWriter();
         csvWriter.appendRow(csvHeaderRow);
         csvWriter.writeBundlesToFile(groupSetBundles);

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class CSVReader {
 
+    // csv column data
     public static int JOB = 0;
     public static int SPOOL = 1;
     public static int ITEM_NO = 2;
@@ -22,11 +23,10 @@ public class CSVReader {
     public static int BIN = 12;
     public static int LABEL = 13;
 
-    private static final String pathToCsv = "C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\" +
-            "csv\\input\\pipes.csv";
+    private static String filePath;
 
     public static ArrayList<String[]> getDataRows() throws IOException {
-        BufferedReader csvReader = new BufferedReader(new FileReader(pathToCsv));
+        BufferedReader csvReader = new BufferedReader(new FileReader(filePath));
 
         ArrayList<String[]> rows = new ArrayList<>();
 
@@ -42,7 +42,7 @@ public class CSVReader {
     }
 
     public static String[] getHeaderRow() throws IOException {
-        BufferedReader csvReader = new BufferedReader(new FileReader(pathToCsv));
+        BufferedReader csvReader = new BufferedReader(new FileReader(filePath));
 
         String row = csvReader.readLine();
 
@@ -56,4 +56,7 @@ public class CSVReader {
         return output.split(",");
     }
 
+    public static void setFilePath(String filePath) {
+        CSVReader.filePath = filePath;
+    }
 }
