@@ -11,9 +11,9 @@ public class Bundle {
     private float diameter;
     private boolean isPulledTee;
 
-    private float totalLength;
+    private float combinedLength;
 
-    private int TOTAL_LENGTH_MAX = 223; // inches
+    private int MAX_COMBINED_LENGTH = 223; // inches
 
     Bundle(String service, float diameter, boolean isPulledTee) {
         setService(service);
@@ -22,7 +22,7 @@ public class Bundle {
     }
 
     void addPipe(Pipe pipe) {
-        setTotalLength(getTotalLength() + pipe.getLength());
+        setCombinedLength(getCombinedLength() + pipe.getLength());
         pipes.add(pipe);
     }
 
@@ -35,7 +35,7 @@ public class Bundle {
     }
 
     float getRemainingLength() {
-        return TOTAL_LENGTH_MAX - getTotalLength();
+        return MAX_COMBINED_LENGTH - getCombinedLength();
     }
 
     // getters and setters
@@ -64,13 +64,13 @@ public class Bundle {
         isPulledTee = pulledTee;
     }
 
-    private void setTotalLength(float length) {
+    private void setCombinedLength(float length) {
         DecimalFormat df = new DecimalFormat(".##");
 
-        totalLength = Float.valueOf(df.format(length));
+        combinedLength = Float.valueOf(df.format(length));
     }
 
-    public float getTotalLength() {
-        return totalLength;
+    public float getCombinedLength() {
+        return combinedLength;
     }
 }

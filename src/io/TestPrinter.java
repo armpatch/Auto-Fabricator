@@ -33,7 +33,7 @@ public class TestPrinter {
     }
 
     public static void print(Bundle bundle) {
-        String totalLength = "Total = " + bundle.getTotalLength() + "\"";
+        String totalLength = "Total = " + bundle.getCombinedLength() + "\"";
         String diameter = bundle.getDiameter() + "\" ";
         String service = bundle.getService() + " ";
         String isPulledTee = (bundle.isPulledTee())? "PT" : "";

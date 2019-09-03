@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class Coordinator {
 
-    private static String jobNumber = "380200"; // TODO fix this placeholder
+    private static String jobNumber = "";
     private static String outputFolderPath;
     private static String sourceFilePath;
 
@@ -18,6 +18,7 @@ public class Coordinator {
     public static void startConversion() throws IOException {
         CSVReader.setFilePath(sourceFilePath);
         ArrayList<String[]> csvRows = CSVReader.getDataRows();
+        jobNumber = csvRows.get(0)[0];
         csvHeaderRow = CSVReader.getHeaderRow();
         ArrayList<Pipe> pipes = PipeFactory.getPipesFrom(csvRows);
         ArrayList<PipeGroup> pipeGroups = PipeGroupFactory.createPipeGroups(pipes);
