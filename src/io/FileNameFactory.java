@@ -1,6 +1,6 @@
 package io;
 
-public class FileNameMaker {
+public class FileNameFactory {
     private static final String TRADE = "PL";
     private static final String AREA = "AREA";
     private static final String MACHINE_NAME = "TCC-50";
@@ -20,14 +20,14 @@ public class FileNameMaker {
     }
 
     private static String removeReservedCharacters(String fileName) {
-        String cleanFileName = fileName;
+        String output = fileName;
 
         String[] reservedCharacters = {"<", ">", ":", "\"", "/", "\\", "|", "?", "*"};
 
         for (String reservedCharacter : reservedCharacters) {
-            cleanFileName = cleanFileName.replace(reservedCharacter, "");
+            output = output.replace(reservedCharacter, "");
         }
 
-        return cleanFileName;
+        return output;
     }
 }

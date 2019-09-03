@@ -193,8 +193,8 @@ public class MainFrame {
         if (!verifyPaths()) {
             return;
         }
-        Coordinator.setSourceFilePath(sourceFilePath);
-        Coordinator.setOutputFolderPath(outputFolderPath);
+        Coordinator.setSourcePath(sourceFilePath);
+        Coordinator.setOutputPath(outputFolderPath);
 
         try {
             Coordinator.startConversion();

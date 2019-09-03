@@ -2,7 +2,7 @@ package util;
 
 import io.CSVReader;
 import io.CSVWriter;
-import io.FileNameMaker;
+import io.FileNameFactory;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class Coordinator {
 
     private static String jobNumber = "";
-    private static String outputFolderPath;
+    private static String folderPath;
     private static String sourceFilePath;
 
     private static String[] csvHeaderRow;
@@ -38,8 +38,8 @@ public class Coordinator {
             groupSetBundles.addAll(bundles);
         }
 
-        String fileName = FileNameMaker.getFileName(jobNumber, groupSet.isPulledTee(), groupSet.getDiameter());
-        String filePath = outputFolderPath + "\\" + fileName;
+        String fileName = FileNameFactory.getFileName(jobNumber, groupSet.isPulledTee(), groupSet.getDiameter());
+        String filePath = folderPath + "\\" + fileName;
 
         CSVWriter csvWriter = new CSVWriter(filePath);
         csvWriter.initFileWriter();
@@ -48,11 +48,11 @@ public class Coordinator {
         csvWriter.closeWriter();
     }
 
-    public static void setOutputFolderPath(String outputFolderPath) {
-        Coordinator.outputFolderPath = outputFolderPath;
+    public static void setOutputPath(String filePath) {
+        Coordinator.folderPath = filePath;
     }
 
-    public static void setSourceFilePath(String sourceFilePath) {
-        Coordinator.sourceFilePath = sourceFilePath;
+    public static void setSourcePath(String filePath) {
+        Coordinator.sourceFilePath = filePath;
     }
 }
