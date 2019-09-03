@@ -82,6 +82,13 @@ public class MainFrame {
         browserButton1.setBounds(340,y,100,30);
         frame.add(browserButton1);
 
+
+        browserButton1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                chooseSourceFile();
+            }
+        });
     }
 
     private void setupOutputField() {
@@ -139,6 +146,24 @@ public class MainFrame {
 
     private void showFrame() {
         frame.setVisible(true);
+    }
+
+    private void chooseSourceFile() {
+        fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
+
+        fileChooser.setCurrentDirectory(new File("."));
+        fileChooser.setDialogTitle("Title");
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+
+        int result = fileChooser.showOpenDialog(frame);
+
+        if (result == JFileChooser.APPROVE_OPTION) {
+            String filePath = fileChooser.getSelectedFile().getAbsolutePath();
+            setSourceFilePath(filePath); // TODO this field setter seems redundant
+            textField1.setText(filePath);
+            System.out.println("Selected file: " + filePath);
+        }
     }
 
     private void chooseOutputFolder() {
