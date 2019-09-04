@@ -10,7 +10,7 @@ public class FilenameFactory {
     // 380200_PL-Lev04-T2-TCC-50-(PT)-1.5
     // 380200_PL-Lev04T2-TCC-50-1.25
 
-    public static String getFileName(String jobNumber, boolean isPulledTee, float pipeDiameter) {
+    public static String createFileNameWith(String jobNumber, boolean isPulledTee, float pipeDiameter) {
         String pulledTee = isPulledTee? "(PT)-" : "";
         String size = String.valueOf(pipeDiameter);
 

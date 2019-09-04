@@ -6,27 +6,27 @@ import java.util.ArrayList;
 
 class PipeFactory {
 
-    static ArrayList<Pipe> getPipesFrom(ArrayList<String[]> rows) {
+    static ArrayList<Pipe> createPipesFrom(ArrayList<String[]> rows) {
 
         ArrayList<Pipe> pipes = new ArrayList<>(rows.size());
 
         for (String[] row : rows) {
-            Pipe pipe = getPipeFrom(row);
+            Pipe pipe = createPipeFrom(row);
             pipes.add(pipe);
         }
 
         return pipes;
     }
 
-    private static Pipe getPipeFrom(String[] row) {
+    private static Pipe createPipeFrom(String[] row) {
         Pipe pipe = new Pipe();
 
         pipe.setRowData(row);
-        pipe.setLength(Float.valueOf(row[CSVReader.LENGTH_DECIMAL]));
-        pipe.setService(row[CSVReader.SERVICE]);
+        pipe.setLength(Float.parseFloat(row[CSVReader.LENGTH_COLUMN]));
+        pipe.setService(row[CSVReader.SERVICE_COLUMN]);
 
-        pipe.setPulledTee(isPulledTee(row[CSVReader.SPOOL]));
-        pipe.setDiameter(getDiameter(row[CSVReader.DIAMETER]));
+        pipe.setPulledTee(isPulledTee(row[CSVReader.SPOOL_COLUMN]));
+        pipe.setDiameter(getDiameter(row[CSVReader.DIAMETER_COLUMN]));
 
         return pipe;
     }

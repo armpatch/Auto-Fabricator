@@ -16,11 +16,11 @@ public class CSVWriter {
         setFilePath(filePath);
     }
 
-    public void initFileWriter() throws IOException {
+    public void open() throws IOException {
         fileWriter = new FileWriter(getFilePath());
     }
 
-    public void writeBundlesToFile(ArrayList<Bundle> bundles) throws IOException {
+    public void appendBundleRows(ArrayList<Bundle> bundles) throws IOException {
         for (Bundle bundle : bundles) {
             ArrayList<Pipe> pipes = bundle.getPipes();
             for (Pipe pipe : pipes) {
@@ -28,7 +28,11 @@ public class CSVWriter {
             }
             appendRow(new String[] {});
         }
+    }
 
+    public void appendEndRow() throws IOException {
+        String[] endRow = {JobInfo.getJobNumber(), "END", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"};
+        appendRow(endRow);
     }
 
     public void appendRow(String[] data) throws IOException {
@@ -42,7 +46,7 @@ public class CSVWriter {
         fileWriter.append("\n");
     }
 
-    public void closeWriter() throws IOException {
+    public void close() throws IOException {
         fileWriter.flush();
         fileWriter.close();
     }

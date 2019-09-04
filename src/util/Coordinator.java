@@ -3,47 +3,47 @@ package util;
 import io.CSVReader;
 import io.CSVWriter;
 import io.FilenameFactory;
+import io.JobInfo;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
 public class Coordinator {
 
-    private static String jobNumber = "";
+    public static void startConversion(String sourceFilepath, String outputFolderPath) throws IOException {
+        ArrayList<String[]> csvRows = CSVReader.getPipeDataRows(sourceFilepath);
+        JobInfo.setJobNumber(csvRows.get(0)[0]);
+        JobInfo.setHeaderRow(CSVReader.getHeaderRow(sourceFilepath));
 
-    private static String[] csvHeaderRow;
-
-    public static void startConversion(String sourceFilePath, String outputFolderPath) throws IOException {
-        CSVReader.setFilePath(sourceFilePath);
-        ArrayList<String[]> csvRows = CSVReader.getDataRows();
-        jobNumber = csvRows.get(0)[0];
-        csvHeaderRow = CSVReader.getHeaderRow();
-        ArrayList<Pipe> pipes = PipeFactory.getPipesFrom(csvRows);
-        ArrayList<PipeGroup> pipeGroups = PipeGroupFactory.createPipeGroups(pipes);
-        ArrayList<GroupSet> groupSets = GroupSetFactory.createGroupSets(pipeGroups);
-
-        for (GroupSet groupSet : groupSets) {
+        for (GroupSet groupSet : createGroupSets(csvRows)) {
             outputToCSV(groupSet, outputFolderPath);
         }
     }
 
+    private static ArrayList<GroupSet> createGroupSets(ArrayList<String[]> csvRows) {
+        ArrayList<Pipe> pipes = PipeFactory.createPipesFrom(csvRows);
+        ArrayList<PipeGroup> pipeGroups = PipeGroupFactory.createPipeGroups(pipes);
+        return GroupSetFactory.createGroupSets(pipeGroups);
+    }
+
     private static void outputToCSV(GroupSet groupSet, String outputFolderPath) throws IOException {
-        ArrayList<Bundle> groupSetBundles = new ArrayList<>();
+        ArrayList<Bundle> allBundles = new ArrayList<>();
 
         // make bundles from each pipe group
         for (PipeGroup pipeGroup: groupSet.getPipeGroups()) {
             ArrayList<Bundle> bundles = BundleFactory.createBundlesFrom(pipeGroup);
-            groupSetBundles.addAll(bundles);
+            allBundles.addAll(bundles);
         }
 
-        String fileName = FilenameFactory.getFileName(jobNumber, groupSet.isPulledTee(), groupSet.getDiameter());
+        String fileName = FilenameFactory.createFileNameWith(JobInfo.getJobNumber(), groupSet.isPulledTee(), groupSet.getDiameter());
         String filePath = outputFolderPath + "\\" + fileName;
 
         CSVWriter csvWriter = new CSVWriter(filePath);
-        csvWriter.initFileWriter();
-        csvWriter.appendRow(csvHeaderRow);
-        csvWriter.writeBundlesToFile(groupSetBundles);
-        csvWriter.closeWriter();
+        csvWriter.open();
+        csvWriter.appendRow(JobInfo.getHeaderRow());
+        csvWriter.appendBundleRows(allBundles);
+        csvWriter.appendEndRow();
+        csvWriter.close();
     }
 
 }
