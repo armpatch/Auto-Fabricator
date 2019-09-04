@@ -12,17 +12,16 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 
-public class MainFrame {
+public class StartWindow {
 
     private JFrame frame;
-    private JFileChooser fileChooser;
     private JTextField textField1 = new JTextField();
     private JTextField textField2 = new JTextField();
 
     private String sourceFilePath = "";
     private String outputFolderPath = "";
 
-    public MainFrame() {
+    StartWindow() {
         setupJFrame();
     }
 
@@ -45,12 +44,12 @@ public class MainFrame {
         frame.setLayout(null);
         frame.setResizable(false);
 
-        setupSourceFileChooser();
-        setupOutputFolderChooser();
-        setupConvertButton();
+        addSourceFieldAndButton();
+        addOutputFieldAndButton();
+        addConvertButton();
     }
 
-    private void setupSourceFileChooser() {
+    private void addSourceFieldAndButton() {
         int y = 20;
 
         frame.add(textField1);
@@ -77,11 +76,9 @@ public class MainFrame {
             }
         });
 
-
         JButton browserButton1 = new JButton("Browse");
         browserButton1.setBounds(340,y,100,30);
         frame.add(browserButton1);
-
 
         browserButton1.addActionListener(new ActionListener() {
             @Override
@@ -91,7 +88,7 @@ public class MainFrame {
         });
     }
 
-    private void setupOutputFolderChooser() {
+    private void addOutputFieldAndButton() {
         int y = 60;
 
         frame.add(textField2);
@@ -136,7 +133,7 @@ public class MainFrame {
         });
     }
 
-    private void setupConvertButton() {
+    private void addConvertButton() {
         String title = "Convert";
         JButton button = new JButton(title);
         button.setBounds(20, 100, 150, 50);
@@ -150,36 +147,29 @@ public class MainFrame {
     }
 
     private void showFileChooserWindow() {
-        fileChooser = new JFileChooser();
+        JFileChooser fileChooser = new JFileChooser();
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
-
-        fileChooser.setCurrentDirectory(new File("."));
-        fileChooser.setDialogTitle("Title");
+        fileChooser.setDialogTitle("Select Source File");
         fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
 
-        int result = fileChooser.showOpenDialog(frame);
-
-        if (result == JFileChooser.APPROVE_OPTION) {
+        if (fileChooser.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION) {
             String filePath = fileChooser.getSelectedFile().getAbsolutePath();
             setSourceFilePath(filePath); // TODO this field setter seems redundant
             textField1.setText(filePath);
-            System.out.println("Selected file: " + filePath);
         }
     }
 
     private void showFolderChooserWindow() {
-        fileChooser = new JFileChooser();
+        JFileChooser fileChooser = new JFileChooser();
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
-
-        fileChooser.setCurrentDirectory(new File("."));
-        fileChooser.setDialogTitle("Title");
+        fileChooser.setDialogTitle("Select Output Folder");
         fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 
         int result = fileChooser.showOpenDialog(frame);
 
         if (result == JFileChooser.APPROVE_OPTION) {
             String folderPath = fileChooser.getSelectedFile().getAbsolutePath();
-            outputFolderPath = folderPath;
+            setOutputFolderPath(folderPath);
             textField2.setText(folderPath);
             System.out.println("Selected file: " + outputFolderPath);
         }
@@ -190,21 +180,20 @@ public class MainFrame {
     private void setSourceFilePath(String path) {this.sourceFilePath = path;}
 
     private void beginConversion () {
-        if (!verifyPaths()) {
+        if (pathsAreInvalid()) {
             return;
         }
-        Coordinator.setSourcePath(sourceFilePath);
-        Coordinator.setOutputPath(outputFolderPath);
 
         try {
-            Coordinator.startConversion();
-            System.out.println("MainFrame: begin conversion");
+            Coordinator.startConversion(sourceFilePath, outputFolderPath);
+            JOptionPane.showMessageDialog(null,
+                    "Conversion Complete.");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private boolean verifyPaths() {
+    private boolean pathsAreInvalid() {
         boolean isSourcePathValid = false;
         boolean isOutputPathValid = false;
         File sourceFile = new File(sourceFilePath);
@@ -226,6 +215,6 @@ public class MainFrame {
             System.out.println("MainFrame: output folder path is not valid");
         }
 
-        return isSourcePathValid && isOutputPathValid;
+        return isSourcePathValid || isOutputPathValid;
     }
 }

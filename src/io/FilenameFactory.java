@@ -1,6 +1,6 @@
 package io;
 
-public class FileNameFactory {
+public class FilenameFactory {
     private static final String TRADE = "PL";
     private static final String AREA = "AREA";
     private static final String MACHINE_NAME = "TCC-50";
