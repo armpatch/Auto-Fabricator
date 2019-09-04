@@ -1,5 +1,6 @@
 package gui;
 
+import io.FilepathChecker;
 import util.Coordinator;
 
 import javax.swing.*;
@@ -15,11 +16,11 @@ import java.io.IOException;
 public class StartWindow {
 
     private JFrame frame;
-    private JTextField textField1 = new JTextField();
-    private JTextField textField2 = new JTextField();
+    private JTextField sourceTextField = new JTextField();
+    private JTextField outputTextField = new JTextField();
 
-    private String sourceFilePath = "";
-    private String outputFolderPath = "";
+    private String sourcePath = "";
+    private String outputPath = "";
 
     StartWindow() {
         setupJFrame();
@@ -52,9 +53,9 @@ public class StartWindow {
     private void addSourceFieldAndButton() {
         int y = 20;
 
-        frame.add(textField1);
-        textField1.setBounds(20, y,300,30);
-        textField1.getDocument().addDocumentListener(new DocumentListener() {
+        frame.add(sourceTextField);
+        sourceTextField.setBounds(20, y,300,30);
+        sourceTextField.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent event) {textChanged(event);}
 
@@ -69,7 +70,7 @@ public class StartWindow {
 
                 try {
                     String text = doc.getText(0, doc.getLength());
-                    setSourceFilePath(text);
+                    setSourcePath(text);
                 } catch (BadLocationException e) {
                     e.printStackTrace();
                 }
@@ -83,7 +84,7 @@ public class StartWindow {
         browserButton1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                showFileChooserWindow();
+                showSourceChooserWindow();
             }
         });
     }
@@ -91,9 +92,9 @@ public class StartWindow {
     private void addOutputFieldAndButton() {
         int y = 60;
 
-        frame.add(textField2);
-        textField2.setBounds(20,y,300,30);
-        textField2.getDocument().addDocumentListener(new DocumentListener() {
+        frame.add(outputTextField);
+        outputTextField.setBounds(20,y,300,30);
+        outputTextField.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent event) {
                 textChanged(event);
@@ -114,7 +115,7 @@ public class StartWindow {
 
                 try {
                     String text = doc.getText(0, doc.getLength());
-                    setOutputFolderPath(text);
+                    setOutputPath(text);
                 } catch (BadLocationException e) {
                     e.printStackTrace();
                 }
@@ -128,7 +129,7 @@ public class StartWindow {
         browserButton2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                showFolderChooserWindow();
+                showOutputChooserWindow();
             }
         });
     }
@@ -146,7 +147,7 @@ public class StartWindow {
         });
     }
 
-    private void showFileChooserWindow() {
+    private void showSourceChooserWindow() {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
         fileChooser.setDialogTitle("Select Source File");
@@ -154,12 +155,12 @@ public class StartWindow {
 
         if (fileChooser.showOpenDialog(frame) == JFileChooser.APPROVE_OPTION) {
             String filePath = fileChooser.getSelectedFile().getAbsolutePath();
-            setSourceFilePath(filePath); // TODO this field setter seems redundant
-            textField1.setText(filePath);
+            setSourcePath(filePath);
+            sourceTextField.setText(filePath);
         }
     }
 
-    private void showFolderChooserWindow() {
+    private void showOutputChooserWindow() {
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.home")));
         fileChooser.setDialogTitle("Select Output Folder");
@@ -169,23 +170,27 @@ public class StartWindow {
 
         if (result == JFileChooser.APPROVE_OPTION) {
             String folderPath = fileChooser.getSelectedFile().getAbsolutePath();
-            setOutputFolderPath(folderPath);
-            textField2.setText(folderPath);
-            System.out.println("Selected file: " + outputFolderPath);
+            setOutputPath(folderPath);
+            outputTextField.setText(folderPath);
+            System.out.println("Selected file: " + outputPath);
         }
     }
 
-    private void setOutputFolderPath(String path) {outputFolderPath = path;}
+    private void setOutputPath(String path) {
+        outputPath = path;
+    }
 
-    private void setSourceFilePath(String path) {this.sourceFilePath = path;}
+    private void setSourcePath(String path) {
+        this.sourcePath = path;
+    }
 
     private void beginConversion () {
-        if (pathsAreInvalid()) {
+        if (!pathsAreValid()) {
             return;
         }
 
         try {
-            Coordinator.startConversion(sourceFilePath, outputFolderPath);
+            Coordinator.startConversion(sourcePath, outputPath);
             JOptionPane.showMessageDialog(null,
                     "Conversion Complete.");
         } catch (IOException e) {
@@ -193,28 +198,8 @@ public class StartWindow {
         }
     }
 
-    private boolean pathsAreInvalid() {
-        boolean isSourcePathValid = false;
-        boolean isOutputPathValid = false;
-        File sourceFile = new File(sourceFilePath);
-        File outputFile = new File(outputFolderPath);
-
-        System.out.println(" ");
-        System.out.println("MainFrame: source = " + sourceFilePath);
-        System.out.println("MainFrame: output = " + outputFolderPath);
-
-        if (sourceFile.isFile()) {
-            isSourcePathValid = true;
-        } else {
-            System.out.println("MainFrame: source file path is not valid");
-        }
-
-        if (outputFile.isDirectory()) {
-            isOutputPathValid = true;
-        } else {
-            System.out.println("MainFrame: output folder path is not valid");
-        }
-
-        return isSourcePathValid || isOutputPathValid;
+    private boolean pathsAreValid() {
+        return FilepathChecker.isFile(sourcePath) &&
+                FilepathChecker.isDirectory(outputPath);
     }
 }
