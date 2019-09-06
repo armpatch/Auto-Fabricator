@@ -22,8 +22,17 @@ public class StartWindow {
     private String sourcePath = "";
     private String outputPath = "";
 
+    private final boolean TESTING_ENABLED = true;
+
     StartWindow() {
         setupJFrame();
+
+        if (TESTING_ENABLED) {
+            setSourcePath("C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\csv\\input\\pipes.csv");
+            sourceTextField.setText(sourcePath);
+            setOutputPath("C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\csv\\output");
+            outputTextField.setText(outputPath);
+        }
     }
 
     public void show() {
@@ -40,7 +49,7 @@ public class StartWindow {
         // setup frame size
         frame = new JFrame("TC-50 Pipe Sorter");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(460, 200);
+        frame.setSize(460, 320);
         frame.setLocationByPlatform(true);
         frame.setLayout(null);
         frame.setResizable(false);
@@ -51,10 +60,16 @@ public class StartWindow {
     }
 
     private void addSourceFieldAndButton() {
-        int y = 20;
+        int y1 = 30;
+
+        JLabel header = new JLabel("Source File Location");
+        header.setBounds(20,y1, 300, 30);
+        frame.add(header);
+
+        int y2 = 60;
 
         frame.add(sourceTextField);
-        sourceTextField.setBounds(20, y,300,30);
+        sourceTextField.setBounds(20, y2,300,30);
         sourceTextField.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent event) {textChanged(event);}
@@ -78,7 +93,7 @@ public class StartWindow {
         });
 
         JButton browserButton1 = new JButton("Browse");
-        browserButton1.setBounds(340,y,100,30);
+        browserButton1.setBounds(340,y2,100,30);
         frame.add(browserButton1);
 
         browserButton1.addActionListener(new ActionListener() {
@@ -90,10 +105,15 @@ public class StartWindow {
     }
 
     private void addOutputFieldAndButton() {
-        int y = 60;
+        int y1 = 110;
 
+        JLabel header = new JLabel("Output Folder Location");
+        header.setBounds(20,y1, 300, 30);
+        frame.add(header);
+
+        int y2 = 140;
         frame.add(outputTextField);
-        outputTextField.setBounds(20,y,300,30);
+        outputTextField.setBounds(20,y2,300,30);
         outputTextField.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent event) {
@@ -123,7 +143,7 @@ public class StartWindow {
         });
 
         JButton browserButton2 = new JButton("Browse");
-        browserButton2.setBounds(340,60,100,30);
+        browserButton2.setBounds(340,y2,100,30);
         frame.add(browserButton2);
 
         browserButton2.addActionListener(new ActionListener() {
@@ -137,7 +157,7 @@ public class StartWindow {
     private void addConvertButton() {
         String title = "Convert";
         JButton button = new JButton(title);
-        button.setBounds(20, 100, 150, 50);
+        button.setBounds(20, 200, 150, 50);
         frame.add(button);
         button.addActionListener(new ActionListener() {
             @Override
@@ -191,7 +211,7 @@ public class StartWindow {
 
         try {
             Coordinator.startConversion(sourcePath, outputPath);
-            JOptionPane.showMessageDialog(null,
+            JOptionPane.showMessageDialog(frame,
                     "Conversion Complete.");
         } catch (IOException e) {
             e.printStackTrace();

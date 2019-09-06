@@ -26,7 +26,7 @@ public class FileNameFactory {
     private static String removeReservedCharacters(String fileName) {
         String output = fileName;
 
-        String[] reservedCharacters = {"<", ">", ":", "\"", "/", "\\", "|", "?", "*"};
+        String[] reservedCharacters = {"<", ">", "\"", "/", "\\", "|", "?", "*"};
 
         for (String reservedCharacter : reservedCharacters) {
             output = output.replace(reservedCharacter, "");
