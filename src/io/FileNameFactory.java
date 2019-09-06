@@ -1,10 +1,12 @@
 package io;
 
-public class FilenameFactory {
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class FileNameFactory {
     private static final String TRADE = "PL";
     private static final String AREA = "AREA";
     private static final String MACHINE_NAME = "TCC-50";
-    private static final String FILE_EXTENSION = ".csv";
 
     // EX:
     // 380200_PL-Lev04-T2-TCC-50-(PT)-1.5
@@ -13,8 +15,10 @@ public class FilenameFactory {
     public static String createFileNameWith(String jobNumber, boolean isPulledTee, float pipeDiameter) {
         String pulledTee = isPulledTee? "(PT)-" : "";
         String size = String.valueOf(pipeDiameter);
+        String timeStamp = getTimeStamp();
 
-        String fileName = jobNumber + "_" + TRADE + "-" + AREA + "-" + MACHINE_NAME + "-" + pulledTee + size + FILE_EXTENSION;
+        String fileName = jobNumber + "_" + TRADE + "-" + AREA + "-" +
+                MACHINE_NAME + "-" + pulledTee + size + "_" + timeStamp + ".csv";
 
         return removeReservedCharacters(fileName);
     }
@@ -29,5 +33,14 @@ public class FilenameFactory {
         }
 
         return output;
+    }
+
+    private static String getTimeStamp() {
+        String pattern = "dd.MM.YY_hh.mm";
+
+        Date date = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat(pattern);
+
+        return dateFormat.format(date);
     }
 }

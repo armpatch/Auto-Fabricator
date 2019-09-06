@@ -31,7 +31,7 @@ public class CSVWriter {
     }
 
     public void appendEndRow() throws IOException {
-        String[] endRow = {JobInfo.getJobNumber(), "END", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"};
+        String[] endRow = new String[] {JobInfo.getJobNumber(), "END", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"};
         appendRow(endRow);
     }
 
@@ -42,7 +42,6 @@ public class CSVWriter {
                 fileWriter.append(",");
             }
         }
-
         fileWriter.append("\n");
     }
 

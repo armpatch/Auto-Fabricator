@@ -2,7 +2,7 @@ package util;
 
 import io.CSVReader;
 import io.CSVWriter;
-import io.FilenameFactory;
+import io.FileNameFactory;
 import io.JobInfo;
 
 import java.io.IOException;
@@ -35,7 +35,7 @@ public class Coordinator {
             allBundles.addAll(bundles);
         }
 
-        String fileName = FilenameFactory.createFileNameWith(JobInfo.getJobNumber(), groupSet.isPulledTee(), groupSet.getDiameter());
+        String fileName = FileNameFactory.createFileNameWith(JobInfo.getJobNumber(), groupSet.isPulledTee(), groupSet.getDiameter());
         String filePath = outputFolderPath + "\\" + fileName;
 
         CSVWriter csvWriter = new CSVWriter(filePath);
