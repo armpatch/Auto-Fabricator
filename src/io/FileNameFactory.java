@@ -24,23 +24,19 @@ public class FileNameFactory {
     }
 
     private static String removeReservedCharacters(String fileName) {
-        String output = fileName;
-
         String[] reservedCharacters = {"<", ">", "\"", "/", "\\", "|", "?", "*"};
 
-        for (String reservedCharacter : reservedCharacters) {
-            output = output.replace(reservedCharacter, "");
+        for (String character : reservedCharacters) {
+            fileName = fileName.replace(character, "");
         }
 
-        return output;
+        return fileName;
     }
 
     private static String getTimeStamp() {
         String pattern = "dd.MM.YY_hh.mm";
-
-        Date date = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat(pattern);
 
-        return dateFormat.format(date);
+        return dateFormat.format(new Date());
     }
 }
