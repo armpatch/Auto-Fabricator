@@ -12,8 +12,8 @@ public class Coordinator {
 
     public static void startConversion(String sourceFilepath, String outputFolderPath) throws IOException {
         ArrayList<String[]> csvRows = CSVReader.getPipeDataRows(sourceFilepath);
-        JobInfo.setJobNumber(csvRows.get(0)[0]);
-        JobInfo.setHeaderRow(CSVReader.getHeaderRow(sourceFilepath));
+        JobInfo.jobNumber = (csvRows.get(0)[0]);
+        JobInfo.headerRow = CSVReader.getHeaderRow(sourceFilepath);
 
         for (GroupSet groupSet : createGroupSets(csvRows)) {
             outputToCSV(groupSet, outputFolderPath);
@@ -35,11 +35,11 @@ public class Coordinator {
             allBundles.addAll(bundles);
         }
 
-        String fileName = FileNameFactory.createFileNameWith(JobInfo.getJobNumber(), groupSet.isPulledTee(), groupSet.getDiameter());
+        String fileName = FileNameFactory.createFileNameWith(JobInfo.jobNumber, groupSet.isPulledTee(), groupSet.getDiameter());
         String filePath = outputFolderPath + "\\" + fileName;
 
         CSVWriter csvWriter = new CSVWriter(filePath);
-        csvWriter.appendRow(JobInfo.getHeaderRow());
+        csvWriter.appendRow(JobInfo.headerRow);
         csvWriter.appendBundleRows(allBundles);
         csvWriter.appendTerminatingRow();
         csvWriter.close();

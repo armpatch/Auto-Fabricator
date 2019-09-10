@@ -27,7 +27,7 @@ public class CSVWriter {
     }
 
     public void appendTerminatingRow() throws IOException {
-        String[] endRow = new String[] {JobInfo.getJobNumber(), "END", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"};
+        String[] endRow = new String[] {JobInfo.jobNumber, "END", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"};
         appendRow(endRow);
     }
 
