@@ -13,7 +13,7 @@ public class StartWindow {
     private JTextField sourceTextField = new JTextField();
     private JTextField outputTextField = new JTextField();
 
-    private final boolean TESTING_ENABLED = true;
+    private final boolean TESTING_ENABLED = false;
 
     StartWindow() {
         setupJFrame();

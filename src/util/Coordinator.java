@@ -39,10 +39,9 @@ public class Coordinator {
         String filePath = outputFolderPath + "\\" + fileName;
 
         CSVWriter csvWriter = new CSVWriter(filePath);
-        csvWriter.open();
         csvWriter.appendRow(JobInfo.getHeaderRow());
         csvWriter.appendBundleRows(allBundles);
-        csvWriter.appendEndRow();
+        csvWriter.appendTerminatingRow();
         csvWriter.close();
     }
 

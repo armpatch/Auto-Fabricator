@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Pipe Cutter Algo:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Pipe_Cutter_Algo_jar</output-path>
-    <root id="archive" name="Pipe Cutter Algo.jar">
-      <element id="module-output" name="Pipe Cutter Algo" />
-    </root>
-  </artifact>
-</component>

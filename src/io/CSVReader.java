@@ -14,25 +14,21 @@ public class CSVReader {
 
     public static ArrayList<String[]> getPipeDataRows(String filepath) throws IOException {
         BufferedReader csvReader = new BufferedReader(new FileReader(filepath));
-
         ArrayList<String[]> rows = new ArrayList<>();
 
         String row;
-
         while ((row = csvReader.readLine()) != null) {
             rows.add(splitAndFormat(row));
         }
         csvReader.close();
-
         rows.remove(0);
+
         return rows;
     }
 
     public static String[] getHeaderRow(String filepath) throws IOException {
         BufferedReader csvReader = new BufferedReader(new FileReader(filepath));
-
         String row = csvReader.readLine();
-
         csvReader.close();
 
         return splitAndFormat(row);

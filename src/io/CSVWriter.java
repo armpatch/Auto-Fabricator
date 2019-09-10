@@ -9,20 +9,16 @@ import java.util.ArrayList;
 
 public class CSVWriter {
 
-    private String filePath;
     private FileWriter fileWriter;
 
-    public CSVWriter(String filePath) {
-        setFilePath(filePath);
-    }
-
-    public void open() throws IOException {
-        fileWriter = new FileWriter(getFilePath());
+    public CSVWriter(String filePath) throws IOException {
+        fileWriter = new FileWriter(filePath);
     }
 
     public void appendBundleRows(ArrayList<Bundle> bundles) throws IOException {
         for (Bundle bundle : bundles) {
             ArrayList<Pipe> pipes = bundle.getPipes();
+
             for (Pipe pipe : pipes) {
                 appendRow(pipe.getRowData());
             }
@@ -30,7 +26,7 @@ public class CSVWriter {
         }
     }
 
-    public void appendEndRow() throws IOException {
+    public void appendTerminatingRow() throws IOException {
         String[] endRow = new String[] {JobInfo.getJobNumber(), "END", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"};
         appendRow(endRow);
     }
@@ -48,14 +44,5 @@ public class CSVWriter {
     public void close() throws IOException {
         fileWriter.flush();
         fileWriter.close();
-    }
-
-    // getters and setters
-    private String getFilePath() {
-        return filePath;
-    }
-
-    private void setFilePath(String filePath) {
-        this.filePath = filePath;
     }
 }
