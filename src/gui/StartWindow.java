@@ -13,14 +13,14 @@ public class StartWindow {
     private JTextField sourceTextField = new JTextField();
     private JTextField outputTextField = new JTextField();
 
-    private final boolean TESTING_ENABLED = false;
+    private final boolean TESTING_ENABLED = true;
 
     StartWindow() {
         setupJFrame();
 
         if (TESTING_ENABLED) {
-            sourceTextField.setText("C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\csv\\input\\pipes.csv");
-            outputTextField.setText("C:\\Users\\Aaron\\IdeaProjects\\Pipe Cutter Algo\\csv\\output");
+            sourceTextField.setText("test\\csv\\input\\pipes.csv");
+            outputTextField.setText("test\\csv\\output");
         }
     }
 

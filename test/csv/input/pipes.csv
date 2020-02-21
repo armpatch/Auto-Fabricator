@@ -1,0 +1,438 @@
+JCC Job #,Spool,Item No,Area,Service,Material,End 1,Length,Connector #1,Connector #2,Length2,Printer,Bin,Label
+380200,CW-4T2-416-3,CW04-133,A1,CW,Hard Copper,"0 1/2""","53 1/2""",Copper Ftg,Copper Ftg,53.59,1,3,2
+380200,CW-4T2-414-4,CW04-187,A2,CW,Hard Copper,"0 1/2""","13""",Copper Ftg,Copper Ftg,12.88,1,3,0
+380200,CW-4T2-414-2,CW04-229,A2,CW,Hard Copper,"0 1/2""","48 3/4""",Copper Ftg,Copper Ftg,48.7,1,3,2
+380200,CW-4T2-415-1,CW04-245,A2,CW,Hard Copper,"0 1/2""","109 1/2""",Copper Ftg,Copper Ftg,109.38,1,1,2
+380200,CW-4T2-415-1,CW04-262,A2,CW,Hard Copper,"0 1/2""","81 1/4""",Copper Ftg,Copper Ftg,81.24,1,3,2
+380200,CW-4T2-416-4,CW04-299,A1,CW,Hard Copper,"0 1/2""","103 1/2""",Copper Ftg,Copper Ftg,103.55,1,1,2
+380200,CW-4T2-407-2,CW04-375,B2,CW,Hard Copper,"0 1/2""","75 1/2""",Copper Ftg,Copper Ftg,75.41,1,3,2
+380200,CW-4T2-406-5,CW04-382,B1,CW,Hard Copper,"0 1/2""","36""",Copper Ftg,Copper Ftg,35.95,1,3,0
+380200,CW-4T2-401-3,CW04-466,A1,CW,Hard Copper,"0 1/2""","17 1/4""",Copper Ftg,Copper Ftg,17.26,1,3,0
+380200,CW-4T2-413-4,CW04-476,B1,CW,Hard Copper,"0 1/2""","196 1/4""",Copper Ftg,Copper Ftg,196.13,1,2,2
+380200,CW-4T2-401-7,CW04-603,A1,CW,Hard Copper,"0 1/2""","49 3/4""",Copper Ftg,Copper Ftg,49.68,1,3,2
+380200,CW-4T2-416-4,CW04-623,A1,CW,Hard Copper,"0 1/2""","22 1/2""",Copper Ftg,Copper Ftg,22.51,1,3,0
+380200,CW-4T2-410-1,CW04-627,B2,CW,Hard Copper,"0 1/2""","13 3/4""",Copper Ftg,Copper Ftg,13.66,1,3,0
+380200,CW-4T2-409-2,CW04-661,B2,CW,Hard Copper,"0 1/2""","25""",Copper Ftg,Copper Ftg,24.92,1,3,0
+380200,CW-4T2-418-1,CW04-687,A1,CW,Hard Copper,"0 1/2""","24""",Copper Ftg,Copper Ftg,24.05,1,3,0
+380200,CW-4T2-408-1,CW04-788,B2,CW,Hard Copper,"0 1/2""","19 1/2""",Copper Ftg,Copper Ftg,19.44,1,3,0
+380200,CW-4T2-410-5,CW04-968,B2,CW,Hard Copper,"0 1/2""","69 1/2""",Copper Ftg,Copper Ftg,69.43,1,3,2
+380200,CW-4T2-408-4,CW04-989,B2,CW,Hard Copper,"0 1/2""","13 3/4""",Copper Ftg,Copper Ftg,13.79,1,3,0
+380200,CW-4T2-406-4,CW04-1035,B1,CW,Hard Copper,"0 1/2""","15 1/4""",Copper Ftg,Copper Ftg,15.26,1,3,0
+380200,CW-4T2-401-10,CW04-1134,A1,CW,Hard Copper,"0 1/2""","33 1/4""",Copper Ftg,Copper Ftg,33.21,1,3,0
+380200,CWPT-4T2-417-2,CW04-1206,A1,CW,Hard Copper,"0 1/2""","18""",Copper Ftg,Copper Ftg,18,1,3,0
+380200,CW-4T2-416-1,CW04-1272,A1,CW,Hard Copper,"0 1/2""","21 1/4""",Copper Ftg,Copper Ftg,21.28,1,3,0
+380200,CW-4T2-416-5,CW04-1273,A1,CW,Hard Copper,"0 1/2""","52""",Copper Ftg,Copper Ftg,52.1,1,3,2
+380200,CW-4T2-416-6,CW04-1281,A1,CW,Hard Copper,"0 1/2""","16 1/2""",Copper Ftg,Copper Ftg,16.41,1,3,0
+380200,CW-4T2-409-6,CW04-1341,B2,CW,Hard Copper,"0 1/2""","14""",Copper Ftg,Copper Ftg,13.88,1,3,0
+380200,CW-4T2-409-6,CW04-1353,B2,CW,Hard Copper,"0 1/2""","37 1/2""",Copper Ftg,Copper Ftg,37.38,1,3,2
+380200,CW-4T2-409-3,CW04-1361,B2,CW,Hard Copper,"0 1/2""","46""",Copper Ftg,Copper Ftg,45.92,1,3,2
+380200,CW-4T2-408-2,CW04-1364,B2,CW,Hard Copper,"0 1/2""","14 1/2""",Copper Ftg,Copper Ftg,14.5,1,3,0
+380200,CW-4T2-407-1,CW04-1376,B2,CW,Hard Copper,"0 1/2""","18""",Copper Ftg,Copper Ftg,18.06,1,3,0
+380200,CW-4T2-406-2,CW04-1380,B1,CW,Hard Copper,"0 1/2""","38 1/4""",Copper Ftg,Copper Ftg,38.33,1,3,2
+380200,CW-4T2-405-5,CW04-1398,B1,CW,Hard Copper,"0 1/2""","86 1/4""",Copper Ftg,Copper Ftg,86.35,1,1,2
+380200,CW-4T2-405-3,CW04-1400,B1,CW,Hard Copper,"0 1/2""","69""",Copper Ftg,Copper Ftg,68.98,1,3,2
+380200,CW-4T2-403-2,CW04-1411,A2,CW,Hard Copper,"0 1/2""","22 3/4""",Copper Ftg,Copper Ftg,22.73,1,3,0
+380200,CW-4T2-402-2,CW04-1421,A2,CW,Hard Copper,"0 1/2""","29 1/4""",Copper Ftg,Copper Ftg,29.25,1,3,0
+380200,CW-4T2-401-5,CW04-1422,A1,CW,Hard Copper,"0 1/2""","19""",Copper Ftg,Copper Ftg,18.91,1,3,0
+380200,CW-4T2-418-6,CW04-1441,A1,CW,Hard Copper,"0 1/2""","19 1/2""",Copper Ftg,Copper Ftg,19.44,1,3,0
+380200,CW-4T2-418-3,CW04-1448,A1,CW,Hard Copper,"0 1/2""","38 1/4""",Copper Ftg,Copper Ftg,38.37,1,3,2
+380200,CW-4T2-409-4,CW04-1449,B2,CW,Hard Copper,"0 1/2""","26""",Copper Ftg,Copper Ftg,25.91,1,3,0
+380200,CW-4T2-418-7,CW04-1472,A1,CW,Hard Copper,"0 1/2""","24""",Copper Ftg,Copper Ftg,24.07,1,3,0
+380200,CW-4T2-402-3,CW04-1480,A2,CW,Hard Copper,"0 1/2""","65""",Copper Ftg,Copper Ftg,65.07,1,3,2
+380200,CW-4T2-402-2,CW04-1481,A2,CW,Hard Copper,"0 1/2""","15""",Copper Ftg,Copper Ftg,15.12,1,3,0
+380200,CW-4T2-403-5,CW04-1504,A2,CW,Hard Copper,"0 1/2""","13 1/2""",Copper Ftg,Copper Ftg,13.38,1,3,0
+380200,CW-4T2-403-4,CW04-1507,A2,CW,Hard Copper,"0 1/2""","77 3/4""",Copper Ftg,Copper Ftg,77.77,1,3,2
+380200,CW-4T2-404-4,CW04-1515,A2,CW,Hard Copper,"0 1/2""","39 1/4""",Copper Ftg,Copper Ftg,39.33,1,3,2
+380200,CW-4T2-404-3,CW04-1525,A2,CW,Hard Copper,"0 1/2""","77""",Copper Ftg,Copper Ftg,77.06,1,3,2
+380200,CW-4T2-404-3,CW04-1535,A2,CW,Hard Copper,"0 1/2""","25""",Copper Ftg,Copper Ftg,24.89,1,3,0
+380200,CW-4T2-405-4,CW04-1549,B1,CW,Hard Copper,"0 1/2""","34 1/2""",Copper Ftg,Copper Ftg,34.53,1,3,0
+380200,CW-4T2-405-4,CW04-1550,B1,CW,Hard Copper,"0 1/2""","69 1/2""",Copper Ftg,Copper Ftg,69.46,1,3,2
+380200,CW-4T2-409-6,CW04-1575,B2,CW,Hard Copper,"0 1/2""","15 1/2""",Copper Ftg,Copper Ftg,15.5,1,3,0
+380200,CW-4T2-409-6,CW04-1579,B2,CW,Hard Copper,"0 1/2""","20 1/2""",Copper Ftg,Copper Ftg,20.58,1,3,0
+380200,CW-4T2-409-6,CW04-1582,B2,CW,Hard Copper,"0 1/2""","15 1/2""",Copper Ftg,Copper Ftg,15.54,1,3,0
+380200,CW-4T2-411-5,CW04-1585,B2,CW,Hard Copper,"0 1/2""","49 1/4""",Copper Ftg,Copper Ftg,49.28,1,3,2
+380200,CW-4T2-411-5,CW04-1586,B2,CW,Hard Copper,"0 1/2""","24 1/2""",Copper Ftg,Copper Ftg,24.43,1,3,0
+380200,CW-4T2-409-10,CW04-1593,B2,CW,Hard Copper,"0 1/2""","96 3/4""",Copper Ftg,Copper Ftg,96.81,1,1,2
+380200,CW-4T2-409-10,CW04-1595,B2,CW,Hard Copper,"0 1/2""","77 1/4""",Copper Ftg,Copper Ftg,77.33,1,3,2
+380200,CW-4T2-409-9,CW04-1596,B2,CW,Hard Copper,"0 1/2""","58""",Copper Ftg,Copper Ftg,57.89,1,3,2
+380200,CW-4T2-409-8,CW04-1597,B2,CW,Hard Copper,"0 1/2""","66""",Copper Ftg,Copper Ftg,66.01,1,3,2
+380200,CW-4T2-409-6,CW04-1600,B2,CW,Hard Copper,"0 1/2""","29""",Copper Ftg,Copper Ftg,29.09,1,3,0
+380200,CW-4T2-408-1,CW04-1607,B2,CW,Hard Copper,"0 1/2""","18 1/4""",Copper Ftg,Copper Ftg,18.21,1,3,0
+380200,CW-4T2-401-6,CW04-1608,A1,CW,Hard Copper,"0 1/2""","89 3/4""",Copper Ftg,Copper Ftg,89.7,1,1,2
+380200,CW-4T2-417-2,CW04-1609,A1,CW,Hard Copper,"0 1/2""","71 1/4""",Copper Ftg,Copper Ftg,71.13,1,3,2
+380200,CW-4T2-418-3,CW04-1610,A1,CW,Hard Copper,"0 1/2""","30 1/2""",Copper Ftg,Copper Ftg,30.45,1,3,0
+380200,CW-4T2-401-6,CW04-1612,A1,CW,Hard Copper,"0 1/2""","157 1/4""",Copper Ftg,Copper Ftg,157.34,1,2,2
+380200,CW-4T2-418-3,CW04-1614,A1,CW,Hard Copper,"0 1/2""","43""",Copper Ftg,Copper Ftg,42.9,1,3,2
+380200,CW-4T2-412-5,CW04-1617,B1,CW,Hard Copper,"0 1/2""","201 1/2""",Copper Ftg,Copper Ftg,201.62,1,2,2
+380200,CW-4T2-414-5,CW04-1618,A2,CW,Hard Copper,"0 1/2""","69 1/2""",Copper Ftg,Copper Ftg,69.43,1,3,2
+380200,CW-4T2-409-7,CW04-1623,B2,CW,Hard Copper,"0 1/2""","66""",Copper Ftg,Copper Ftg,66.01,1,3,2
+380200,CW-4T2-409-3,CW04-1624,B2,CW,Hard Copper,"0 1/2""","13 1/4""",Copper Ftg,Copper Ftg,13.22,1,3,0
+380200,CW-4T2-409-4,CW04-1625,B2,CW,Hard Copper,"0 1/2""","47 1/2""",Copper Ftg,Copper Ftg,47.48,1,3,2
+380200,CW-4T2-409-3,CW04-1626,B2,CW,Hard Copper,"0 1/2""","75 1/2""",Copper Ftg,Copper Ftg,75.44,1,3,2
+380200,CW-4T2-410-5,CW04-1630,B2,CW,Hard Copper,"0 1/2""","22""",Copper Ftg,Copper Ftg,21.94,1,3,0
+380200,CW-4T2-410-1,CW04-1632,B2,CW,Hard Copper,"0 1/2""","21""",Copper Ftg,Copper Ftg,21.02,1,3,0
+380200,CW-4T2-410-4,CW04-1633,B2,CW,Hard Copper,"0 1/2""","52 3/4""",Copper Ftg,Copper Ftg,52.8,1,3,2
+380200,CW-4T2-410-2,CW04-1637,B2,CW,Hard Copper,"0 1/2""","54 3/4""",Copper Ftg,Copper Ftg,54.66,1,3,2
+380200,CW-4T2-410-2,CW04-1638,B2,CW,Hard Copper,"0 1/2""","27 1/2""",Copper Ftg,Copper Ftg,27.58,1,3,0
+380200,CW-4T2-411-6,CW04-1644,B2,CW,Hard Copper,"0 1/2""","60 3/4""",Copper Ftg,Copper Ftg,60.64,1,3,2
+380200,CW-4T2-411-4,CW04-1647,B2,CW,Hard Copper,"0 1/2""","62""",Copper Ftg,Copper Ftg,61.89,1,3,2
+380200,CW-4T2-411-2,CW04-1648,B2,CW,Hard Copper,"0 1/2""","40""",Copper Ftg,Copper Ftg,40.03,1,3,2
+380200,CW-4T2-411-5,CW04-1657,B2,CW,Hard Copper,"0 1/2""","26""",Copper Ftg,Copper Ftg,26.07,1,3,0
+380200,CW-4T2-412-4,CW04-1659,B1,CW,Hard Copper,"0 1/2""","75 1/2""",Copper Ftg,Copper Ftg,75.47,1,3,2
+380200,CW-4T2-412-4,CW04-1663,B1,CW,Hard Copper,"0 1/2""","26 3/4""",Copper Ftg,Copper Ftg,26.82,1,3,0
+380200,CW-4T2-412-3,CW04-1668,B1,CW,Hard Copper,"0 1/2""","58 1/4""",Copper Ftg,Copper Ftg,58.21,1,3,2
+380200,CW-4T2-413-3,CW04-1677,B1,CW,Hard Copper,"0 1/2""","15 1/2""",Copper Ftg,Copper Ftg,15.56,1,3,0
+380200,CW-4T2-413-3,CW04-1683,B1,CW,Hard Copper,"0 1/2""","20""",Copper Ftg,Copper Ftg,20.02,1,3,0
+380200,CW-4T2-413-3,CW04-1686,B1,CW,Hard Copper,"0 1/2""","54 1/2""",Copper Ftg,Copper Ftg,54.5,1,3,2
+380200,CW-4T2-413-3,CW04-1689,B1,CW,Hard Copper,"0 1/2""","51 3/4""",Copper Ftg,Copper Ftg,51.68,1,3,2
+380200,CW-4T2-413-2,CW04-1690,B1,CW,Hard Copper,"0 1/2""","51 1/4""",Copper Ftg,Copper Ftg,51.21,1,3,2
+380200,CW-4T2-414-5,CW04-1698,A2,CW,Hard Copper,"0 1/2""","22 1/4""",Copper Ftg,Copper Ftg,22.24,1,3,0
+380200,CW-4T2-414-4,CW04-1699,A2,CW,Hard Copper,"0 1/2""","52 1/2""",Copper Ftg,Copper Ftg,52.51,1,3,2
+380200,CW-4T2-415-4,CW04-1700,A2,CW,Hard Copper,"0 1/2""","24 1/4""",Copper Ftg,Copper Ftg,24.24,1,3,0
+380200,CW-4T2-415-3,CW04-1704,A2,CW,Hard Copper,"0 1/2""","24 1/4""",Copper Ftg,Copper Ftg,24.24,1,3,0
+380200,CW-4T2-415-4,CW04-1705,A2,CW,Hard Copper,"0 1/2""","48 1/2""",Copper Ftg,Copper Ftg,48.53,1,3,2
+380200,CW-4T2-408-5,CW04-1712,B2,CW,Hard Copper,"0 1/2""","45""",Copper Ftg,Copper Ftg,44.96,1,3,2
+380200,CW-4T2-408-5,CW04-1716,B2,CW,Hard Copper,"0 1/2""","45""",Copper Ftg,Copper Ftg,44.96,1,3,2
+380200,CW-4T2-408-5,CW04-1719,B2,CW,Hard Copper,"0 1/2""","118 3/4""",Copper Ftg,Copper Ftg,118.68,1,2,2
+380200,CW-4T2-408-2,CW04-1724,B2,CW,Hard Copper,"0 1/2""","55 1/4""",Copper Ftg,Copper Ftg,55.15,1,3,2
+380200,CW-4T2-407-1,CW04-1734,B2,CW,Hard Copper,"0 1/2""","87 1/4""",Copper Ftg,Copper Ftg,87.33,1,1,2
+380200,CW-4T2-407-4,CW04-1738,B2,CW,Hard Copper,"0 1/2""","71 1/4""",Copper Ftg,Copper Ftg,71.27,1,3,2
+380200,CW-4T2-407-4,CW04-1741,B2,CW,Hard Copper,"0 1/2""","73 1/4""",Copper Ftg,Copper Ftg,73.32,1,3,2
+380200,CW-4T2-407-5,CW04-1742,B2,CW,Hard Copper,"0 1/2""","40 1/4""",Copper Ftg,Copper Ftg,40.3,1,3,2
+380200,CW-4T2-406-3,CW04-1752,B1,CW,Hard Copper,"0 1/2""","31 1/4""",Copper Ftg,Copper Ftg,31.21,1,3,0
+380200,CW-4T2-406-4,CW04-1755,B1,CW,Hard Copper,"0 1/2""","69 3/4""",Copper Ftg,Copper Ftg,69.68,1,3,2
+380200,CW-4T2-406-6,CW04-1759,B1,CW,Hard Copper,"0 1/2""","38 1/4""",Copper Ftg,Copper Ftg,38.33,1,3,2
+380200,CW-4T2-406-5,CW04-1760,B1,CW,Hard Copper,"0 1/2""","140 3/4""",Copper Ftg,Copper Ftg,140.85,1,2,2
+380200,CW-4T2-404-5,CW04-1767,A2,CW,Hard Copper,"0 1/2""","23 1/4""",Copper Ftg,Copper Ftg,23.34,1,3,0
+380200,CW-4T2-404-5,CW04-1768,A2,CW,Hard Copper,"0 1/2""","33""",Copper Ftg,Copper Ftg,33.06,1,3,0
+380200,CW-4T2-404-4,CW04-1769,A2,CW,Hard Copper,"0 1/2""","31 1/2""",Copper Ftg,Copper Ftg,31.55,1,3,0
+380200,CW-4T2-404-1,CW04-1771,A2,CW,Hard Copper,"0 1/2""","131""",Copper Ftg,Copper Ftg,130.92,1,2,2
+380200,CW-4T2-404-1,CW04-1774,A2,CW,Hard Copper,"0 1/2""","95 3/4""",Copper Ftg,Copper Ftg,95.7,1,1,2
+380200,CW-4T2-404-3,CW04-1776,A2,CW,Hard Copper,"0 1/2""","27 1/4""",Copper Ftg,Copper Ftg,27.2,1,3,0
+380200,CW-4T2-404-3,CW04-1779,A2,CW,Hard Copper,"0 1/2""","40 3/4""",Copper Ftg,Copper Ftg,40.73,1,3,2
+380200,CW-4T2-403-6,CW04-1792,A2,CW,Hard Copper,"0 1/2""","33 1/4""",Copper Ftg,Copper Ftg,33.17,1,3,0
+380200,CW-4T2-403-5,CW04-1793,A2,CW,Hard Copper,"0 1/2""","64""",Copper Ftg,Copper Ftg,63.88,1,3,2
+380200,CW-4T2-402-6,CW04-1798,A2,CW,Hard Copper,"0 1/2""","38 1/2""",Copper Ftg,Copper Ftg,38.48,1,3,2
+380200,CW-4T2-402-5,CW04-1805,A2,CW,Hard Copper,"0 1/2""","75 3/4""",Copper Ftg,Copper Ftg,75.79,1,3,2
+380200,CW-4T2-402-6,CW04-1806,A2,CW,Hard Copper,"0 1/2""","73 1/2""",Copper Ftg,Copper Ftg,73.38,1,3,2
+380200,CW-4T2-401-9,CW04-1814,A1,CW,Hard Copper,"0 1/2""","36 1/4""",Copper Ftg,Copper Ftg,36.36,1,3,2
+380200,CW-4T2-401-4,CW04-1819,A1,CW,Hard Copper,"0 1/2""","79 1/4""",Copper Ftg,Copper Ftg,79.25,1,3,2
+380200,CW-4T2-401-3,CW04-1820,A1,CW,Hard Copper,"0 1/2""","27 1/2""",Copper Ftg,Copper Ftg,27.57,1,3,0
+380200,CW-4T2-401-3,CW04-1821,A1,CW,Hard Copper,"0 1/2""","54 1/2""",Copper Ftg,Copper Ftg,54.42,1,3,2
+380200,CW-4T2-416-5,CW04-1832,A1,CW,Hard Copper,"0 1/2""","35 3/4""",Copper Ftg,Copper Ftg,35.63,1,3,0
+380200,CW-4T2-416-6,CW04-1833,A1,CW,Hard Copper,"0 1/2""","49 1/2""",Copper Ftg,Copper Ftg,49.54,1,3,2
+380200,CW-4T2-418-7,CW04-1841,A1,CW,Hard Copper,"0 1/2""","40 1/2""",Copper Ftg,Copper Ftg,40.52,1,3,2
+380200,CW-4T2-417-2,CW04-1859,A1,CW,Hard Copper,"0 1/2""","129""",Copper Ftg,Copper Ftg,129.01,1,2,2
+380200,CW-4T2-415-4,CW04-2176,A2,CW,Hard Copper,"0 1/2""","19 1/2""",Copper Ftg,Copper Ftg,19.44,1,3,0
+380200,CW-4T2-415-4,CW04-2180,A2,CW,Hard Copper,"0 1/2""","12 3/4""",Copper Ftg,Copper Ftg,12.63,1,3,0
+380200,CW-4T2-408-4,CW04-2183,B2,CW,Hard Copper,"0 1/2""","69 3/4""",Copper Ftg,Copper Ftg,69.66,1,3,2
+380200,CW-4T2-417-1,CW04-2195,A1,CW,Hard Copper,"0 1/2""","50""",Copper Ftg,Copper Ftg,49.9,1,3,2
+380200,CW-4T2-408-3,CW04-2197,B2,CW,Hard Copper,"0 1/2""","44 3/4""",Copper Ftg,Copper Ftg,44.84,1,3,2
+380200,CW-4T2-408-3,CW04-2201,B2,CW,Hard Copper,"0 1/2""","14 3/4""",Copper Ftg,Copper Ftg,14.8,1,3,0
+380200,CW-4T2-408-2,CW04-2204,B2,CW,Hard Copper,"0 1/2""","112""",Copper Ftg,Copper Ftg,112.03,1,1,2
+380200,CW-4T2-407-2,CW04-2206,B2,CW,Hard Copper,"0 1/2""","62 1/2""",Copper Ftg,Copper Ftg,62.45,1,3,2
+380200,CW-4T2-406-6,CW04-2207,B1,CW,Hard Copper,"0 1/2""","71 3/4""",Copper Ftg,Copper Ftg,71.68,1,3,2
+380200,CW-4T2-403-6,CW04-2210,A2,CW,Hard Copper,"0 1/2""","43""",Copper Ftg,Copper Ftg,42.94,1,3,2
+380200,CW-4T2-403-2,CW04-2213,A2,CW,Hard Copper,"0 1/2""","57""",Copper Ftg,Copper Ftg,56.92,1,3,2
+380200,CW-4T2-401-2,CW04-2216,A1,CW,Hard Copper,"0 1/2""","79 1/4""",Copper Ftg,Copper Ftg,79.25,1,3,2
+380200,CW-4T2-418-5,CW04-2217,A1,CW,Hard Copper,"0 1/2""","65 3/4""",Copper Ftg,Copper Ftg,65.84,1,3,2
+380200,CW-4T2-418-6,CW04-2219,A1,CW,Hard Copper,"0 1/2""","30 1/4""",Copper Ftg,Copper Ftg,30.27,1,3,0
+380200,CW-4T2-418-6,CW04-2222,A1,CW,Hard Copper,"0 1/2""","48 1/4""",Copper Ftg,Copper Ftg,48.28,1,3,2
+380200,CW-4T2-417-4,CW04-2226,A1,CW,Hard Copper,"0 1/2""","12 3/4""",Copper Ftg,Copper Ftg,12.76,1,3,0
+380200,CW-4T2-417-4,CW04-2232,A1,CW,Hard Copper,"0 1/2""","48 1/2""",Copper Ftg,Copper Ftg,48.38,1,3,2
+380200,CW-4T2-417-1,CW04-2233,A1,CW,Hard Copper,"0 1/2""","60 1/4""",Copper Ftg,Copper Ftg,60.31,1,3,2
+380200,CW-4T2-417-4,CW04-2235,A1,CW,Hard Copper,"0 1/2""","36 1/4""",Copper Ftg,Copper Ftg,36.16,1,3,2
+380200,CW-4T2-405-6,CW04-2236,B1,CW,Hard Copper,"0 1/2""","70 3/4""",Copper Ftg,Copper Ftg,70.78,1,3,2
+380200,CW-4T2-405-5,CW04-2237,B1,CW,Hard Copper,"0 1/2""","31""",Copper Ftg,Copper Ftg,31.11,1,3,0
+380200,HW-4T2-413-3,HW04-103,B1,HW,Hard Copper,"0 1/2""","108""",Copper Ftg,Copper Ftg,108.01,2,1,1
+380200,HW-4T2-412-3,HW04-107,B1,HW,Hard Copper,"0 1/2""","97 1/2""",Copper Ftg,Copper Ftg,97.5,2,1,1
+380200,HW-4T2-414-1,HW04-208,A2,HW,Hard Copper,"0 1/2""","32 3/4""",Copper Ftg,Copper Ftg,32.65,2,3,1
+380200,HW-4T2-414-3,HW04-219,A2,HW,Hard Copper,"0 1/2""","53 3/4""",Copper Ftg,Copper Ftg,53.7,2,3,1
+380200,HW-4T2-415-1,HW04-236,A2,HW,Hard Copper,"0 1/2""","104 1/2""",Copper Ftg,Copper Ftg,104.38,2,1,1
+380200,HW-4T2-415-1,HW04-252,A2,HW,Hard Copper,"0 1/2""","71 1/4""",Copper Ftg,Copper Ftg,71.24,2,3,1
+380200,HW-4T2-416-3,HW04-289,A1,HW,Hard Copper,"0 1/2""","103 1/2""",Copper Ftg,Copper Ftg,103.55,2,1,1
+380200,HWPT-4T2-401-1,HW04-448,A1,HW,Hard Copper,"0 1/2""","14""",Copper Ftg,Copper Ftg,14,2,3,1
+380200,HW-4T2-401-5,HW04-474,A1,HW,Hard Copper,"0 1/2""","49 3/4""",Copper Ftg,Copper Ftg,49.68,2,3,1
+380200,HW-4T2-416-3,HW04-494,A1,HW,Hard Copper,"0 1/2""","17 1/2""",Copper Ftg,Copper Ftg,17.52,2,3,1
+380200,HW-4T2-409-8,HW04-526,B2,HW,Hard Copper,"0 1/2""","32 3/4""",Copper Ftg,Copper Ftg,32.84,2,3,1
+380200,HW-4T2-413-2,HW04-584,B1,HW,Hard Copper,"0 1/2""","16 1/4""",Copper Ftg,Copper Ftg,16.33,2,3,1
+380200,HW-4T2-408-1,HW04-630,B2,HW,Hard Copper,"0 1/2""","14 1/2""",Copper Ftg,Copper Ftg,14.44,2,3,1
+380200,HW-4T2-417-5,HW04-723,A1,HW,Hard Copper,"0 1/2""","12 3/4""",Copper Ftg,Copper Ftg,12.76,2,3,1
+380200,HW-4T2-408-3,HW04-804,B2,HW,Hard Copper,"0 1/2""","13 3/4""",Copper Ftg,Copper Ftg,13.79,2,3,1
+380200,HW-4T2-417-2,HW04-991,A1,HW,Hard Copper,"0 1/2""","17""",Copper Ftg,Copper Ftg,16.93,2,3,1
+380200,HW-4T2-418-1,HW04-1047,A1,HW,Hard Copper,"0 1/2""","21 1/4""",Copper Ftg,Copper Ftg,21.29,2,3,1
+380200,HW-4T2-416-1,HW04-1057,A1,HW,Hard Copper,"0 1/2""","23 1/4""",Copper Ftg,Copper Ftg,23.28,2,3,1
+380200,HW-4T2-416-5,HW04-1059,A1,HW,Hard Copper,"0 1/2""","48""",Copper Ftg,Copper Ftg,48.1,2,3,1
+380200,HW-4T2-409-4,HW04-1130,B2,HW,Hard Copper,"0 1/2""","14""",Copper Ftg,Copper Ftg,13.88,2,3,1
+380200,HW-4T2-409-8,HW04-1139,B2,HW,Hard Copper,"0 1/2""","90 1/4""",Copper Ftg,Copper Ftg,90.36,2,1,1
+380200,HW-4T2-407-1,HW04-1155,B2,HW,Hard Copper,"0 1/2""","18""",Copper Ftg,Copper Ftg,18.06,2,3,1
+380200,HW-4T2-406-2,HW04-1156,B1,HW,Hard Copper,"0 1/2""","40 1/4""",Copper Ftg,Copper Ftg,40.32,2,3,1
+380200,HW-4T2-405-5,HW04-1174,B1,HW,Hard Copper,"0 1/2""","96 1/4""",Copper Ftg,Copper Ftg,96.34,2,1,1
+380200,HW-4T2-405-5,HW04-1184,B1,HW,Hard Copper,"0 1/2""","13 3/4""",Copper Ftg,Copper Ftg,13.64,2,3,1
+380200,HW-4T2-403-2,HW04-1186,A2,HW,Hard Copper,"0 1/2""","27 3/4""",Copper Ftg,Copper Ftg,27.73,2,3,1
+380200,HW-4T2-402-2,HW04-1197,A2,HW,Hard Copper,"0 1/2""","24 1/4""",Copper Ftg,Copper Ftg,24.25,2,3,1
+380200,HW-4T2-401-8,HW04-1201,A1,HW,Hard Copper,"0 1/2""","37 1/4""",Copper Ftg,Copper Ftg,37.22,2,3,1
+380200,HW-4T2-418-3,HW04-1222,A1,HW,Hard Copper,"0 1/2""","33 1/4""",Copper Ftg,Copper Ftg,33.37,2,3,1
+380200,HW-4T2-409-10,HW04-1226,B2,HW,Hard Copper,"0 1/2""","34""",Copper Ftg,Copper Ftg,33.91,2,3,1
+380200,HW-4T2-402-3,HW04-1236,A2,HW,Hard Copper,"0 1/2""","70""",Copper Ftg,Copper Ftg,70.07,2,3,1
+380200,HW-4T2-403-5,HW04-1262,A2,HW,Hard Copper,"0 1/2""","13 1/2""",Copper Ftg,Copper Ftg,13.38,2,3,1
+380200,HW-4T2-403-6,HW04-1265,A2,HW,Hard Copper,"0 1/2""","37 1/4""",Copper Ftg,Copper Ftg,37.18,2,3,1
+380200,HW-4T2-404-6,HW04-1276,A2,HW,Hard Copper,"0 1/2""","34 1/4""",Copper Ftg,Copper Ftg,34.33,2,3,1
+380200,HW-4T2-404-4,HW04-1291,A2,HW,Hard Copper,"0 1/2""","69""",Copper Ftg,Copper Ftg,69.06,2,3,1
+380200,HW-4T2-404-4,HW04-1302,A2,HW,Hard Copper,"0 1/2""","15""",Copper Ftg,Copper Ftg,14.88,2,3,1
+380200,HW-4T2-405-4,HW04-1315,B1,HW,Hard Copper,"0 1/2""","65 1/2""",Copper Ftg,Copper Ftg,65.47,2,3,1
+380200,HW-4T2-406-4,HW04-1326,B1,HW,Hard Copper,"0 1/2""","13 1/4""",Copper Ftg,Copper Ftg,13.3,2,3,1
+380200,HW-4T2-406-4,HW04-1331,B1,HW,Hard Copper,"0 1/2""","37 1/2""",Copper Ftg,Copper Ftg,37.43,2,3,1
+380200,HW-4T2-409-6,HW04-1339,B2,HW,Hard Copper,"0 1/2""","58""",Copper Ftg,Copper Ftg,57.89,2,3,1
+380200,HW-4T2-409-4,HW04-1350,B2,HW,Hard Copper,"0 1/2""","37 1/2""",Copper Ftg,Copper Ftg,37.49,2,3,1
+380200,HW-4T2-410-2,HW04-1359,B2,HW,Hard Copper,"0 1/2""","48""",Copper Ftg,Copper Ftg,48.02,2,3,1
+380200,HW-4T2-411-6,HW04-1361,B2,HW,Hard Copper,"0 1/2""","78 1/4""",Copper Ftg,Copper Ftg,78.21,2,3,1
+380200,HW-4T2-411-2,HW04-1362,B2,HW,Hard Copper,"0 1/2""","35""",Copper Ftg,Copper Ftg,35.03,2,3,1
+380200,HW-4T2-409-3,HW04-1367,B2,HW,Hard Copper,"0 1/2""","42 1/2""",Copper Ftg,Copper Ftg,42.38,2,3,1
+380200,HW-4T2-409-3,HW04-1370,B2,HW,Hard Copper,"0 1/2""","44 3/4""",Copper Ftg,Copper Ftg,44.63,2,3,1
+380200,HW-4T2-409-9,HW04-1371,B2,HW,Hard Copper,"0 1/2""","18""",Copper Ftg,Copper Ftg,17.97,2,3,1
+380200,HW-4T2-409-10,HW04-1374,B2,HW,Hard Copper,"0 1/2""","52 1/2""",Copper Ftg,Copper Ftg,52.48,2,3,1
+380200,HW-4T2-409-8,HW04-1375,B2,HW,Hard Copper,"0 1/2""","34""",Copper Ftg,Copper Ftg,33.91,2,3,1
+380200,HW-4T2-410-3,HW04-1380,B2,HW,Hard Copper,"0 1/2""","17""",Copper Ftg,Copper Ftg,16.94,2,3,1
+380200,HW-4T2-410-3,HW04-1383,B2,HW,Hard Copper,"0 1/2""","65 1/2""",Copper Ftg,Copper Ftg,65.44,2,3,1
+380200,HW-4T2-410-1,HW04-1384,B2,HW,Hard Copper,"0 1/2""","13""",Copper Ftg,Copper Ftg,12.99,2,3,1
+380200,HW-4T2-410-2,HW04-1387,B2,HW,Hard Copper,"0 1/2""","136""",Copper Ftg,Copper Ftg,135.9,2,2,1
+380200,HW-4T2-410-4,HW04-1388,B2,HW,Hard Copper,"0 1/2""","22 1/2""",Copper Ftg,Copper Ftg,22.58,2,3,1
+380200,HW-4T2-410-4,HW04-1389,B2,HW,Hard Copper,"0 1/2""","34""",Copper Ftg,Copper Ftg,33.94,2,3,1
+380200,HW-4T2-411-5,HW04-1396,B2,HW,Hard Copper,"0 1/2""","67""",Copper Ftg,Copper Ftg,66.89,2,3,1
+380200,HW-4T2-411-6,HW04-1403,B2,HW,Hard Copper,"0 1/2""","31""",Copper Ftg,Copper Ftg,31.07,2,3,1
+380200,HW-4T2-412-3,HW04-1407,B1,HW,Hard Copper,"0 1/2""","96""",Copper Ftg,Copper Ftg,96,2,1,1
+380200,HW-4T2-412-4,HW04-1411,B1,HW,Hard Copper,"0 1/2""","21 3/4""",Copper Ftg,Copper Ftg,21.82,2,3,1
+380200,HW-4T2-412-4,HW04-1414,B1,HW,Hard Copper,"0 1/2""","71 1/2""",Copper Ftg,Copper Ftg,71.46,2,3,1
+380200,HW-4T2-412-5,HW04-1417,B1,HW,Hard Copper,"0 1/2""","53 1/4""",Copper Ftg,Copper Ftg,53.21,2,3,1
+380200,HW-4T2-413-4,HW04-1428,B1,HW,Hard Copper,"0 1/2""","28""",Copper Ftg,Copper Ftg,28.02,2,3,1
+380200,HW-4T2-413-4,HW04-1431,B1,HW,Hard Copper,"0 1/2""","75 1/2""",Copper Ftg,Copper Ftg,75.57,2,3,1
+380200,HW-4T2-413-3,HW04-1432,B1,HW,Hard Copper,"0 1/2""","96""",Copper Ftg,Copper Ftg,96,2,1,1
+380200,HW-4T2-413-5,HW04-1433,B1,HW,Hard Copper,"0 1/2""","59 1/4""",Copper Ftg,Copper Ftg,59.21,2,3,1
+380200,HW-4T2-414-6,HW04-1441,A2,HW,Hard Copper,"0 1/2""","65 1/2""",Copper Ftg,Copper Ftg,65.42,2,3,1
+380200,HW-4T2-414-6,HW04-1442,A2,HW,Hard Copper,"0 1/2""","17 1/4""",Copper Ftg,Copper Ftg,17.25,2,3,1
+380200,HW-4T2-414-5,HW04-1443,A2,HW,Hard Copper,"0 1/2""","47 3/4""",Copper Ftg,Copper Ftg,47.64,2,3,1
+380200,HW-4T2-415-3,HW04-1447,A2,HW,Hard Copper,"0 1/2""","29 1/4""",Copper Ftg,Copper Ftg,29.24,2,3,1
+380200,HW-4T2-415-4,HW04-1448,A2,HW,Hard Copper,"0 1/2""","35 1/2""",Copper Ftg,Copper Ftg,35.53,2,3,1
+380200,HW-4T2-408-2,HW04-1454,B2,HW,Hard Copper,"0 1/2""","107""",Copper Ftg,Copper Ftg,107.03,2,1,1
+380200,HW-4T2-408-2,HW04-1459,B2,HW,Hard Copper,"0 1/2""","50 1/4""",Copper Ftg,Copper Ftg,50.15,2,3,1
+380200,HW-4T2-408-5,HW04-1461,B2,HW,Hard Copper,"0 1/2""","45""",Copper Ftg,Copper Ftg,44.96,2,3,1
+380200,HW-4T2-408-5,HW04-1465,B2,HW,Hard Copper,"0 1/2""","45""",Copper Ftg,Copper Ftg,44.96,2,3,1
+380200,HW-4T2-408-5,HW04-1468,B2,HW,Hard Copper,"0 1/2""","118 3/4""",Copper Ftg,Copper Ftg,118.68,2,2,1
+380200,HW-4T2-407-1,HW04-1478,B2,HW,Hard Copper,"0 1/2""","82 1/4""",Copper Ftg,Copper Ftg,82.33,2,3,1
+380200,HW-4T2-407-5,HW04-1482,B2,HW,Hard Copper,"0 1/2""","76 1/4""",Copper Ftg,Copper Ftg,76.27,2,3,1
+380200,HW-4T2-407-5,HW04-1485,B2,HW,Hard Copper,"0 1/2""","69 1/4""",Copper Ftg,Copper Ftg,69.32,2,3,1
+380200,HW-4T2-407-4,HW04-1486,B2,HW,Hard Copper,"0 1/2""","45 1/4""",Copper Ftg,Copper Ftg,45.3,2,3,1
+380200,HW-4T2-406-3,HW04-1494,B1,HW,Hard Copper,"0 1/2""","27 1/4""",Copper Ftg,Copper Ftg,27.21,2,3,1
+380200,HW-4T2-406-5,HW04-1498,B1,HW,Hard Copper,"0 1/2""","30 1/4""",Copper Ftg,Copper Ftg,30.34,2,3,1
+380200,HW-4T2-406-4,HW04-1499,B1,HW,Hard Copper,"0 1/2""","150 3/4""",Copper Ftg,Copper Ftg,150.85,2,2,1
+380200,HW-4T2-402-6,HW04-1514,A2,HW,Hard Copper,"0 1/2""","33 1/2""",Copper Ftg,Copper Ftg,33.48,2,3,1
+380200,HW-4T2-402-6,HW04-1521,A2,HW,Hard Copper,"0 1/2""","69""",Copper Ftg,Copper Ftg,69.1,2,3,1
+380200,HW-4T2-401-7,HW04-1527,A1,HW,Hard Copper,"0 1/2""","40""",Copper Ftg,Copper Ftg,40.08,2,3,1
+380200,HW-4T2-401-3,HW04-1533,A1,HW,Hard Copper,"0 1/2""","63 1/4""",Copper Ftg,Copper Ftg,63.31,2,3,1
+380200,HW-4T2-401-3,HW04-1534,A1,HW,Hard Copper,"0 1/2""","22 1/4""",Copper Ftg,Copper Ftg,22.28,2,3,1
+380200,HW-4T2-416-5,HW04-1545,A1,HW,Hard Copper,"0 1/2""","40 1/2""",Copper Ftg,Copper Ftg,40.62,2,3,1
+380200,HW-4T2-416-4,HW04-1546,A1,HW,Hard Copper,"0 1/2""","72 1/4""",Copper Ftg,Copper Ftg,72.3,2,3,1
+380200,HW-4T2-417-6,HW04-1569,A1,HW,Hard Copper,"0 1/2""","122""",Copper Ftg,Copper Ftg,121.95,2,2,1
+380200,HW-4T2-415-4,HW04-1757,A2,HW,Hard Copper,"0 1/2""","36 1/4""",Copper Ftg,Copper Ftg,36.2,2,3,1
+380200,HW-4T2-415-4,HW04-1761,A2,HW,Hard Copper,"0 1/2""","12 3/4""",Copper Ftg,Copper Ftg,12.63,2,3,1
+380200,HW-4T2-408-3,HW04-1764,B2,HW,Hard Copper,"0 1/2""","78 1/4""",Copper Ftg,Copper Ftg,78.17,2,3,1
+380200,HW-4T2-417-3,HW04-1777,A1,HW,Hard Copper,"0 1/2""","33""",Copper Ftg,Copper Ftg,32.92,2,3,1
+380200,HW-4T2-408-4,HW04-1779,B2,HW,Hard Copper,"0 1/2""","39 3/4""",Copper Ftg,Copper Ftg,39.84,2,3,1
+380200,HW-4T2-407-2,HW04-1784,B2,HW,Hard Copper,"0 1/2""","45 1/2""",Copper Ftg,Copper Ftg,45.45,2,3,1
+380200,HW-4T2-406-5,HW04-1788,B1,HW,Hard Copper,"0 1/2""","66 3/4""",Copper Ftg,Copper Ftg,66.65,2,3,1
+380200,HW-4T2-402-5,HW04-1789,A2,HW,Hard Copper,"0 1/2""","70 3/4""",Copper Ftg,Copper Ftg,70.79,2,3,1
+380200,HW-4T2-401-2,HW04-1794,A1,HW,Hard Copper,"0 1/2""","74 1/4""",Copper Ftg,Copper Ftg,74.23,2,3,1
+380200,HW-4T2-418-5,HW04-1795,A1,HW,Hard Copper,"0 1/2""","70 3/4""",Copper Ftg,Copper Ftg,70.84,2,3,1
+380200,HW-4T2-418-6,HW04-1797,A1,HW,Hard Copper,"0 1/2""","35 1/4""",Copper Ftg,Copper Ftg,35.27,2,3,1
+380200,HW-4T2-418-6,HW04-1800,A1,HW,Hard Copper,"0 1/2""","73 1/4""",Copper Ftg,Copper Ftg,73.22,2,3,1
+380200,HW-4T2-417-3,HW04-1806,A1,HW,Hard Copper,"0 1/2""","62 1/4""",Copper Ftg,Copper Ftg,62.27,2,3,1
+380200,HW-4T2-417-1,HW04-1807,A1,HW,Hard Copper,"0 1/2""","25 1/4""",Copper Ftg,Copper Ftg,25.37,2,3,1
+380200,HW-4T2-417-5,HW04-1808,A1,HW,Hard Copper,"0 1/2""","31""",Copper Ftg,Copper Ftg,31.08,2,3,1
+380200,HW-4T2-417-5,HW04-1809,A1,HW,Hard Copper,"0 1/2""","52 1/2""",Copper Ftg,Copper Ftg,52.44,2,3,1
+380200,HW-4T2-409-7,HW04-1811,B2,HW,Hard Copper,"0 1/2""","72 1/4""",Copper Ftg,Copper Ftg,72.33,2,3,1
+380200,HW-4T2-409-7,HW04-1812,B2,HW,Hard Copper,"0 1/2""","96 3/4""",Copper Ftg,Copper Ftg,96.72,2,1,1
+380200,HW-4T2-409-4,HW04-1813,B2,HW,Hard Copper,"0 1/2""","17""",Copper Ftg,Copper Ftg,17.1,2,3,1
+380200,HW-4T2-409-5,HW04-1818,B2,HW,Hard Copper,"0 1/2""","71""",Copper Ftg,Copper Ftg,71.01,2,3,1
+380200,HW-4T2-411-4,HW04-1819,B2,HW,Hard Copper,"0 1/2""","12 1/4""",Copper Ftg,Copper Ftg,12.25,2,3,1
+380200,HW-4T2-411-4,HW04-1820,B2,HW,Hard Copper,"0 1/2""","16 1/4""",Copper Ftg,Copper Ftg,16.32,2,3,1
+380200,HW-4T2-406-4,HW04-1822,B1,HW,Hard Copper,"0 1/2""","41""",Copper Ftg,Copper Ftg,40.96,2,3,1
+380200,HW-4T2-405-6,HW04-1823,B1,HW,Hard Copper,"0 1/2""","65 3/4""",Copper Ftg,Copper Ftg,65.78,2,3,1
+380200,HW-4T2-405-5,HW04-1824,B1,HW,Hard Copper,"0 1/2""","41""",Copper Ftg,Copper Ftg,41.11,2,3,1
+380200,HW-4T2-401-4,HW04-1825,A1,HW,Hard Copper,"0 1/2""","99 3/4""",Copper Ftg,Copper Ftg,99.7,2,1,1
+380200,HW-4T2-401-4,HW04-1826,A1,HW,Hard Copper,"0 1/2""","162 1/4""",Copper Ftg,Copper Ftg,162.34,2,2,1
+380200,HW-4T2-417-6,HW04-1827,A1,HW,Hard Copper,"0 1/2""","76 1/4""",Copper Ftg,Copper Ftg,76.13,2,3,1
+380200,HW-4T2-407-2,HW04-1828,B2,HW,Hard Copper,"0 1/2""","70 1/2""",Copper Ftg,Copper Ftg,70.41,2,3,1
+380200,HW-4T2-418-3,HW04-1829,A1,HW,Hard Copper,"0 1/2""","30 1/2""",Copper Ftg,Copper Ftg,30.47,2,3,1
+380200,HW-4T2-418-3,HW04-1832,A1,HW,Hard Copper,"0 1/2""","53""",Copper Ftg,Copper Ftg,52.9,2,3,1
+380200,HW-4T2-405-3,HW04-1835,B1,HW,Hard Copper,"0 1/2""","74""",Copper Ftg,Copper Ftg,73.98,2,3,1
+380200,HW-4T2-405-4,HW04-1836,B1,HW,Hard Copper,"0 1/2""","39 1/2""",Copper Ftg,Copper Ftg,39.53,2,3,1
+380200,HW-4T2-404-3,HW04-1843,A2,HW,Hard Copper,"0 1/2""","18 1/4""",Copper Ftg,Copper Ftg,18.34,2,3,1
+380200,HW-4T2-404-3,HW04-1844,A2,HW,Hard Copper,"0 1/2""","26""",Copper Ftg,Copper Ftg,26.05,2,3,1
+380200,HW-4T2-404-6,HW04-1845,A2,HW,Hard Copper,"0 1/2""","36 1/2""",Copper Ftg,Copper Ftg,36.55,2,3,1
+380200,HW-4T2-404-1,HW04-1849,A2,HW,Hard Copper,"0 1/2""","136""",Copper Ftg,Copper Ftg,135.92,2,2,1
+380200,HW-4T2-404-1,HW04-1850,A2,HW,Hard Copper,"0 1/2""","105 3/4""",Copper Ftg,Copper Ftg,105.7,2,1,1
+380200,HW-4T2-404-5,HW04-1851,A2,HW,Hard Copper,"0 1/2""","32""",Copper Ftg,Copper Ftg,31.95,2,3,1
+380200,HW-4T2-404-4,HW04-1855,A2,HW,Hard Copper,"0 1/2""","43 3/4""",Copper Ftg,Copper Ftg,43.74,2,3,1
+380200,HW-4T2-403-3,HW04-1858,A2,HW,Hard Copper,"0 1/2""","72 3/4""",Copper Ftg,Copper Ftg,72.77,2,3,1
+380200,HW-4T2-403-5,HW04-1859,A2,HW,Hard Copper,"0 1/2""","69""",Copper Ftg,Copper Ftg,68.88,2,3,1
+380200,HW-4T2-403-6,HW04-1890,A2,HW,Hard Copper,"0 1/2""","48""",Copper Ftg,Copper Ftg,47.93,2,3,1
+380200,HW-4T2-403-2,HW04-1891,A2,HW,Hard Copper,"0 1/2""","62""",Copper Ftg,Copper Ftg,61.92,2,3,1
+380200,CW-4T2-413-1,CW04-182,B1,CW,Hard Copper,"0 3/4""","19 1/2""",Copper Ftg,Copper Ftg,19.48,1,3,0
+380200,CW-4T2-414-3,CW04-202,A2,CW,Hard Copper,"0 3/4""","105 3/4""",Copper Ftg,Copper Ftg,105.87,1,1,2
+380200,CWPT-4T2-414-2,CW04-215,A2,CW,Hard Copper,"0 3/4""","92 1/4""",Copper Ftg,Copper Ftg,92.33,1,1,2
+380200,CW-4T2-414-3,CW04-228,A2,CW,Hard Copper,"0 3/4""","54 3/4""",Copper Ftg,Copper Ftg,54.82,1,3,2
+380200,CW-4T2-414-1,CW04-231,A2,CW,Hard Copper,"0 3/4""","64""",Copper Ftg,Copper Ftg,64.05,1,3,2
+380200,CWPT-4T2-414-1,CW04-239,A2,CW,Hard Copper,"0 3/4""","43 1/4""",Copper Ftg,Copper Ftg,43.29,1,3,2
+380200,CW-4T2-412-2,CW04-637,B1,CW,Hard Copper,"0 3/4""","58""",Copper Ftg,Copper Ftg,57.98,1,3,2
+380200,CW-4T2-409-5,CW04-652,B2,CW,Hard Copper,"0 3/4""","41 1/2""",Copper Ftg,Copper Ftg,41.44,1,3,2
+380200,CW-4T2-409-1,CW04-662,B2,CW,Hard Copper,"0 3/4""","58 1/4""",Copper Ftg,Copper Ftg,58.24,1,3,2
+380200,CW-4T2-403-3,CW04-1087,A2,CW,Hard Copper,"0 3/4""","13 1/2""",Copper Ftg,Copper Ftg,13.48,1,3,0
+380200,CWPT-4T2-401-1,CW04-1132,A1,CW,Hard Copper,"0 3/4""","79""",Press Joint - Cup,Copper Ftg,79.01,1,3,2
+380200,CW-4T2-401-1,CW04-1146,A1,CW,Hard Copper,"0 3/4""","12 3/4""",Copper Ftg,Copper Ftg,12.82,1,3,0
+380200,CW-4T2-401-1,CW04-1153,A1,CW,Hard Copper,"0 3/4""","16 1/2""",Copper Ftg,Copper Ftg,16.47,1,3,0
+380200,CW-4T2-401-1,CW04-1154,A1,CW,Hard Copper,"0 3/4""","13""",Copper Ftg,Copper Ftg,12.98,1,3,0
+380200,CWPT-4T2-416-1,CW04-1178,A1,CW,Hard Copper,"0 3/4""","24""",Copper Ftg,Copper Ftg,24.12,1,3,0
+380200,CWPT-4T2-415-1,CW04-1184,A2,CW,Hard Copper,"0 3/4""","121 1/2""",Copper Ftg,Copper Ftg,121.45,1,2,2
+380200,CWPT-4T2-413-1,CW04-1188,B1,CW,Hard Copper,"0 3/4""","85 1/4""",Copper Ftg,Copper Ftg,85.28,1,1,2
+380200,CWPT-4T2-412-2,CW04-1195,B1,CW,Hard Copper,"0 3/4""","26 1/4""",Copper Ftg,Copper Ftg,26.15,1,3,0
+380200,CWPT-4T2-411-1,CW04-1196,B2,CW,Hard Copper,"0 3/4""","74 1/4""",Copper Ftg,Copper Ftg,74.22,1,3,2
+380200,CWPT-4T2-410-1,CW04-1197,B2,CW,Hard Copper,"0 3/4""","63 1/4""",Copper Ftg,Copper Ftg,63.34,1,3,2
+380200,CWPT-4T2-408-1,CW04-1198,B2,CW,Hard Copper,"0 3/4""","64""",Copper Ftg,Copper Ftg,63.91,1,3,2
+380200,CWPT-4T2-407-1,CW04-1199,B2,CW,Hard Copper,"0 3/4""","51 1/2""",Press Joint - Cup,Copper Ftg,51.49,1,3,2
+380200,CWPT-4T2-406-1,CW04-1200,B1,CW,Hard Copper,"0 3/4""","93""",Copper Ftg,Copper Ftg,93.07,1,1,2
+380200,CWPT-4T2-404-1,CW04-1201,A2,CW,Hard Copper,"0 3/4""","59 1/4""",Copper Ftg,Copper Ftg,59.29,1,3,2
+380200,CWPT-4T2-402-1,CW04-1202,A2,CW,Hard Copper,"0 3/4""","24 3/4""",Copper Ftg,Copper Ftg,24.76,1,3,0
+380200,CW-4T2-401-1,CW04-1203,A1,CW,Hard Copper,"0 3/4""","21 1/4""",Copper Ftg,Copper Ftg,21.18,1,3,0
+380200,CWPT-4T2-417-1,CW04-1233,A1,CW,Hard Copper,"0 3/4""","110""",Copper Ftg,Copper Ftg,109.91,1,1,2
+380200,CWPT-4T2-417-2,CW04-1237,A1,CW,Hard Copper,"0 3/4""","44""",Copper Ftg,Copper Ftg,44.07,1,3,2
+380200,CWPT-4T2-418-1,CW04-1271,A1,CW,Hard Copper,"0 3/4""","25 1/2""",Copper Ftg,Copper Ftg,25.46,1,3,0
+380200,CWPT-4T2-416-2,CW04-1288,A1,CW,Hard Copper,"0 3/4""","75 3/4""",Copper Ftg,Copper Ftg,75.74,1,3,2
+380200,CW-4T2-416-2,CW04-1290,A1,CW,Hard Copper,"0 3/4""","100""",Copper Ftg,Copper Ftg,100.12,1,1,2
+380200,CWPT-4T2-412-1,CW04-1323,B1,CW,Hard Copper,"0 3/4""","72 1/4""",Copper Ftg,Copper Ftg,72.19,1,3,2
+380200,CW-4T2-410-3,CW04-1335,B2,CW,Hard Copper,"0 3/4""","13 1/2""",Copper Ftg,Copper Ftg,13.38,1,3,0
+380200,CW-4T2-406-1,CW04-1381,B1,CW,Hard Copper,"0 3/4""","13""",Copper Ftg,Copper Ftg,12.98,1,3,0
+380200,CW-4T2-406-1,CW04-1385,B1,CW,Hard Copper,"0 3/4""","22 1/2""",Copper Ftg,Copper Ftg,22.54,1,3,0
+380200,CW-4T2-405-1,CW04-1410,B1,CW,Hard Copper,"0 3/4""","32 1/4""",Copper Ftg,Copper Ftg,32.19,1,3,0
+380200,CW-4T2-401-8,CW04-1423,A1,CW,Hard Copper,"0 3/4""","21""",Copper Ftg,Copper Ftg,20.99,1,3,0
+380200,CW-4T2-411-3,CW04-1432,B2,CW,Hard Copper,"0 3/4""","30 3/4""",Copper Ftg,Copper Ftg,30.72,1,3,0
+380200,CW-4T2-403-1,CW04-1492,A2,CW,Hard Copper,"0 3/4""","14 1/2""",Copper Ftg,Copper Ftg,14.49,1,3,0
+380200,CW-4T2-403-3,CW04-1505,A2,CW,Hard Copper,"0 3/4""","54 1/4""",Copper Ftg,Copper Ftg,54.18,1,3,2
+380200,CW-4T2-403-3,CW04-1506,A2,CW,Hard Copper,"0 3/4""","88 1/4""",Copper Ftg,Copper Ftg,88.37,1,1,2
+380200,CW-4T2-405-2,CW04-1551,B1,CW,Hard Copper,"0 3/4""","108""",Copper Ftg,Copper Ftg,107.97,1,1,2
+380200,CW-4T2-418-2,CW04-1611,A1,CW,Hard Copper,"0 3/4""","23 1/4""",Copper Ftg,Copper Ftg,23.29,1,3,0
+380200,CW-4T2-410-3,CW04-1636,B2,CW,Hard Copper,"0 3/4""","111""",Copper Ftg,Copper Ftg,111.04,1,1,2
+380200,CW-4T2-411-1,CW04-1649,B2,CW,Hard Copper,"0 3/4""","21 1/4""",Copper Ftg,Copper Ftg,21.35,1,3,0
+380200,CWPT-4T2-411-2,CW04-1658,B2,CW,Hard Copper,"0 3/4""","82""",Copper Ftg,Copper Ftg,82.05,1,3,2
+380200,CW-4T2-412-1,CW04-1669,B1,CW,Hard Copper,"0 3/4""","35 1/4""",Copper Ftg,Copper Ftg,35.25,1,3,0
+380200,CW-4T2-413-1,CW04-1691,B1,CW,Hard Copper,"0 3/4""","34 1/2""",Copper Ftg,Copper Ftg,34.38,1,3,0
+380200,CWPT-4T2-413-2,CW04-1692,B1,CW,Hard Copper,"0 3/4""","88""",Copper Ftg,Copper Ftg,88.01,1,1,2
+380200,CW-4T2-407-3,CW04-1746,B2,CW,Hard Copper,"0 3/4""","130""",Copper Ftg,Copper Ftg,129.92,1,2,2
+380200,CW-4T2-405-2,CW04-1761,B1,CW,Hard Copper,"0 3/4""","50 1/4""",Copper Ftg,Copper Ftg,50.27,1,3,2
+380200,CWPT-4T2-403-1,CW04-1791,A2,CW,Hard Copper,"0 3/4""","118 1/2""",Copper Ftg,Copper Ftg,118.47,1,2,2
+380200,CW-4T2-402-1,CW04-1807,A2,CW,Hard Copper,"0 3/4""","24 1/2""",Copper Ftg,Copper Ftg,24.47,1,3,0
+380200,CW-4T2-401-1,CW04-1818,A1,CW,Hard Copper,"0 3/4""","58""",Copper Ftg,Copper Ftg,57.98,1,3,2
+380200,CW-4T2-404-2,CW04-2173,A2,CW,Hard Copper,"0 3/4""","61""",Copper Ftg,Copper Ftg,60.92,1,3,2
+380200,CW-4T2-402-4,CW04-2184,A2,CW,Hard Copper,"0 3/4""","129 1/4""",Copper Ftg,Copper Ftg,129.29,1,2,2
+380200,CWPT-4T2-402-2,CW04-2186,A2,CW,Hard Copper,"0 3/4""","175 3/4""",Copper Ftg,Copper Ftg,175.86,1,2,2
+380200,CWPT-4T2-408-2,CW04-2205,B2,CW,Hard Copper,"0 3/4""","141 1/4""",Copper Ftg,Copper Ftg,141.29,1,2,2
+380200,CW-4T2-405-1,CW04-2208,B1,CW,Hard Copper,"0 3/4""","49 3/4""",Copper Ftg,Copper Ftg,49.65,1,3,2
+380200,CW-4T2-403-1,CW04-2214,A2,CW,Hard Copper,"0 3/4""","26""",Copper Ftg,Copper Ftg,25.93,1,3,0
+380200,CW-4T2-403-1,CW04-2215,A2,CW,Hard Copper,"0 3/4""","24 3/4""",Copper Ftg,Copper Ftg,24.69,1,3,0
+380200,CW-4T2-418-4,CW04-2223,A1,CW,Hard Copper,"0 3/4""","75 1/4""",Copper Ftg,Copper Ftg,75.2,1,3,2
+380200,CW-4T2-418-4,CW04-2224,A1,CW,Hard Copper,"0 3/4""","67""",Copper Ftg,Copper Ftg,66.89,1,3,2
+380200,CW-4T2-417-3,CW04-2231,A1,CW,Hard Copper,"0 3/4""","132""",Copper Ftg,Copper Ftg,132.03,1,2,2
+380200,HW-4T2-414-4,HW04-184,A2,HW,Hard Copper,"0 3/4""","100 3/4""",Copper Ftg,Copper Ftg,100.87,2,1,1
+380200,HWPT-4T2-414-2,HW04-197,A2,HW,Hard Copper,"0 3/4""","92 1/4""",Copper Ftg,Copper Ftg,92.33,2,1,1
+380200,HW-4T2-414-4,HW04-218,A2,HW,Hard Copper,"0 3/4""","46 3/4""",Copper Ftg,Copper Ftg,46.82,2,3,1
+380200,HWPT-4T2-414-1,HW04-220,A2,HW,Hard Copper,"0 3/4""","58 3/4""",Copper Ftg,Copper Ftg,58.86,2,3,1
+380200,HW-4T2-414-2,HW04-228,A2,HW,Hard Copper,"0 3/4""","43 1/4""",Copper Ftg,Copper Ftg,43.29,2,3,1
+380200,HW-4T2-412-1,HW04-310,B1,HW,Hard Copper,"0 3/4""","19 1/4""",Copper Ftg,Copper Ftg,19.35,2,3,1
+380200,HW-4T2-409-1,HW04-522,B2,HW,Hard Copper,"0 3/4""","53 1/4""",Copper Ftg,Copper Ftg,53.27,2,3,1
+380200,HW-4T2-409-2,HW04-536,B2,HW,Hard Copper,"0 3/4""","31 1/2""",Copper Ftg,Copper Ftg,31.44,2,3,1
+380200,HW-4T2-407-3,HW04-835,B2,HW,Hard Copper,"0 3/4""","130""",Press Joint - Cup,Copper Ftg,129.92,2,2,1
+380200,HW-4T2-403-4,HW04-887,A2,HW,Hard Copper,"0 3/4""","13 1/2""",Copper Ftg,Copper Ftg,13.48,2,3,1
+380200,HWPT-4T2-401-1,HW04-921,A1,HW,Hard Copper,"0 3/4""","70 1/4""",Press Joint - Cup,Copper Ftg,70.32,2,3,1
+380200,HW-4T2-401-1,HW04-932,A1,HW,Hard Copper,"0 3/4""","12 3/4""",Copper Ftg,Copper Ftg,12.82,2,3,1
+380200,HW-4T2-401-1,HW04-939,A1,HW,Hard Copper,"0 3/4""","21 1/2""",Copper Ftg,Copper Ftg,21.45,2,3,1
+380200,HW-4T2-401-1,HW04-940,A1,HW,Hard Copper,"0 3/4""","13""",Copper Ftg,Copper Ftg,12.98,2,3,1
+380200,HWPT-4T2-416-1,HW04-959,A1,HW,Hard Copper,"0 3/4""","28 3/4""",Copper Ftg,Copper Ftg,28.86,2,3,1
+380200,HWPT-4T2-415-1,HW04-968,A2,HW,Hard Copper,"0 3/4""","129 1/2""",Copper Ftg,Copper Ftg,129.52,2,2,1
+380200,HWPT-4T2-413-1,HW04-969,B1,HW,Hard Copper,"0 3/4""","82 1/4""",Copper Ftg,Copper Ftg,82.28,2,3,1
+380200,HWPT-4T2-412-2,HW04-979,B1,HW,Hard Copper,"0 3/4""","85 3/4""",Copper Ftg,Copper Ftg,85.66,2,1,1
+380200,HWPT-4T2-412-1,HW04-980,B1,HW,Hard Copper,"0 3/4""","85 1/4""",Copper Ftg,Copper Ftg,85.19,2,1,1
+380200,HWPT-4T2-411-1,HW04-981,B2,HW,Hard Copper,"0 3/4""","79 1/4""",Copper Ftg,Copper Ftg,79.21,2,3,1
+380200,HWPT-4T2-410-1,HW04-982,B2,HW,Hard Copper,"0 3/4""","79 1/2""",Copper Ftg,Copper Ftg,79.4,2,3,1
+380200,HWPT-4T2-408-1,HW04-983,B2,HW,Hard Copper,"0 3/4""","68 3/4""",Copper Ftg,Copper Ftg,68.7,2,3,1
+380200,HWPT-4T2-407-1,HW04-984,B2,HW,Hard Copper,"0 3/4""","63""",Copper Ftg,Copper Ftg,63.02,2,3,1
+380200,HWPT-4T2-406-1,HW04-985,B1,HW,Hard Copper,"0 3/4""","69""",Copper Ftg,Copper Ftg,69.08,2,3,1
+380200,HWPT-4T2-402-1,HW04-989,A2,HW,Hard Copper,"0 3/4""","24 3/4""",Copper Ftg,Copper Ftg,24.76,2,3,1
+380200,HW-4T2-401-1,HW04-990,A1,HW,Hard Copper,"0 3/4""","26""",Copper Ftg,Copper Ftg,26.04,2,3,1
+380200,HWPT-4T2-417-2,HW04-1018,A1,HW,Hard Copper,"0 3/4""","56 1/4""",Copper Ftg,Copper Ftg,56.14,2,3,1
+380200,HWPT-4T2-418-1,HW04-1056,A1,HW,Hard Copper,"0 3/4""","30 1/2""",Copper Ftg,Copper Ftg,30.4,2,3,1
+380200,HWPT-4T2-416-2,HW04-1070,A1,HW,Hard Copper,"0 3/4""","62 3/4""",Copper Ftg,Copper Ftg,62.74,2,3,1
+380200,HW-4T2-416-2,HW04-1074,A1,HW,Hard Copper,"0 3/4""","100""",Copper Ftg,Copper Ftg,100.12,2,1,1
+380200,HW-4T2-406-1,HW04-1157,B1,HW,Hard Copper,"0 3/4""","13""",Copper Ftg,Copper Ftg,13.01,2,3,1
+380200,HW-4T2-406-1,HW04-1161,B1,HW,Hard Copper,"0 3/4""","27 1/2""",Copper Ftg,Copper Ftg,27.53,2,3,1
+380200,HW-4T2-405-1,HW04-1185,B1,HW,Hard Copper,"0 3/4""","31""",Copper Ftg,Copper Ftg,31.03,2,3,1
+380200,HW-4T2-403-1,HW04-1193,A2,HW,Hard Copper,"0 3/4""","29 1/2""",Copper Ftg,Copper Ftg,29.56,2,3,1
+380200,HW-4T2-411-3,HW04-1210,B2,HW,Hard Copper,"0 3/4""","25 3/4""",Copper Ftg,Copper Ftg,25.72,2,3,1
+380200,HW-4T2-403-4,HW04-1263,A2,HW,Hard Copper,"0 3/4""","59 1/4""",Copper Ftg,Copper Ftg,59.18,2,3,1
+380200,HW-4T2-403-4,HW04-1264,A2,HW,Hard Copper,"0 3/4""","96 1/4""",Copper Ftg,Copper Ftg,96.37,2,1,1
+380200,HW-4T2-405-2,HW04-1316,B1,HW,Hard Copper,"0 3/4""","113""",Copper Ftg,Copper Ftg,112.97,2,1,1
+380200,HWPT-4T2-417-1,HW04-1364,A1,HW,Hard Copper,"0 3/4""","109 3/4""",Copper Ftg,Copper Ftg,109.66,2,1,1
+380200,HW-4T2-411-1,HW04-1397,B2,HW,Hard Copper,"0 3/4""","26 1/4""",Copper Ftg,Copper Ftg,26.35,2,3,1
+380200,HWPT-4T2-411-2,HW04-1405,B2,HW,Hard Copper,"0 3/4""","85""",Copper Ftg,Copper Ftg,85.05,2,1,1
+380200,HW-4T2-412-1,HW04-1418,B1,HW,Hard Copper,"0 3/4""","33 1/4""",Copper Ftg,Copper Ftg,33.25,2,3,1
+380200,HWPT-4T2-413-2,HW04-1434,B1,HW,Hard Copper,"0 3/4""","75""",Copper Ftg,Copper Ftg,75.01,2,3,1
+380200,HW-4T2-413-1,HW04-1435,B1,HW,Hard Copper,"0 3/4""","23 1/4""",Copper Ftg,Copper Ftg,23.28,2,3,1
+380200,HW-4T2-402-1,HW04-1522,A2,HW,Hard Copper,"0 3/4""","29 1/2""",Copper Ftg,Copper Ftg,29.47,2,3,1
+380200,HW-4T2-401-1,HW04-1532,A1,HW,Hard Copper,"0 3/4""","66""",Copper Ftg,Copper Ftg,66.01,2,3,1
+380200,HW-4T2-402-4,HW04-1766,A2,HW,Hard Copper,"0 3/4""","116 1/4""",Copper Ftg,Copper Ftg,116.29,2,1,1
+380200,HWPT-4T2-402-2,HW04-1768,A2,HW,Hard Copper,"0 3/4""","165 3/4""",Copper Ftg,Copper Ftg,165.86,2,2,1
+380200,HWPT-4T2-408-2,HW04-1783,B2,HW,Hard Copper,"0 3/4""","154 1/4""",Copper Ftg,Copper Ftg,154.29,2,2,1
+380200,HW-4T2-401-6,HW04-1793,A1,HW,Hard Copper,"0 3/4""","24""",Copper Ftg,Copper Ftg,23.99,2,3,1
+380200,HW-4T2-418-4,HW04-1801,A1,HW,Hard Copper,"0 3/4""","88 1/4""",Copper Ftg,Copper Ftg,88.18,2,1,1
+380200,HW-4T2-418-4,HW04-1802,A1,HW,Hard Copper,"0 3/4""","67""",Copper Ftg,Copper Ftg,66.88,2,3,1
+380200,HW-4T2-417-4,HW04-1803,A1,HW,Hard Copper,"0 3/4""","132""",Copper Ftg,Copper Ftg,132.1,2,2,1
+380200,HW-4T2-418-2,HW04-1830,A1,HW,Hard Copper,"0 3/4""","33 1/4""",Copper Ftg,Copper Ftg,33.27,2,3,1
+380200,HW-4T2-405-2,HW04-1837,B1,HW,Hard Copper,"0 3/4""","47 1/4""",Copper Ftg,Copper Ftg,47.26,2,3,1
+380200,HWPT-4T2-404-1,HW04-1856,A2,HW,Hard Copper,"0 3/4""","56""",Copper Ftg,Copper Ftg,55.95,2,3,1
+380200,HWPT-4T2-403-1,HW04-1857,A2,HW,Hard Copper,"0 3/4""","118 1/2""",Copper Ftg,Copper Ftg,118.47,2,2,1
+380200,HW-4T2-404-2,HW04-1886,A2,HW,Hard Copper,"0 3/4""","61""",Copper Ftg,Copper Ftg,60.92,2,3,1
+380200,HW-4T2-405-1,HW04-1889,B1,HW,Hard Copper,"0 3/4""","44 1/4""",Copper Ftg,Copper Ftg,44.33,2,3,1
+380200,HW-4T2-403-1,HW04-1892,A2,HW,Hard Copper,"0 3/4""","36""",Copper Ftg,Copper Ftg,35.93,2,3,1
+380200,CW-4T2-414-A2-1,CW04-139,A2,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-418-A1-1,CW04-152,A1,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-401-A1-1,CW04-154,A1,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-402-A2-1,CW04-155,A2,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-403-A2-1,CW04-157,A2,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-404-A2-1,CW04-158,A2,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,125.99,1,2,2
+380200,CW-4T2-405-B1-1,CW04-160,B1,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-407-B2-1,CW04-162,B2,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-408-B2-1,CW04-164,B2,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-410-B2-1,CW04-166,B2,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-411-B2-1,CW04-168,B2,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-412-B1-1,CW04-170,B1,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-413-B1-1,CW04-172,B1,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-415-A2-1,CW04-174,A2,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-416-A1-1,CW04-176,A1,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,CW-4T2-417-A1-1,CW04-178,A1,CW,Hard Copper,"1 1/2""","126""",Copper Ftg,Copper Ftg,126,1,2,2
+380200,HW-4T2-405-B1-1,HW04-141,B1,HW,Hard Copper,"1 1/4""","42 3/4""",Copper Ftg,Copper Ftg,42.86,2,3,1
+380200,HW-4T2-404-A2-1,HW04-144,A2,HW,Hard Copper,"1 1/4""","39 3/4""",Copper Ftg,Copper Ftg,39.83,2,3,1
+380200,HW-4T2-406-B1-1,HW04-147,B1,HW,Hard Copper,"1 1/4""","47 3/4""",Copper Ftg,Copper Ftg,47.73,2,3,1
+380200,HW-4T2-407-B2-1,HW04-150,B2,HW,Hard Copper,"1 1/4""","36 3/4""",Copper Ftg,Copper Ftg,36.66,2,3,1
+380200,HW-4T2-408-B2-1,HW04-153,B2,HW,Hard Copper,"1 1/4""","48 3/4""",Copper Ftg,Copper Ftg,48.81,2,3,1
+380200,HW-4T2-403-A2-1,HW04-156,A2,HW,Hard Copper,"1 1/4""","36 3/4""",Copper Ftg,Copper Ftg,36.77,2,3,1
+380200,HW-4T2-416-A1-1,HW04-162,A1,HW,Hard Copper,"1 1/4""","43 3/4""",Copper Ftg,Copper Ftg,43.85,2,3,1
+380200,HW-4T2-418-A1-1,HW04-165,A1,HW,Hard Copper,"1 1/4""","39 3/4""",Copper Ftg,Copper Ftg,39.87,2,3,1
+380200,HW-4T2-402-A2-1,HW04-137,A2,HW,Hard Copper,"1""","81 1/2""",Copper Ftg,Copper Ftg,81.5,2,3,1
+380200,HW-4T2-405-B1-1,HW04-143,B1,HW,Hard Copper,"1""","81 1/4""",Copper Ftg,Copper Ftg,81.2,2,3,1
+380200,HW-4T2-404-A2-1,HW04-146,A2,HW,Hard Copper,"1""","84 1/4""",Copper Ftg,Copper Ftg,84.23,2,1,1
+380200,HW-4T2-406-B1-1,HW04-149,B1,HW,Hard Copper,"1""","76 1/4""",Copper Ftg,Copper Ftg,76.33,2,3,1
+380200,HW-4T2-407-B2-1,HW04-152,B2,HW,Hard Copper,"1""","87 1/2""",Copper Ftg,Copper Ftg,87.4,2,1,1
+380200,HW-4T2-402-A2-1,HW04-159,A2,HW,Hard Copper,"1""","42 3/4""",Copper Ftg,Copper Ftg,42.81,2,3,1
+380200,HW-4T2-418-A1-1,HW04-176,A1,HW,Hard Copper,"1""","84 1/4""",Copper Ftg,Copper Ftg,84.19,2,1,1
+380200,HW-4T2-403-A2-1,HW04-179,A2,HW,Hard Copper,"1""","87 1/4""",Copper Ftg,Copper Ftg,87.3,2,1,1
+380200,HW-4T2-408-B2-1,HW04-180,B2,HW,Hard Copper,"1""","75 1/4""",Copper Ftg,Copper Ftg,75.25,2,3,1
+380200,HW-4T2-416-A1-1,HW04-191,A1,HW,Hard Copper,"1""","80 1/4""",Copper Ftg,Copper Ftg,80.21,2,3,1
