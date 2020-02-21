@@ -13,12 +13,12 @@ public class StartWindow {
     private JTextField sourceTextField = new JTextField();
     private JTextField outputTextField = new JTextField();
 
-    private final boolean TESTING_ENABLED = true;
+    private final boolean SET_DEFAULT_FIELDS = true;
 
     StartWindow() {
         setupJFrame();
 
-        if (TESTING_ENABLED) {
+        if (SET_DEFAULT_FIELDS) {
             sourceTextField.setText("test\\csv\\input\\pipes.csv");
             outputTextField.setText("test\\csv\\output");
         }
