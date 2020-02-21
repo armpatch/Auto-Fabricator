@@ -2,6 +2,8 @@
 
 A lightweight desktop Java application used to parse and sort CAD data for use with a TC-50 Pipe Cutting Machine.
 
+Video Demonstration: https://youtu.be/DZxeHO2s-Vc
+
 ## Description
 
 ###  **Overview:**
