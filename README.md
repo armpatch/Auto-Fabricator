@@ -32,6 +32,8 @@ The pipes are then added to separate Lists based on three parameters: diameter (
 
 Each group of cut pipes is then sorted by length in descending order. Starting with the first pipe, the algorithm adds pipes to a new Bundle as long as the total length of the bundle remains less than the size of the stock (slightly less than 20’).
 
+The data from these new groups is then written to new csv files, grouping together hot and cold groups in the same file. Pipes in the within the same bundle are placed in consecutive rows, with an empty row designating separate bundles. These files are automatically named according to the job number, pipe diameter, and end type. 
+
 **Example:**
 
 Unsorted pipe lengths: 15’, 15’, 11’, 10’, 10’, 5’, 5’, 4’, 3’, 3’, 3’, 1’, 1’, 1’
@@ -42,3 +44,8 @@ Are grouped as follows:
 (15’, 5’) = 20’
 (11’, 4’, 3’, 1’, 1’) = 20’
 (3’, 3’, 1’ ) = 6’
+
+###  **Future Improvements**:
+
+- Create a report that shows general information, including the total number of pipes, total length, leftover pipe, material cost, etc.
+- Create a config file to designate additional pipe sizes or types, and output settings.
